@@ -7,6 +7,7 @@
  * 
  * This software is distribute under MIT License
  */
+
 var jexcel = (function(el, options) {
     // Create jexcel object
     var obj = {};
@@ -12170,3 +12171,5 @@ for (var i = 0; i < Object.keys(jexcel.methods).length; i++) {
         }
     }
 }
+
+module.exports = jexcel;
