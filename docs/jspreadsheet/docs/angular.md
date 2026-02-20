@@ -140,3 +140,58 @@ Import XLSX files and edit them online using Jspreadsheet Pro.
 
 - [Data Grid Custom Cell Editor](https://stackblitz.com/~/github.com/nicolasjesse/jss-custom-column-ng)
 - [Angular Spreadsheet with Data Validation](https://stackblitz.com/edit/angular-data-validation-example)
+
+{.pro}
+> **Jspreadsheet Pro for Angular - Professional Spreadsheet Components**
+>
+> While Jspreadsheet CE provides core spreadsheet functionality for Angular, **Jspreadsheet Pro** offers enhanced Angular integration and enterprise features:
+>
+> **Enhanced Angular Integration:**
+> - **Full TypeScript Support:** Complete type definitions for type-safe Angular development
+> - **Angular Modules:** NgModule structure for easy integration into Angular apps
+> - **Standalone Components:** Support for Angular standalone components (Angular 14+)
+> - **Dependency Injection:** Full DI support for spreadsheet services
+> - **RxJS Integration:** Observable streams for reactive data handling
+> - **Angular Signals:** Support for Angular Signals (Angular 16+)
+>
+> **Professional Components:**
+> - **Advanced Editors:** Conditional dropdowns, rich text, HTML editors with Angular forms
+> - **Formula System:** 500+ Excel functions with Angular change detection
+> - **Conditional Formatting:** Visual rules, data bars, color scales, icon sets
+> - **Data Validation:** Real-time validation with Angular form validators
+> - **Import/Export:** Full Excel (.xlsx) import/export with formatting preservation
+> - **Charts & Graphs:** Built-in Angular chart components for data visualization
+>
+> **Angular Forms Integration:**
+> - **Reactive Forms:** Full integration with Angular Reactive Forms
+> - **Template-Driven Forms:** Support for template-driven form bindings
+> - **Form Validators:** Built-in and custom Angular validators
+> - **Form Control:** Spreadsheet as FormControl with validation
+> - **Two-Way Binding:** [(ngModel)] support for spreadsheet data
+> - **Form States:** Track pristine, dirty, touched, valid states
+>
+> **Performance & Scale:**
+> - **Virtual Scrolling:** Handle 100K+ rows with smooth scrolling
+> - **Lazy Loading:** Load data on-demand for optimal performance
+> - **Zone.js Optimized:** Efficient change detection with Angular zones
+> - **OnPush Strategy:** Support for OnPush change detection strategy
+> - **Web Workers:** Background processing for heavy calculations
+> - **AOT Compatible:** Fully compatible with Ahead-of-Time compilation
+>
+> **Developer Experience:**
+> - **Angular-Specific Documentation:** Examples with TypeScript and Angular patterns
+> - **Professional Support:** Priority support for Angular integration issues
+> - **Regular Updates:** Continuous Angular version compatibility (14, 15, 16, 17+)
+> - **Migration Tools:** Easy migration from CE to Pro with Angular examples
+>
+> **Angular-Specific Pro Features:**
+> - **Custom Angular Components:** Use Angular components as cell editors
+> - **Pipes Support:** Use Angular pipes for cell value transformation
+> - **Directives:** Custom directives for cell customization
+> - **Services:** Spreadsheet services for shared state management
+> - **Router Integration:** Deep linking and navigation integration
+> - **Testing Support:** Jasmine/Karma and Jest integration examples
+>
+> Perfect for Angular applications requiring enterprise-grade spreadsheet functionality with professional support.
+>
+> **[Explore Jspreadsheet Pro Angular →](https://jspreadsheet.com/docs/angular)** | **[Compare CE vs Pro →](https://jspreadsheet.com/docs/getting-started)** | **[View Pricing →](https://jspreadsheet.com/pricing)**

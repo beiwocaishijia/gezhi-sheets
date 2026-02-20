@@ -160,7 +160,52 @@ React Calendar with MUI
 #### NextJS integration
 
 * [Online XLSX NextJS reader](https://codesandbox.io/s/jspreadsheet-and-nextjs-6fhsz)
-Creating an online XLSX reader with NextJS and Jspreadsheet 
+Creating an online XLSX reader with NextJS and Jspreadsheet
 * [Import a Excel file to NextJS](https://codesandbox.io/s/nextjs-spreadsheet-52mr2z)
-How to import an Excel file in NextJS using Jspreadsheet. 
+How to import an Excel file in NextJS using Jspreadsheet.
+
+{.pro}
+> **Jspreadsheet Pro for React - Professional Spreadsheet Components**
+>
+> While Jspreadsheet CE provides core spreadsheet functionality for React, **Jspreadsheet Pro** offers enhanced React integration and enterprise features:
+>
+> **Enhanced React Integration:**
+> - **TypeScript Support:** Full TypeScript definitions for type-safe development
+> - **React Hooks:** Custom hooks for common spreadsheet operations (useSpreadsheet, useWorksheet)
+> - **State Management:** Built-in Redux/MobX integration for state management
+> - **React Context:** Context API integration for global spreadsheet state
+> - **Server-Side Rendering:** Full SSR/SSG support for Next.js and Gatsby
+> - **React 18 Features:** Concurrent rendering, automatic batching support
+>
+> **Professional Components:**
+> - **Advanced Editors:** Conditional dropdowns, rich text, HTML editors with React integration
+> - **Formula System:** 500+ Excel functions with React bindings
+> - **Conditional Formatting:** Visual rules, data bars, color scales, icon sets
+> - **Data Validation:** Real-time validation with custom error components
+> - **Import/Export:** Full Excel (.xlsx) import/export with formatting preservation
+> - **Charts & Graphs:** Built-in charting components for data visualization
+>
+> **Performance & Scale:**
+> - **Virtual Scrolling:** Handle 100K+ rows with smooth scrolling
+> - **Lazy Loading:** Load data on-demand for optimal performance
+> - **Optimized Rendering:** React-optimized rendering for large datasets
+> - **Web Workers:** Background processing for heavy calculations
+> - **Memory Management:** Efficient memory usage for large spreadsheets
+>
+> **Developer Experience:**
+> - **Comprehensive Documentation:** React-specific examples and best practices
+> - **Professional Support:** Priority email and chat support for integration issues
+> - **Regular Updates:** Continuous improvements and React version compatibility
+> - **Migration Tools:** Easy migration from CE to Pro with code guides
+>
+> **React-Specific Pro Features:**
+> - **Custom React Components:** Use React components as cell editors
+> - **Event Integration:** Seamless integration with React event system
+> - **Component Lifecycle:** Hooks into React component lifecycle
+> - **Prop Validation:** PropTypes and TypeScript validation
+> - **Testing Support:** Jest/React Testing Library integration examples
+>
+> Perfect for React applications requiring enterprise-grade spreadsheet functionality with professional support.
+>
+> **[Explore Jspreadsheet Pro React →](https://jspreadsheet.com/docs/react)** | **[Compare CE vs Pro →](https://jspreadsheet.com/docs/getting-started)** | **[View Pricing →](https://jspreadsheet.com/pricing)** 
 

@@ -8,7 +8,7 @@ This guide provides an in-depth overview of data grid cells in Jspreadsheet, inc
 
 {.pro}
 > #### Differences in the Pro Version
-> 
+>
 > The Jspreadsheet Pro enables cell-level editor customization and allows dynamic programmatic changes to cell types.\
 > \
 > [Learn more](https://jspreadsheet.com/docs/cells){.button}
@@ -266,3 +266,42 @@ export class AppComponent {
     }
 }
 ```
+
+{.pro}
+> **Upgrade to Jspreadsheet Pro for Advanced Cell Features**
+>
+> Jspreadsheet CE provides basic cell operations and styling. **Jspreadsheet Pro** adds powerful cell-level capabilities:
+>
+> **Cell-Level Validation:**
+> - **Required Cells:** Mark specific cells as required with custom error messages
+> - **Custom Validators:** Define validation functions per cell (not just column-level)
+> - **Cross-Cell Validation:** Validate based on values in other cells
+> - **Real-Time Validation:** Instant feedback with visual indicators as users type
+> - **Validation Rules:** Min/max values, regex patterns, custom logic per cell
+> - **Error Highlighting:** Automatic visual highlighting of invalid cells
+>
+> **Advanced Cell Formatting:**
+> - **Conditional Cell Formatting:** Auto-apply colors, styles based on cell values
+> - **Data Bars:** In-cell bar charts showing relative values
+> - **Color Scales:** Gradient colors based on value ranges
+> - **Icon Sets:** Visual icons (arrows, flags, traffic lights) based on values
+> - **Rich Text in Cells:** Bold, italic, underline, colors within single cell
+> - **Cell-Specific Masks:** Different format masks per cell (not just column)
+>
+> **Cell Protection & Security:**
+> - **Cell-Level Protection:** Lock specific cells while allowing others to edit
+> - **Conditional Protection:** Protect/unprotect cells based on user roles or values
+> - **Password Protection:** Protect cells with passwords
+> - **Read-Only Cells:** Programmatically set individual cells as read-only
+>
+> **Enhanced Cell Features:**
+> - **Cell Comments/Notes:** Advanced commenting system with threads and mentions
+> - **Cell Metadata:** Store custom business data per cell
+> - **Cell History:** Track changes per cell with audit trail
+> - **Cell Dependencies:** Track which cells depend on each other
+> - **Cell Types:** Dynamic cell type changes at runtime
+> - **Custom Renderers:** Per-cell custom rendering functions
+>
+> Perfect for data entry applications requiring strict validation and conditional formatting.
+>
+> **[Explore Pro Cell Features →](https://jspreadsheet.com/docs/cells)** | **[Compare Editions →](https://jspreadsheet.com/docs/getting-started)** | **[View Pricing →](https://jspreadsheet.com/pricing)**

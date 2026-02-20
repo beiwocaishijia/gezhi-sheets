@@ -129,3 +129,8 @@ export class AppComponent {
     }
 }
 ```
+
+## Related Tools
+
+- [Jspreadsheet Pro Freeze Columns](https://jspreadsheet.com/docs/freeze-columns) - Advanced freeze with user controls (Pro)
+- [Jspreadsheet Pro Freeze Rows](https://jspreadsheet.com/docs/freeze-rows) - Freeze header rows with interactive controls (Pro)

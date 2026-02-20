@@ -701,3 +701,40 @@ export class AppComponent {
     }
 }
 ```
+
+{.pro}
+> **Upgrade to Jspreadsheet Pro for Advanced Data Operations**
+>
+> Jspreadsheet CE supports basic data loading from arrays, CSV, JSON, and HTML tables. **Jspreadsheet Pro** adds enterprise-grade data management capabilities:
+>
+> **Excel Import/Export:**
+> - **Full Excel Compatibility:** Import/export native .xlsx and .xls files with formulas, formatting, and styles preserved
+> - **Multiple Worksheet Support:** Import/export workbooks with multiple sheets
+> - **Formula Translation:** Excel formulas automatically converted to Jspreadsheet format
+> - **Style Preservation:** Cell colors, fonts, borders, and formatting maintained on import/export
+> - **Chart Import:** Import Excel charts and graphs
+> - **Named Ranges:** Support for Excel named ranges and defined names
+>
+> **Advanced Data Loading:**
+> - **Database Integration:** Direct integration with MySQL, PostgreSQL, SQL Server, MongoDB
+> - **API Integration:** RESTful API support with authentication and pagination
+> - **Real-Time Data:** WebSocket support for live data updates
+> - **Lazy Loading:** Load large datasets incrementally for better performance
+> - **Background Processing:** Async data loading with progress indicators
+>
+> **Data Export Options:**
+> - **PDF Export:** Export spreadsheets to formatted PDF documents
+> - **XML Export:** Export data in XML format
+> - **Custom Formats:** Build custom export formats with templates
+> - **Batch Export:** Export multiple worksheets at once
+> - **Server-Side Export:** Generate exports on the server for large datasets
+>
+> **Data Validation & Quality:**
+> - **Data Validation Rules:** Enforce data integrity with validation rules
+> - **Duplicate Detection:** Find and merge duplicate records
+> - **Data Cleansing:** Auto-trim, case normalization, format correction
+> - **Import Validation:** Validate data during import with error reporting
+>
+> Perfect for business applications requiring Excel compatibility and enterprise data management.
+>
+> **[Explore Pro Data Features →](https://jspreadsheet.com/docs/import-and-export)** | **[Compare Editions →](https://jspreadsheet.com/docs/getting-started)** | **[View Pricing →](https://jspreadsheet.com/pricing)**

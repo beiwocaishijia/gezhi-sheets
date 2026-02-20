@@ -202,3 +202,9 @@ export class AppComponent {
     }
 }
 ```
+
+## Related Tools
+
+- [Nested Headers](/jspreadsheet/docs/nested-headers) - Create multi-level column headers
+- [Data Grid Footers](/jspreadsheet/docs/footers) - Add footer rows with formulas
+- [Jspreadsheet Pro Headers](https://jspreadsheet.com/docs/headers) - Advanced header customization (Pro)

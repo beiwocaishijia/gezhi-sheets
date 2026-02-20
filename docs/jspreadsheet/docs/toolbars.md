@@ -667,3 +667,8 @@ export class AppComponent {
     }
 }
 ```
+
+## Related Tools
+
+- [JavaScript Toolbar](https://jsuites.net/docs/toolbar) - Standalone toolbar component with customizable items
+- [Jspreadsheet Pro Toolbar](https://jspreadsheet.com/docs/toolbar) - Advanced toolbar customization with plugins (Pro)

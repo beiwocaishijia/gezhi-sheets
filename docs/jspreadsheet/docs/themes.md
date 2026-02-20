@@ -111,3 +111,9 @@ export class AppComponent {
     }
 }
 ```
+
+## Related Tools
+
+- [CE Style Guide](/jspreadsheet/docs/style) - Custom cell styling in Jspreadsheet CE
+- [Jspreadsheet Pro Appearance](https://jspreadsheet.com/docs/appearance) - Advanced theming and visual customization (Pro)
+- [Jspreadsheet Pro Themes](https://jspreadsheet.com/docs/themes) - Professional pre-built themes (Pro)

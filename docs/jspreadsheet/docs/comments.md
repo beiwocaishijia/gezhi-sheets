@@ -305,3 +305,8 @@ worksheets[0].setComments({
 });
 ```
 
+## Related Tools
+
+- [Jspreadsheet Pro Comments](https://jspreadsheet.com/docs/comments) - Advanced comment features with formatting and attachments (Pro)
+- [Advanced Comments Extension](https://jspreadsheet.com/products/comments) - Multiple comments per cell (Enterprise)
+

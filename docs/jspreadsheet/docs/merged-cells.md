@@ -360,3 +360,7 @@ export class AppComponent {
     }
 }
 ```
+
+## Related Tools
+
+- [Jspreadsheet Pro Merged Cells](https://jspreadsheet.com/docs/merged-cells) - Advanced merge operations with batch methods (Pro)

@@ -157,3 +157,12 @@ export class AppComponent {
     }
 }
 ```
+
+## Related Image Tools
+
+### Free Image Components
+- [JavaScript Image Cropper](https://jsuites.net/docs/image-cropper) - Crop, rotate, and edit images with brightness/contrast controls
+- [JavaScript Image Slider](https://jsuites.net/docs/image-slider) - Display image galleries and carousels
+- [LemonadeJS Image Cropper](https://lemonadejs.com/docs/plugins/image-cropper) - Reactive image cropper component
+
+These free components complement Jspreadsheet CE for building complete image management solutions.
