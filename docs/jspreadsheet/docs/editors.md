@@ -765,3 +765,28 @@ The source code for editors is available for reference. Use these examples as a 
 \
 [https://github.com/jspreadsheet/editors](https://github.com/jspreadsheet/editors){.button}
 
+{.pro}
+> **Upgrade to Jspreadsheet Pro for Advanced Cell Editors**
+>
+> Jspreadsheet CE provides 12 basic editors. **Jspreadsheet Pro** extends this with 17 professional editors and advanced capabilities:
+>
+> **Advanced Editor Types:**
+> - **Conditional Dropdowns:** Options dynamically change based on other cell values
+> - **Rich Text Editor:** Full HTML formatting with bold, italic, lists, and styling
+> - **HTML Editor:** Embed custom HTML content directly in cells
+> - **Advanced Date/Time:** Enhanced calendar with time selection and custom formats
+> - **Rating Editor:** Star ratings and custom rating systems
+> - **Tags Editor:** Multi-select tags with autocomplete
+> - **Progress Bars:** Visual progress indicators in cells
+> - **Custom Editors:** Build your own cell editors with full API access
+>
+> **Pro-Only Editor Features:**
+> - **Cell-Level Editors:** Define different editors for individual cells (not just columns)
+> - **Programmatic Type Changes:** Dynamically change cell types at runtime
+> - **Enhanced Validation:** Advanced validation rules with custom messages
+> - **Editor Events:** Extended event system for editor lifecycle
+>
+> Perfect for data-intensive applications requiring sophisticated user input controls.
+>
+> **[Explore Pro Editors →](https://jspreadsheet.com/docs/editors)** | **[Compare Editions →](https://jspreadsheet.com/docs/getting-started)** | **[View Pricing →](https://jspreadsheet.com/pricing)**
+

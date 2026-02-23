@@ -17,7 +17,62 @@ Jspreadsheet CE, formerly jExcel, is a free, lightweight JavaScript spreadsheet 
 - Lightweight, fast, and intuitive
 - Easy integration with third-party plugins
 - Built for collaboration and sharing
- 
+
+## Jspreadsheet Editions
+
+### Jspreadsheet CE - Community Edition
+This page documents Jspreadsheet CE (v5), the free, open-source spreadsheet library:
+- Core spreadsheet functionality
+- Excel-like data grids
+- MIT license
+- Community support
+
+**Perfect for:**
+- Open source projects
+- Learning and prototyping
+- Basic spreadsheet needs
+- Budget-conscious projects
+
+### Upgrade to Jspreadsheet Pro
+[Jspreadsheet Pro](https://jspreadsheet.com/docs/getting-started) offers professional features not available in CE:
+- **Advanced Editors:** Dropdown with conditional logic, date/time, rich text, HTML, color pickers
+- **Enhanced Formulas:** 500+ Excel-compatible functions, cross-worksheet calculations
+- **Conditional Formatting:** Visual rules, data bars, color scales
+- **Data Validation:** Advanced rules, custom validation
+- **Multiple Worksheets:** Tabs, cross-sheet references
+- **Import/Export:** Full Excel compatibility, CSV, JSON
+- **Performance:** Optimized for large datasets
+- **Professional Support:** Dedicated support team, priority bug fixes
+- **Commercial License:** For commercial applications
+
+**[Explore Jspreadsheet Pro Features →](https://jspreadsheet.com/docs/getting-started)** | **[Compare Editions →](https://jspreadsheet.com/pricing)**
+
+### LemonadeJS Data Grid - Lightweight Alternative
+For simple data display without Excel features, [LemonadeJS Data Grid](https://lemonadejs.net/docs/plugins/data-grid) offers:
+- Lightweight (5KB)
+- Reactive data binding
+- Basic search and pagination
+- Perfect for simple CRUD interfaces
+
+**[View LemonadeJS Data Grid →](https://lemonadejs.net/docs/plugins/data-grid)**
+
+---
+
+### Feature Comparison
+
+| Feature | CE | Pro | LemonadeJS Grid |
+|---------|----|----|-----------------|
+| Formulas | Basic | ✓✓ 500+ functions | ❌ |
+| Conditional Formatting | ❌ | ✓ | ❌ |
+| Advanced Editors | Basic | ✓✓ Full suite | ❌ |
+| Multiple Worksheets | ✓ | ✓ | ❌ |
+| Excel Import/Export | Basic | ✓✓ Full | ❌ |
+| Data Validation | Basic | ✓✓ Advanced | ❌ |
+| License | MIT | Commercial | MIT |
+| Support | Community | ✓ Dedicated | Community |
+| Size | Medium | Full-featured | 5KB |
+
+---
 
 
 ## Installation

@@ -5,7 +5,6 @@ description: Dive into the comprehensive guide on managing spreadsheet columns i
 # Spreadsheet Columns
 
 The Jspreadsheet column settings control all the cell attributes within a column, including data types, read-only status, data masks, and rendering options. This section covers settings, events, and methods in Jspreadsheet to customize spreadsheet functionality for your application needs.
-  
 
 ## Documentation
 
@@ -491,4 +490,33 @@ export class AppComponent {
 }
 ```
 
- 
+{.pro}
+> **Upgrade to Jspreadsheet Pro for Advanced Column Features**
+>
+> Jspreadsheet CE provides core column functionality including types, widths, and basic validation. **Jspreadsheet Pro** adds powerful column management capabilities:
+>
+> **Advanced Validation:**
+> - **Column-Level Validation Rules:** Required fields, min/max values, regex patterns, custom validators
+> - **Data Type Validation:** Strict validation for numbers, dates, emails, URLs, and custom types
+> - **Cross-Column Validation:** Validation rules based on values in other columns
+> - **Custom Error Messages:** User-friendly validation messages per column
+> - **Real-Time Validation:** Instant feedback as users type
+>
+> **Column Dependencies:**
+> - **Conditional Logic:** Show/hide columns based on other column values
+> - **Dynamic Dropdowns:** Dropdown options that change based on other selections
+> - **Calculated Columns:** Auto-calculate column values from formulas
+> - **Cascading Updates:** Automatic updates when dependent columns change
+>
+> **Enhanced Column Features:**
+> - **Nested Headers:** Multi-level column headers for complex layouts
+> - **Column Grouping:** Group related columns with expand/collapse
+> - **Fixed Columns:** Freeze columns while scrolling horizontally
+> - **Column Templates:** Reusable column configurations
+> - **Advanced Sorting:** Multi-column sorting with custom sort logic
+> - **Column Filters:** Built-in filter dropdowns per column
+>
+> Perfect for complex data entry forms and enterprise applications requiring sophisticated column management.
+>
+> **[Explore Pro Column Features →](https://jspreadsheet.com/docs/columns)** | **[Compare Editions →](https://jspreadsheet.com/docs/getting-started)** | **[View Pricing →](https://jspreadsheet.com/pricing)**
+

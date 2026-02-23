@@ -12,7 +12,6 @@ This section provides details about the row filters in Jspreadsheet CE.
 >\
 > [Learn more](https://jspreadsheet.com/docs/filters){.button}
 
-
 ## Documentation
 
 ### Methods
@@ -150,3 +149,47 @@ export class AppComponent {
     }
 }
 ```
+
+{.pro}
+> **Upgrade to Jspreadsheet Pro for Advanced Filtering**
+>
+> Jspreadsheet CE provides basic row filtering. **Jspreadsheet Pro** adds Excel-like filtering capabilities for data analysis:
+>
+> **Advanced Filter Types:**
+> - **Text Filters:** Contains, starts with, ends with, equals, custom text matching
+> - **Number Filters:** Greater than, less than, between, top 10, above/below average
+> - **Date Filters:** Today, this week, this month, this year, custom date ranges
+> - **Boolean Filters:** True/false checkbox filters
+> - **Color Filters:** Filter by cell background or text color
+> - **Custom Filters:** Define your own filter logic with JavaScript functions
+>
+> **Multi-Column Filtering:**
+> - **Simultaneous Filters:** Apply filters to multiple columns at once (Excel-like)
+> - **Filter Combinations:** AND/OR logic between multiple column filters
+> - **Filter Priority:** Control which filters apply first
+> - **Dependent Filters:** Filter options change based on other active filters
+>
+> **Professional Filter UI:**
+> - **Dropdown Filter Menus:** Excel-like dropdown on each column header
+> - **Search in Filters:** Quick search within filter dropdown options
+> - **Select All/None:** Bulk select/deselect filter values
+> - **Filter Indicators:** Visual indicators showing which columns are filtered
+> - **Filter Count:** Show count of visible vs total rows
+>
+> **Filter Management:**
+> - **Save Filter States:** Persist filters across sessions
+> - **Filter Templates:** Predefined filter configurations for common scenarios
+> - **Clear All Filters:** One-click to reset all active filters
+> - **Filter History:** Navigate through previously applied filters
+> - **Filter Events:** Track filter changes with advanced event system
+> - **Programmatic API:** Set/get/clear filters via JavaScript API
+>
+> **Performance & Compatibility:**
+> - **Large Dataset Filtering:** Optimized for filtering 100K+ rows
+> - **Excel Compatibility:** Import/export preserves Excel filters
+> - **Filter Cell Ranges:** Filter specific ranges, not just entire columns
+> - **Virtual Scrolling:** Maintain performance with filtered large datasets
+>
+> Perfect for business intelligence dashboards and data analysis applications.
+>
+> **[Explore Pro Filters →](https://jspreadsheet.com/docs/filters)** | **[Compare Editions →](https://jspreadsheet.com/docs/getting-started)** | **[View Pricing →](https://jspreadsheet.com/pricing)**

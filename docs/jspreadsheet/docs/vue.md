@@ -4,7 +4,7 @@ description: Build advanced data grid applications with intuitive spreadsheet-li
 
 # Vue Spreadsheet
 
-Jspreadsheet CE version 5 introduces a VueJS wrapper, enabling developers to create advanced data grid solutions with intuitive spreadsheet-like controls seamlessly integrated with VueJS version 3. 
+Jspreadsheet CE version 5 introduces a VueJS wrapper, enabling developers to create advanced data grid solutions with intuitive spreadsheet-like controls seamlessly integrated with VueJS version 3.
 
 ## Documentation
 
@@ -187,4 +187,56 @@ If you are interested in using Jspreadsheet Pro, explore the following resources
 * [Vue Spreadsheet with actions](https://codesandbox.io/s/vue3-spreadsheet-with-actions-chx7dw)
 * [Vue Spreadsheet Editor](https://codesandbox.io/s/vue-spreadsheet-zpmf2)
 
+{.pro}
+> **Jspreadsheet Pro for Vue - Professional Spreadsheet Components**
+>
+> While Jspreadsheet CE provides core spreadsheet functionality for Vue, **Jspreadsheet Pro** offers enhanced Vue integration and enterprise features:
+>
+> **Enhanced Vue Integration:**
+> - **TypeScript Support:** Full TypeScript definitions for Vue 3 with type-safe development
+> - **Composition API:** Native Composition API support with custom composables
+> - **Vue 3 Optimized:** Built specifically for Vue 3 with full reactivity system support
+> - **Pinia Integration:** Built-in Pinia store integration for state management
+> - **Nuxt Support:** Full SSR/SSG support for Nuxt 3 applications
+> - **Vue DevTools:** Enhanced debugging with Vue DevTools integration
+>
+> **Professional Components:**
+> - **Advanced Editors:** Conditional dropdowns, rich text, HTML editors with Vue reactivity
+> - **Formula System:** 500+ Excel functions with Vue reactive bindings
+> - **Conditional Formatting:** Visual rules, data bars, color scales, icon sets
+> - **Data Validation:** Real-time validation with custom Vue components
+> - **Import/Export:** Full Excel (.xlsx) import/export with formatting preservation
+> - **Charts & Graphs:** Built-in Vue chart components for data visualization
+>
+> **Vue Reactivity Features:**
+> - **Reactive Data Binding:** Two-way binding with Vue ref/reactive objects
+> - **Computed Properties:** Use computed values for cell formulas
+> - **Watchers:** Automatic updates when source data changes
+> - **V-Model Support:** Full v-model binding for spreadsheet data
+> - **Teleport Support:** Use Vue Teleport for dialogs and overlays
+> - **Suspense Ready:** Async component loading with Suspense
+>
+> **Performance & Scale:**
+> - **Virtual Scrolling:** Handle 100K+ rows with smooth scrolling
+> - **Lazy Loading:** Load data on-demand for optimal performance
+> - **Vue 3 Performance:** Optimized for Vue 3's improved rendering engine
+> - **Web Workers:** Background processing for heavy calculations
+> - **Memory Efficiency:** Optimized memory usage for large datasets
+>
+> **Developer Experience:**
+> - **Vue-Specific Documentation:** Examples with Options API and Composition API
+> - **Professional Support:** Priority support for Vue integration issues
+> - **Regular Updates:** Continuous Vue 3 compatibility improvements
+> - **Migration Tools:** Easy migration from CE to Pro with Vue examples
+>
+> **Vue-Specific Pro Features:**
+> - **Custom Vue Components:** Use Vue components as cell editors and renderers
+> - **Scoped Slots:** Advanced customization with scoped slots
+> - **Event Integration:** Seamless integration with Vue event system
+> - **Provide/Inject:** Share spreadsheet context across component tree
+> - **Testing Support:** Vitest/Vue Test Utils integration examples
+>
+> Perfect for Vue applications requiring enterprise-grade spreadsheet functionality with professional support.
+>
+> **[Explore Jspreadsheet Pro Vue →](https://jspreadsheet.com/docs/vue)** | **[Compare CE vs Pro →](https://jspreadsheet.com/docs/getting-started)** | **[View Pricing →](https://jspreadsheet.com/pricing)**
 

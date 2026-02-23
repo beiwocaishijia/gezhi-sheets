@@ -444,3 +444,44 @@ export class AppComponent {
     }
 }
 ```
+
+{.pro}
+> **Upgrade to Jspreadsheet Pro for Advanced Styling**
+>
+> Jspreadsheet CE provides basic programmatic cell styling. **Jspreadsheet Pro** adds professional styling capabilities:
+>
+> **Enhanced Styling API:**
+> - **Global Styles:** Define styles at spreadsheet level, reuse across worksheets
+> - **Row/Column Styling:** Style entire rows/columns with `A:A` or `1:1` syntax
+> - **Range Styling:** Apply styles to cell ranges (e.g., `A1:D10`) in one command
+> - **Style Inheritance:** Cascade styles from worksheet → column → cell
+> - **Style Templates:** Reusable named style templates for consistent branding
+> - **Batch Styling:** Style thousands of cells efficiently with optimized API
+>
+> **Conditional Styling:**
+> - **Value-Based Styles:** Auto-apply styles based on cell values (>100 = green)
+> - **Formula-Based Styles:** Apply styles using conditional formulas
+> - **Data Bars:** In-cell horizontal bars showing relative values
+> - **Color Scales:** 2-color and 3-color gradients based on value ranges
+> - **Icon Sets:** Visual icons (arrows, flags, traffic lights) based on values
+> - **Duplicate Highlighting:** Auto-highlight duplicate values
+>
+> **Rich Text & Advanced Formatting:**
+> - **Rich Text in Cells:** Bold, italic, underline, colors within single cell
+> - **Cell-Level Fonts:** Different fonts, sizes, colors per cell
+> - **Advanced Borders:** All Excel border styles (thick, thin, dashed, double, custom colors)
+> - **Border Styles:** Top, bottom, left, right, diagonal borders per cell
+> - **Gradient Fills:** Linear and radial gradients for cell backgrounds
+> - **Pattern Fills:** Dots, stripes, crosshatch patterns
+>
+> **Professional Features:**
+> - **Style Import/Export:** Import/export Excel styles with full fidelity
+> - **Theme Support:** Pre-built professional themes (Material, Corporate, Dark mode)
+> - **Style Events:** Track style changes with advanced event system
+> - **Performance:** Optimized for styling large datasets (100K+ cells)
+> - **Responsive Styles:** Different styles for mobile/tablet/desktop
+> - **Print Styles:** Specific styles for printing/PDF export
+>
+> Perfect for dashboards, reports, and applications requiring professional visual presentation.
+>
+> **[Explore Pro Styling →](https://jspreadsheet.com/docs/style)** | **[Compare Editions →](https://jspreadsheet.com/docs/getting-started)** | **[View Pricing →](https://jspreadsheet.com/pricing)**

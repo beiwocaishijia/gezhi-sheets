@@ -27,7 +27,6 @@ The following properties are applied uniformly to all cells in a column.
 > \
 > [Learn more](https://jspreadsheet.com/docs/format){.button}
 
-
 ## Documentation
 
 ### Mask and Format Settings
@@ -698,4 +697,29 @@ export class AppComponent {
     }
 }
 ```
- 
+
+{.pro}
+> **Upgrade to Jspreadsheet Pro for Conditional Formatting**
+>
+> Jspreadsheet CE provides column-level formatting with masks and locale settings. **Jspreadsheet Pro** adds powerful visual formatting capabilities:
+>
+> **Conditional Formatting Features:**
+> - **Visual Rules:** Automatically highlight cells based on values (greater than, less than, between, equal to)
+> - **Color Scales:** Gradient color scales for data visualization (2-color and 3-color scales)
+> - **Data Bars:** In-cell bar charts showing relative values
+> - **Icon Sets:** Traffic lights, arrows, flags, and custom icons based on cell values
+> - **Custom Rules:** Formula-based rules for complex conditional formatting
+> - **Cell-Level Formatting:** Apply different formats to individual cells, not just columns
+> - **Style Templates:** Pre-defined formatting styles and themes
+>
+> **Advanced Format Options:**
+> - **Rich Text Formatting:** Bold, italic, underline, strikethrough, superscript, subscript
+> - **Cell-Specific Masks:** Different formatting masks for individual cells
+> - **Background Colors & Borders:** Cell-level styling with custom colors and border styles
+> - **Text Alignment:** Per-cell horizontal and vertical alignment
+> - **Font Controls:** Font family, size, and color per cell
+>
+> Perfect for dashboards, reports, and data analysis applications requiring visual data presentation.
+>
+> **[Explore Pro Formatting →](https://jspreadsheet.com/docs/format)** | **[Compare Editions →](https://jspreadsheet.com/docs/getting-started)** | **[View Pricing →](https://jspreadsheet.com/pricing)**
+

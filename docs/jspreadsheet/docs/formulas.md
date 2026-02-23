@@ -12,9 +12,9 @@ Jspreadsheet supports Excel-like formulas compatible with popular spreadsheet ap
 
 {.pro}
 > #### Formula Pro
-> 
+>
 > Jspreadsheet Pro's Formula Pro Extension provides a suite of advanced features designed to enhance spreadsheet functionality, including:
-> 
+>
 > - Full-stack applications;
 > - Secure private scopes;
 > - Cross-sheet calculations;
@@ -24,7 +24,6 @@ Jspreadsheet supports Excel-like formulas compatible with popular spreadsheet ap
 >
 >\
 > [More about Formula Pro](https://jspreadsheet.com/products/formulas){.button}
-
 
 ## Documentation
 
@@ -278,4 +277,23 @@ Explore additional sections related to spreadsheet calculations.
 - [Namespaces](https://jspreadsheet.com/docs/namespaces)
 - [The Formula Pro Extension](https://jspreadsheet.com/products/formulas)
 - [Defined Names](https://jspreadsheet.com/docs/defined-names)
+
+{.pro}
+> **Upgrade to Jspreadsheet Pro for 500+ Excel-Compatible Functions**
+>
+> Jspreadsheet CE provides basic formulas like SUM, AVERAGE, and arithmetic operations. **Jspreadsheet Pro** expands this with full Excel compatibility:
+>
+> - **Lookup Functions:** VLOOKUP, HLOOKUP, INDEX, MATCH, XLOOKUP
+> - **Conditional Formulas:** SUMIF, COUNTIF, AVERAGEIF, SUMIFS, COUNTIFS, IFS
+> - **Financial Functions:** NPV, IRR, PMT, FV, PV, RATE
+> - **Date/Time Functions:** Advanced date calculations, NETWORKDAYS, EDATE, EOMONTH
+> - **Text Functions:** String manipulation, CONCATENATE, TEXTJOIN, REGEX
+> - **Statistical Functions:** STDEV, VAR, PERCENTILE, QUARTILE
+> - **Cross-Worksheet Calculations:** Reference cells across multiple worksheets (e.g., Sheet2!A1:B10)
+> - **Dynamic Ranges:** Full column/row references (e.g., A:A, 1:1)
+> - **Array Formulas:** Matrix operations and bulk calculations
+>
+> Perfect for business applications requiring full Excel compatibility and advanced spreadsheet functionality.
+>
+> **[Explore Pro Formula Features →](https://jspreadsheet.com/docs/formulas)** | **[Compare Editions →](https://jspreadsheet.com/docs/getting-started)** | **[View Pricing →](https://jspreadsheet.com/pricing)**
  
