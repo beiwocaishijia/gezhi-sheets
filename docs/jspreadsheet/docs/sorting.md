@@ -422,3 +422,8 @@ export class AppComponent {
     }
 }
 ```
+
+## Related Tools
+
+- [Data Grid Filters](/jspreadsheet/docs/filters) - Filter data before sorting
+- [Jspreadsheet Pro Sorting](https://jspreadsheet.com/docs/sorting) - Advanced sorting with multi-column support (Pro)

@@ -485,3 +485,9 @@ export class AppComponent {
 > Perfect for dashboards, reports, and applications requiring professional visual presentation.
 >
 > **[Explore Pro Styling →](https://jspreadsheet.com/docs/style)** | **[Compare Editions →](https://jspreadsheet.com/docs/getting-started)** | **[View Pricing →](https://jspreadsheet.com/pricing)**
+
+## Related Tools
+
+- [CE Themes](/jspreadsheet/docs/themes) - Pre-built themes for Jspreadsheet CE
+- [Jspreadsheet Pro Appearance](https://jspreadsheet.com/docs/appearance) - Visual attributes and theming (Pro)
+- [Conditional Formatting](https://jspreadsheet.com/docs/conditional-formatting) - Dynamic styling based on values (Pro)

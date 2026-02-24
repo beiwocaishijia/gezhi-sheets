@@ -330,3 +330,9 @@ export class AppComponent {
 ### More Examples
 
 Explore a working example of a JSS [spreadsheet with nested headers](https://jsfiddle.net/spreadsheet/0nwh5u71/) that updates programmatically on JSFiddle.
+
+## Related Tools
+
+- [Spreadsheet Headers](/jspreadsheet/docs/headers) - Basic column header configuration
+- [Data Grid Footers](/jspreadsheet/docs/footers) - Add footer rows with calculations
+- [Jspreadsheet Pro Headers](https://jspreadsheet.com/docs/headers) - Advanced header features with styling (Pro)

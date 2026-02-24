@@ -192,3 +192,9 @@ export class AppComponent {
     }
 }
 ```
+
+## Related Tools
+
+- [Spreadsheet Headers](/jspreadsheet/docs/headers) - Customize column headers
+- [Nested Headers](/jspreadsheet/docs/nested-headers) - Multi-level column headers
+- [Jspreadsheet Pro Footers](https://jspreadsheet.com/docs/footers) - Advanced footer features (Pro)
