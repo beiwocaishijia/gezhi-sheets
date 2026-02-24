@@ -193,3 +193,9 @@ export class AppComponent {
 > Perfect for business intelligence dashboards and data analysis applications.
 >
 > **[Explore Pro Filters →](https://jspreadsheet.com/docs/filters)** | **[Compare Editions →](https://jspreadsheet.com/docs/getting-started)** | **[View Pricing →](https://jspreadsheet.com/pricing)**
+
+## Related Tools
+
+- [Data Grid Search](/jspreadsheet/docs/search) - Search and highlight functionality for data grids
+- [Jspreadsheet Pro Filters](https://jspreadsheet.com/docs/filters) - Advanced filtering with custom rules and date ranges (Pro)
+- [Jspreadsheet Pro Search](https://jspreadsheet.com/docs/search) - Enhanced search with regex and highlighting (Pro)

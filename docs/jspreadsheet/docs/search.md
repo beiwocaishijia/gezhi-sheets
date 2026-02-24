@@ -200,7 +200,10 @@ export class AppComponent {
 }
 ```
  
-## Related Content
+## Related Tools
 
-- [Data Grid Pagination](/jspreadsheet/docs/pagination)
+- [Data Grid Filters](/jspreadsheet/docs/filters) - Filter data grid columns with custom criteria
+- [Data Grid Pagination](/jspreadsheet/docs/pagination) - Paginate large datasets
+- [Jspreadsheet Pro Search](https://jspreadsheet.com/docs/search) - Enhanced search with regex and highlighting (Pro)
+- [Jspreadsheet Pro Filters](https://jspreadsheet.com/docs/filters) - Advanced filtering capabilities (Pro)
 
