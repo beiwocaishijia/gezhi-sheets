@@ -474,4 +474,10 @@ export class AppComponent {
     }
 }
 ```
+
+## Related Tools
+
+- [JavaScript Context Menu](https://jsuites.net/docs/contextmenu) - Standalone context menu component
+- [LemonadeJS Context Menu](https://lemonadejs.com/docs/plugins/context-menu) - Reactive context menu component
+- [Jspreadsheet Pro Context Menu](https://jspreadsheet.com/docs/contextmenu) - Advanced spreadsheet context menu customization (Pro)
  

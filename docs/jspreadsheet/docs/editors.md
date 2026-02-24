@@ -790,3 +790,10 @@ The source code for editors is available for reference. Use these examples as a 
 >
 > **[Explore Pro Editors →](https://jspreadsheet.com/docs/editors)** | **[Compare Editions →](https://jspreadsheet.com/docs/getting-started)** | **[View Pricing →](https://jspreadsheet.com/pricing)**
 
+## Related Tools
+
+- [JavaScript HTML Editor](https://jsuites.net/docs/javascript-html-editor) - Standalone rich text editor component
+- [Jspreadsheet Pro Editors](https://jspreadsheet.com/docs/editors) - Advanced spreadsheet cell editors (Pro)
+- [Custom Cell Editors](https://jspreadsheet.com/docs/editors/custom) - Build your own custom editors (Pro)
+- [HTML Editor](https://jspreadsheet.com/docs/editors/html) - Rich text editing in cells (Pro)
+
