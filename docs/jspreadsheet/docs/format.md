@@ -723,3 +723,13 @@ export class AppComponent {
 >
 > **[Explore Pro Formatting →](https://jspreadsheet.com/docs/format)** | **[Compare Editions →](https://jspreadsheet.com/docs/getting-started)** | **[View Pricing →](https://jspreadsheet.com/pricing)**
 
+## Related Tools
+
+- [JavaScript Input Mask](https://jsuites.net/docs/javascript-mask) - Standalone input masks with Excel-like tokens
+- [JavaScript Rich Forms](https://jsuites.net/docs/rich-form) - Form validation and change tracking
+- [LemonadeJS Forms](https://lemonadejs.com/docs/forms) - Reactive form binding
+- [Jspreadsheet Pro Format](https://jspreadsheet.com/docs/format) - Advanced cell formatting and conditional formatting (Pro)
+- [Data Validations](https://jspreadsheet.com/docs/validations) - Cell validation rules (Pro)
+
+These tools use the same Excel-like mask tokens as Jspreadsheet CE, making it easy to maintain consistent formatting across your application.
+
