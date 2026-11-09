@@ -8,9 +8,9 @@ module.exports = {
     module: {
         rules: [
             { test: /\.css$/, use: ['style-loader', 'css-loader'] },
-            { test: /\.(woff2?|ttf|eot)$/, type: 'asset/resource' },
+            { test: /\.(woff2?|ttf|eot|svg)$/, type: 'asset/resource' },
         ],
     },
-    plugins: [new HtmlWebpackPlugin({ template: './app/index.html' })],
+    plugins: [new HtmlWebpackPlugin({ template: './app/index.html', favicon: './docs/assets/logo.svg' })],
     performance: { hints: false },
 };

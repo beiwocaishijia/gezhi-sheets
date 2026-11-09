@@ -1,382 +1,178 @@
-# CE Lab · AI 表格助手
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/hero-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="docs/assets/hero-light.png">
+  <img alt="格知 AI · Gezhi Sheets — 让表格听懂你的话。" src="docs/assets/hero-light.png" width="100%">
+</picture>
 
-一个在 Windows 本机运行的中文表格工作台：**GLM、Kimi、豆包、DeepSeek、Qwen** 五家 API 可独立配置，所有 AI 修改都先预览、后应用，并支持一次撤销。
+<div align="center">
 
-| 功能     | 用法                                                                       |
-| -------- | -------------------------------------------------------------------------- |
-| 批量填列 | 选中记录，提取、分类、摘要、翻译或指定多个输出字段；新增列或明确覆盖已有列 |
-| 文字转表 | 粘贴订单、清单；编辑预览后新建工作表，或映射字段后追加                     |
-| 整理数据 | 统一名称、拆分信息、提示缺失、建议疑似重复；逐项勾选，重复记录不自动删除   |
-| 表格问答 | 归纳选区内容；统计由受限查询计划与程序计算完成                             |
-| 公式助手 | 中文生成、解释和排查公式；首行生成，逐行试算和填充                         |
-| 操作表格 | 新增行列、按条件填值、整行排序和标色；先检查步骤和变化                     |
+# 格知 AI · Gezhi Sheets
 
-## 运行工作台
+**从一句话，到一张好表。**
 
-需要 **Windows、Node.js 22.13+（已在 Node.js 24 验证）**。
+选中数据，说出需求。让 AI 提取、整理和计算，再由你确认写入。
+
+[![License: MIT](https://img.shields.io/badge/license-MIT-087f70?style=flat-square)](LICENSE) [![JavaScript](https://img.shields.io/badge/JavaScript-vanilla-101f31?style=flat-square)](package.json) [![Models](https://img.shields.io/badge/模型接入-5_家-087f70?style=flat-square)](#模型由你选择) [![Tests](https://img.shields.io/badge/tests-144_passed-101f31?style=flat-square)](docs/VALIDATION.md)
+
+[看它如何工作](#看它如何工作) · [六类能力](#从零散信息到可用数据) · [快速开始](#快速开始) · [使用文档](docs/CE-LAB.md)
+
+</div>
+
+<br>
+
+## 看它如何工作
+
+客户说的是原话，你需要的是可以跟进的记录。选中几条反馈，输入“提取需求类别和一句话摘要”，检查结果后，就能把两列信息写回原记录旁边。
+
+![格知 AI 实际工作台：原始客户反馈与生成的需求类别、需求摘要](docs/assets/product-overview.png)
+
+<p align="center"><sub>实际运行界面 · 合成示例数据 · AI 响应由演示夹具模拟</sub></p>
+
+### 先看结果，再决定写入
+
+**选择范围 → 描述需求 → 生成预览 → 确认应用 → 一次撤销**
+
+![实际页面操作录制：选中三条反馈，生成预览，应用新列，再撤销恢复](docs/assets/demo.gif)
+
+<p align="center"><sub>真实页面交互录制，使用固定模拟响应；不代表真实模型的速度、准确率或联通状态。</sub></p>
+
+## 从零散信息，到可用数据
+
+<table>
+<tr>
+<td width="50%" valign="top">
+<h3>一列资料，批量处理</h3>
+<p>提取信息、分类、摘要、翻译。输出多个字段，逐行对应原文；默认新增列，方便核对。</p>
+<img src="docs/assets/feature-extract.png" alt="真实表格局部：客户原话与两个结果字段" width="100%">
+</td>
+<td width="50%" valign="top">
+<h3>一段文字，变成记录</h3>
+<p>把订单、清单和留言拆成表格。列名与内容可以在预览中编辑，再新建工作表或映射追加。</p>
+<img src="docs/assets/feature-text-to-table.png" alt="文字订单转表格的可编辑预览" width="100%">
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<h3>用中文，表达计算</h3>
+<p>说“数量乘单价”，生成公式并逐行试算。支持解释与排错，计算交给程序完成。</p>
+<img src="docs/assets/feature-formula.png" alt="生成金额公式并显示逐行试算结果" width="100%">
+</td>
+<td width="50%" valign="top">
+<h3>每一次修改，都看得见</h3>
+<p>对照原值、建议值与目标位置。应用后可以一次撤销；数据变动时，过期预览会被阻止。</p>
+<img src="docs/assets/feature-preview.png" alt="完整修改预览中的目标位置、原内容与建议内容" width="100%">
+</td>
+</tr>
+</table>
+
+| 能力 | 试着这样说 |
+| --- | --- |
+| **批量填列** | “提取需求类别和摘要，未提到的预算留空。” |
+| **文字转表** | “把这段订单整理成客户、商品、数量和单价。” |
+| **整理数据** | “统一供应商名称，标记疑似重复并说明理由。” |
+| **表格问答** | “按供应商汇总采购金额，列出前五名。” |
+| **公式助手** | “数量乘单价，在新列计算每笔金额。” |
+| **操作表格** | “按金额从高到低排序，把未付款记录标黄。” |
+
+整理建议可逐项选择；疑似重复只标记，不自动删除。统计使用受限查询计划，由程序执行筛选、分组、计数、求和、平均与排序。含糊的操作会先追问。
+
+## 模型，由你选择
+
+**GLM · Kimi · 豆包 · DeepSeek · Qwen 千问**
+
+每家都有独立的 API Key 与模型配置。支持搜索预设、手动输入模型 ID，以及厂商支持时读取模型列表；记住上次选择，不自动跨厂商切换。
+
+| 厂商 | 接入方式 |
+| --- | --- |
+| GLM / 智谱 | 官方普通模型 API |
+| Kimi / 月之暗面 | 官方 API，支持读取模型列表 |
+| 豆包 / 火山方舟 | 支持模型 ID 或推理接入点 ID |
+| DeepSeek | 官方 API，支持读取模型列表 |
+| Qwen / 千问 | 默认北京地域，支持高级地域与工作空间地址 |
+
+API Key 在本机通过 **Windows DPAPI** 加密保存，重启后可继续使用。工作簿保存在本机；发起 AI 任务时，只把指定范围交给你选择的厂商。
+
+> 五家适配器已通过协议模拟测试。真实账户连接及业务效果仍需填入各自 Key 验证；预设模型不代表账户已开通。
+
+## 从这些日常工作开始
+
+| 你手里的资料 | 整理之后 |
+| --- | --- |
+| 客户留言、客服记录 | 需求类别、核心诉求、待确认事项 |
+| 商品参数、英文说明 | 统一简介、提取字段、整列翻译 |
+| 订单文字、采购备注 | 结构化记录、金额公式、分类汇总 |
+| 会议纪要、工作清单 | 任务、负责人、截止时间；缺失信息留空 |
+
+## 快速开始
+
+需要 **Windows + Node.js 22.13 或更新版本**。这是本机工作台，首版不包含账号系统和多人协作。
 
 ```powershell
-cd D:\clone文件夹\ce-private
+git clone https://github.com/beiwocaishijia/gezhi-sheets.git
+cd gezhi-sheets
 npm ci
 npm run dev
 ```
 
-打开 **http://127.0.0.1:8001**。已有依赖时也可以双击 `启动 CE Lab.cmd`。
+打开 **[http://127.0.0.1:8001](http://127.0.0.1:8001)**。
 
-首次打开可点击“加载反馈示例”，或导入自己的 Excel/CSV；后续恢复上次打开的工作簿。在“模型设置”填写密钥、模型 ID，再点击“保存并测试连接”。**内置模型仅是官方预设，不代表账户已开通；未进行真实调用的厂商显示“未验证”。**
+1. 点击 **模型设置**，选择一家厂商，填写 API Key 与模型 ID，再测试连接。
+2. 点击 **加载反馈示例**，或导入自己的 `.xlsx`、CSV，也可以直接从 Excel 粘贴。
+3. 选择区域，输入要求，生成并检查预览，最后点击 **应用**。
 
-工作簿、任务和配置在 `%LOCALAPPDATA%\CE-Lab`，与代码仓库分离。API Key 使用 Windows DPAPI 当前用户加密，不保存在浏览器长期存储或导出文件中。每张表支持最多 1000 行、100 列，每个工作簿最多 20 张表。Excel/CSV 文件导入上限 10 MB。
+安装依赖后，也可以双击项目里的 **`启动格知 AI.cmd`**。当前仓库为私有仓库，克隆时需要拥有访问权限。
 
-完整使用方法、支持边界、目录和验证步骤见 **[CE Lab 使用与开发说明](docs/CE-LAB.md)**。
+<details>
+<summary><strong>生产启动与开发检查</strong></summary>
 
 ```powershell
-npm run test:component   # 原组件回归与事务/文本测试
-npm run test:ai          # 服务、五家协议模拟、文件、统计和写入保护
+npm run build:app
+npm start
+
+npm run test:component
+npm run test:ai
 npx playwright install chromium --only-shell
-npm run test:browser     # 隔离的端到端浏览器测试，使用模拟厂商
-npm run build:app        # 生产构建
-npm start               # 启动已构建版本
+npm run test:browser
+npm run lint
 ```
 
-五家均有协议模拟测试；真实账户联通与小批量生成需要在本地填入各自 Key 后验证，模拟结果不代表真实联通。
+现有验证共 **144 项通过**：98 项组件回归（包含原有 93 项）、37 项后端与适配测试、9 项浏览器流程测试。详见 [验收记录](docs/VALIDATION.md)。
 
-## 项目来源与组件扩展
+</details>
 
-这是 [beiwocaishijia](https://github.com/beiwocaishijia) 基于
-[Jspreadsheet CE](https://github.com/jspreadsheet/ce) 维护的个人学习分支，
-用于练习组件扩展、问题定位、回归测试与提交历史整理。
-原项目由 Jspreadsheet 及其贡献者开发，原版权声明与 [MIT 许可证](LICENSE) 保留。
+## 文件与数据
 
-## 本分支新增能力
+- **Excel / CSV**：导入前检查工作表、列标题和类型；支持多工作表导出与文本编号前导零。
+- **自动保存**：防抖保存、版本检查、原子替换与上一份有效备份；保存失败可重试。
+- **明确范围**：默认处理选区，整表分析需主动切换；每张表以 1000 行以内为目标。
+- **可控修改**：只读保护、结构操作检查、分批进度、取消与失败批次重试。
 
-自定义单元格编辑器的 `openEditor` 回调现在可以接收第八个参数 `empty`：
+<details>
+<summary><strong>使用边界与兼容说明</strong></summary>
 
--   `true`：从空输入框开始编辑，保存之前保留单元格原值。
--   `false` 或省略：从现有内容开始编辑。
--   原有七参数编辑器保持兼容，事件参数的位置不变。
--   保存、取消、撤销和重做行为有回归测试覆盖。
+每张工作表最多 1000 行、100 列，每个工作簿最多 20 张表；Excel / CSV 导入上限 10 MB。
 
-完整示例见 [自定义编辑器文档](docs/jspreadsheet/docs/editors.md#starting-a-custom-editor-with-empty-content)。
+支持单元格数据、多工作表和白名单公式，不保证宏、图表、复杂排版完整还原。不支持的导入公式使用可用缓存值并提示。
 
-公式字符串现在可以保留 `$`、`&`、双引号、反斜杠和 Unicode 文本。
-引号中的 `A1`、`A1:B2` 等内容不会被当作单元格引用或范围，实际引用仍支持计算和更新。
+公式首版支持 `SUM`、`AVERAGE`、`MIN`、`MAX`、`COUNT`、`COUNTA`、`IF`、`ROUND`、`ABS`、`AND`、`OR`、`NOT` 以及基础运算和当前表引用。
 
-## 本地开发与验证
+本机数据继续沿用 `%LOCALAPPDATA%\CE-Lab`，已有工作簿与密钥无需迁移。AI 语义结果仍需结合原文核对；模型费用与配额由对应厂商提供。
 
-```bash
-npm install
-npm exec -- cross-env NODE_ENV=production webpack --config webpack.config.js
-npm exec -- mocha --recursive --require mocha.config.js
-```
+</details>
 
-只运行编辑器测试：
+## 文档与开发
 
-```bash
-npm exec -- mocha --require mocha.config.js test/editors.js
-```
+| 文档 | 内容 |
+| --- | --- |
+| [使用与开发说明](docs/CE-LAB.md) | 六类任务、模型配置、文件兼容、保存恢复、接口 |
+| [验收记录](docs/VALIDATION.md) | 回归覆盖范围与五家真实连接状态 |
+| [组件扩展](docs/COMPONENT-EXTENSIONS.md) | 事务撤销、显式文本与公式修复 |
+| [视觉素材说明](docs/media/README.md) | 品牌素材、截图与模拟演示的制作方式 |
 
-只运行公式测试：
+前端使用原生 JavaScript、Jspreadsheet CE 与 Webpack；后端使用 Node.js、Express、原生 `fetch` 和 Zod。文件处理采用 ExcelJS 与 Papa Parse，数值统计使用 Decimal。
 
-```bash
-npm exec -- mocha --require mocha.config.js test/calculations.js
-```
+## 来源与许可证
 
-原有 **93 项回归测试**保留，另增加事务、显式文本和自定义公式解析器测试。
-此前 `Calculations > Keeps special characters inside string literals` 的失败已修复，
-例如 `="Total: $"&"100"` 现在正确得到 `Total: $100`。
+格知 AI 基于 **[Jspreadsheet CE](https://github.com/jspreadsheet/ce)** 二次开发，由 [beiwocaishijia](https://github.com/beiwocaishijia) 维护。感谢 Jspreadsheet 及其贡献者提供的开源表格组件。
 
-本分支沿用 `jspreadsheet-ce` 包名。请从当前仓库构建；直接安装上游 npm 包不会包含本分支新增功能。
-以下保留上游组件的使用说明，便于学习和对照。
-
-## Jspreadsheet CE v5: The JavaScript spreadsheet
-
-<b>Jexcel CE</b> has been renamed to <b>Jspreadsheet CE</b><br><br>
-
-## Jspreadsheet CE Use Cases
-
-Jspreadsheet CE is an extensible framework for building sophisticated data-oriented interfaces with Excel-like controls. By bringing familiar spreadsheet features to your application, you can drastically reduce development time while delivering an interface that users already know how to use, leading to faster adoption and increased productivity. You can use Jspreadsheet in many different applications, such as:
-
--   An editable data grid-based interface to simplify inventory management and production planning in a manufacturing company's ERP system.
--   At an educational institution, Jspreadsheet powers grade management systems where teachers can efficiently import and modify student data.
--   A logistics company uses Jspreadsheet to create dynamic delivery route planning tables with real-time updates.
--   In a research laboratory, scientists use Jspreadsheet to collect and analyze experimental data with custom validation rules.
--   At a retail chain, managers use Spreadsheet-based tools to coordinate staff schedules across multiple locations.
-
-### Jspreadsheet Pro - Enterprise Solution
-
--   [Jspreadsheet Pro](https://jspreadsheet.com/)
--   [Real-time React Spreadsheets](https://github.com/jspreadsheet/spreadsheet-react-server)
-
-## Overview
-
-### Why Choose Jspreadsheet CE?
-
--   Create rich, interactive data grid interfaces
--   Handle complex data inputs with Excel-like functionality
--   Direct Excel compatibility: Copy and paste using standard shortcuts
--   Proven success across thousands of implementations
--   Lightweight, fast, and intuitive
--   Easy integration with third-party plugins
--   Built for collaboration and sharing
-
-## Screenshot
-
-![The JavaScript spreadsheet](https://bossanova.uk/templates/default/img/jexcel.gif)
-
-## Installation
-
-### NPM
-
-`npm install jspreadsheet-ce`
-
-### CDN
-
-```html
-<script src="https://cdn.jsdelivr.net/npm/jspreadsheet-ce/dist/index.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jspreadsheet-ce/dist/jspreadsheet.min.css" type="text/css" />
-<script src="https://cdn.jsdelivr.net/npm/jsuites/dist/jsuites.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsuites/dist/jsuites.min.css" type="text/css" />
-```
-
-### Basic Demo
-
-A basic example to integrate the Jspreadsheet in your website to create your first data grid with spreadsheet controls. <https://codepen.io/hchiam/pen/qBRzXKK>
-
-#### Usage
-
-Add jexcel/jspreadsheet and Jsuites to your html file
-
-```html
-<script src="https://bossanova.uk/jspreadsheet/v5/jspreadsheet.js"></script>
-<script src="https://jsuites.net/v5/jsuites.js"></script>
-<link rel="stylesheet" href="https://bossanova.uk/jspreadsheet/v5/jspreadsheet.css" type="text/css" />
-<link rel="stylesheet" href="https://jsuites.net/v5/jsuites.css" type="text/css" />
-```
-
-You should initialize your data grid on a div container, such as:
-
-```html
-<div id="spreadsheet"></div>
-```
-
-To initialize a Jspreadsheet CE table you should run JavaScript, such as:
-
-```javascript
-jspreadsheet(document.getElementById('spreadsheet'), {
-    worksheets: [
-        {
-            data: [
-                ['Jazz', 'Honda', '2019-02-12', '', true, '$ 2.000,00', '#777700'],
-                ['Civic', 'Honda', '2018-07-11', '', true, '$ 4.000,01', '#007777'],
-            ],
-            columns: [
-                { type: 'text', title: 'Car', width: 120 },
-                {
-                    type: 'dropdown',
-                    title: 'Make',
-                    width: 200,
-                    source: ['Alfa Romeo', 'Audi', 'Bmw', 'Honda'],
-                },
-                { type: 'calendar', title: 'Available', width: 200 },
-                { type: 'image', title: 'Photo', width: 120 },
-                { type: 'checkbox', title: 'Stock', width: 80 },
-                {
-                    type: 'numeric',
-                    title: 'Price',
-                    width: 100,
-                    mask: '$ #.##,00',
-                    decimal: ',',
-                },
-                { type: 'color', width: 100, render: 'square' },
-            ],
-        },
-    ],
-});
-```
-
-Serve your html file and then you will get the rendered table in your browser
-
-![sampleTable](./docs/sampleTable.png)
-
-<br>
-
-## Development
-
-### Build your package
-
-% npm run build
-
-### Start a web service
-
-% npm run start
-
-## Data Grid Examples
-
--   https://bossanova.uk/jspreadsheet/docs/examples/create-from-table
--   https://bossanova.uk/jspreadsheet/docs/examples/translations
--   https://bossanova.uk/jspreadsheet/docs/examples/table-overflow
--   https://bossanova.uk/jspreadsheet/docs/examples/richtext-html-editor
--   https://bossanova.uk/jspreadsheet/docs/examples/column-dragging
--   https://bossanova.uk/jspreadsheet/docs/examples/web-component
--   https://bossanova.uk/jspreadsheet/docs/examples/jquery
-
-## Jspreadsheet Changelog
-
-### Custom
-
--   Add onupdateresult event after search/filter;
-
-### Jspreadsheet 5.0.0
-
--   Separation of spreadsheet and worksheets;
--   New worksheet methods and events;
--   Dedicated wrappers for React and Vue for better framework integration;
--   Modern development environment powered by Webpack;
--   Updated architecture aligned with other distributions;
-
-[More information](https://bossanova.uk/jspreadsheet/docs/upgrade-from-v4-to-v5)
-
-### Jspreadsheet 4.6.0
-
--   Jexcel renamed to Jspreadsheet.
--   Integration with Jsuites v4.
-
-### Jspreadsheet 4.2.3
-
--   The spreadsheet plugin is now compatible with Jsuites v3.
--   New flags and security implementations.
--   New DOM element references in the toolbar.
--   Worksheet events are now tabbed.
-
-### Jspreadsheet 4.0.0
-
-Special thanks to [FDL - Fonds de Dotation du Libre](https://www.fdl-lef.org/) for their support and sponsorship, which made the new version possible with many exciting features.
-
--   Workbook/tab support for spreadsheets.
--   Create dynamic spreadsheets from static HTML elements.
--   Highlight selected cells in the spreadsheet after CTRL+C.
--   Footer with formula support.
--   Multiple column resizing.
--   JSON update support (helpers to update a remote server).
--   Centralized event dispatch method for all spreadsheet events.
--   Custom helpers: `=PROGRESS` (progress bar), `=RATING` (5-star rating).
--   Custom formula helpers: `=COLUMN`, `=ROW`, `=CELL`, `=TABLE`, `=VALUE`.
--   Dynamic nested header updates.
--   New HTML editing column type.
--   New flags: `includeHeadersOnCopy`, `persistence`, `filters`, `autoCasting`, `freezeColumns`.
--   New events: `onevent`, `onchangepage`, `onbeforesave`, `onsave`.
--   More examples and documentation.
-
-### Jspreadsheet 3.9.0
-
--   New methods.
--   General fixes.
-
-### Jspreadsheet 3.6.0
-
--   Improved spreadsheet formula parsing.
--   New spreadsheet events.
--   New initialization options.
--   General fixes.
-
-### Jspreadsheet 3.2.3
-
--   `getMeta`, `setMeta` methods.
--   NPM package with jSuites.
--   General fixes.
-
-### Jspreadsheet 3.0.1
-
-Jspreadsheet v3 is a complete rebuild of the JavaScript spreadsheet (previously a jQuery plugin). Due to the changes, full compatibility could not be ensured. If upgrading, your code may require some updates. For more information, refer to the article on upgrading from Jspreadsheet v2 or Handsontable.
-
-**New features in Jspreadsheet v3:**
-
--   Drag and drop columns.
--   Resizable rows.
--   Merge columns.
--   Search functionality.
--   Pagination.
--   Lazy loading.
--   Full-screen mode.
--   Image upload.
--   Native color picker.
--   Better mobile compatibility.
--   Enhanced nested headers support.
--   Advanced keyboard navigation.
--   Better hidden column management.
--   Data picker enhancements: dropdown, autocomplete, multiple selection, group options, and icons.
--   Import from XLSX (experimental).
-
-**Major improvements:**
-
--   A new formula engine with faster results and no external dependencies.
--   No use of selectors, leading to faster performance.
--   New native column types.
--   No jQuery required.
--   Examples for React, Vue, and Angular.
--   XLSX support via a custom SheetJS integration (experimental).
-
-### Jspreadsheet 2.1.0
-
--   Mobile touch improvements.
--   Paste fixes and a new CSV parser.
-
-### Jspreadsheet 2.0.0
-
--   New radio column type.
--   New dropdown with autocomplete and multiple selection options.
--   Header/body separation for better scroll and column resize behavior.
--   Text-wrap improvements, including Excel-compatible `alt+enter`.
--   New `set/get` meta information.
--   New `set/get` configuration parameters.
--   Programmatic `set/get` cell styles.
--   `set/get` cell comments.
--   Custom toolbar for tables.
--   Responsive calendar picker.
-
-### Jspreadsheet 1.5.7
-
--   Improvements to checkbox column type.
--   Updates to table destruction in jQuery.
-
-### Jspreadsheet 1.5.1
-
--   Spreadsheet data overflow and fixed headers. See an [example](https://jspreadsheet.com/examples/table-with-fixed-headers).
--   Navigation improvements.
-
-### Jspreadsheet 1.5.0
-
--   Relative `insertRow`, `deleteRow`, `insertColumn`, `deleteColumn`. See an [example](https://jspreadsheet.com/examples/working-with-the-data).
--   Redo and undo support for `insertRow`, `deleteRow`, `insertColumn`, `deleteColumn`, `moveRow`.
--   New formula column recursive chain.
--   New alternative design option (Bootstrap-like). See an [example](https://jspreadsheet.com/examples/a-custom-table-design).
--   `updateSettings` improvements.
-
-## Official websites
-
--   [Jspreadsheet CE v4 - Javascript Spreadsheet](https://bossanova.uk/jspreadsheet/v4)
--   [Jspreadsheet CE v3 - Vanilla JavaScript](https://bossanova.uk/jspreadsheet/v3)
--   [Jspreadsheet CE v2 - jQuery Plugin](https://bossanova.uk/jspreadsheet/v2)
--   [Jspreadsheet Pro v11 - Javascript Spreadsheet](https://jspreadsheet.com/docs)
--   [Jspreadsheet Pro v10 - Javascript Spreadsheet](https://jspreadsheet.com/docs/v10)
--   [Jspreadsheet Pro v9 - Javascript Spreadsheet](https://jspreadsheet.com/docs/v9)
--   [Jspreadsheet Pro v8 - Javascript Spreadsheet](https://jspreadsheet.com/docs/v8)
--   [Jspreadsheet Pro v7 - Javascript Spreadsheet](https://jspreadsheet.com/docs/v7)
-
-## Community
-
--   [GitHub](https://github.com/jspreadsheet/ce/issues)
-
-## Contributing
-
-See [contributing](contributing.md)
-
-## Copyright and license
-
-Jspreadsheet CE is released under the [MIT license]. Contact contact@jspreadsheet.com
-
-## Other tools
-
--   [LemonadeJS Reactive Library](https://lemonadejs.com)
--   [jSuites Components](https://jsuites.net)
--   [CalendarJS](https://calendarjs.com)
+上游版权与许可声明保留，详见 **[MIT License](LICENSE)**。品牌封面为原创设计示意；其余产品截图与操作演示来自本仓库实际页面。

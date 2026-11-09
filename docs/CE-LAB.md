@@ -1,4 +1,4 @@
-# CE Lab 使用与开发说明
+# 格知 AI 使用与开发说明
 
 ## 开始使用
 
@@ -74,7 +74,7 @@
 
 ## 本机数据与安全边界
 
-默认目录 `%LOCALAPPDATA%\CE-Lab`：
+默认目录 `%LOCALAPPDATA%\CE-Lab`（沿用升级前的目录，已有工作簿与密钥无需迁移）：
 
 ```text
 providers.json          # DPAPI 密文、脱敏尾号、模型与验证状态
@@ -119,4 +119,4 @@ npm run build:app
 
 `test-browser/server.cjs` 只用于测试，在独立临时数据目录、8003 端口使用模拟响应。生产入口从不导入它，不会在真实接口失败时悄悄切换模拟数据。测试覆盖五家协议、DPAPI 重建读取、乐观锁、备份、异常输出、错行/缺行/重复行、只读与合并保护、失败重试、取消、过期预览、公式文本、文件往返、撤销/重做与六类页面流程。
 
-保留原 Jspreadsheet CE 的 MIT 许可与贡献归属。本仓库沿用 `jspreadsheet-ce` 包名；上游 npm 包不包含这里的工作台。
+保留原 Jspreadsheet CE 的 MIT 许可与贡献归属。本地应用包名为 `gezhi-sheets`；底层 Jspreadsheet API 和上游许可保留。上游 npm 包不包含这里的工作台。

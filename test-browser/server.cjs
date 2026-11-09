@@ -100,7 +100,7 @@ async function main() {
     });
     const config = { ...require('../webpack.app.config.cjs'), mode: 'development' };
     app.use(middleware(webpack(config), { publicPath: '/', stats: 'errors-only' }));
-    app.listen(8003, '127.0.0.1', () => console.log('CE Lab isolated browser-test server (simulated providers)'));
+    app.listen(8003, '127.0.0.1', () => console.log('格知 AI isolated browser-test server (simulated providers)'));
 }
 main().catch((e) => {
     console.error(e);

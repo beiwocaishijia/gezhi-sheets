@@ -7,7 +7,7 @@ export async function api(path, method = 'GET', body) {
             body: body === undefined ? undefined : JSON.stringify(body),
         });
     } catch {
-        throw new Error('无法连接本地服务，请确认 CE Lab 正在运行');
+        throw new Error('无法连接本地服务，请确认 格知 AI 正在运行');
     }
     const data = await response.json();
     if (!response.ok) {

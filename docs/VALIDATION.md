@@ -1,4 +1,4 @@
-# CE Lab 验收记录
+# 格知 AI 验收记录
 
 验证日期：2026-11-09。环境：Windows、Node.js 24.15.0、本地 Chrome Headless Shell / Playwright。
 

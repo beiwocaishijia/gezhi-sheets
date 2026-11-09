@@ -28,7 +28,7 @@ async function createApp({ root, fetchImpl, crypt } = {}) {
         next();
     });
     app.use(express.json({ limit: '20mb' }));
-    app.get('/api/health', (req, res) => res.json({ ok: true, app: 'CE Lab', version: 1 }));
+    app.get('/api/health', (req, res) => res.json({ ok: true, app: '格知 AI', version: 1 }));
     app.get('/api/providers', async (req, res) => res.json({ catalog: CATALOG, configs: await vault.public() }));
     app.put('/api/providers/:id', async (req, res) => {
         const id = ProviderId.parse(req.params.id),

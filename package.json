@@ -1,51 +1,28 @@
 {
-    "name": "jspreadsheet-ce",
-    "title": "The Javascript Spreadsheet",
-    "description": "Jspreadsheet is a lightweight, vanilla javascript plugin to create amazing web-based interactive data grids with spreadsheet like controls compatible with Excel, Google Spreadsheets and any other spreadsheet software.",
+    "name": "gezhi-sheets",
+    "title": "格知 AI · Gezhi Sheets",
+    "description": "让表格听懂你的话。支持五家模型的本地 AI 表格助手，提取、整理、计算，先预览再写入。",
     "repository": {
         "type": "git",
-        "url": "https://github.com/jspreadsheet/ce.git"
+        "url": "https://github.com/beiwocaishijia/gezhi-sheets.git"
     },
     "author": {
         "name": "Contact <contact@jspreadsheet.com>"
     },
     "license": "MIT",
     "keywords": [
+        "gezhi-sheets",
+        "ai",
         "spreadsheet",
-        "spreadsheets",
-        "tables",
-        "table",
-        "excel",
-        "grid",
-        "data grid",
-        "data tables",
-        "javascript data grid",
-        "javascript spreadsheet",
-        "data spreadsheet",
-        "react",
-        "grid",
-        "datagrid",
-        "reactjs",
-        "react-component",
-        "angular",
-        "data-grid",
-        "vue",
-        "csv",
-        "datatable",
-        "vuejs",
-        "angular-component",
         "javascript",
-        "data-table",
-        "web-components",
+        "jspreadsheet",
+        "kimi",
+        "glm",
+        "doubao",
+        "deepseek",
+        "qwen",
         "xlsx",
-        "react-table",
-        "sheets",
-        "sheet",
-        "export",
-        "markdown",
-        "parser",
-        "xls",
-        "datasheet"
+        "csv"
     ],
     "dependencies": {
         "@jspreadsheet/formula": "^2.0.2",
@@ -92,9 +69,9 @@
     "engines": {
         "node": ">=22.13.0"
     },
-    "bugs": "https://github.com/jspreadsheet/ce/issues",
-    "homepage": "https://github.com/jspreadsheet/ce",
-    "download": "https://github.com/jspreadsheet/ce/archive/master.zip",
+    "bugs": "https://github.com/beiwocaishijia/gezhi-sheets/issues",
+    "homepage": "https://github.com/beiwocaishijia/gezhi-sheets#readme",
+    "download": "https://github.com/beiwocaishijia/gezhi-sheets/archive/refs/heads/master.zip",
     "scripts": {
         "format": "npm run prettier:fix && npm run lint:fix",
         "lint": "eslint .",
@@ -110,5 +87,6 @@
         "test:component": "cross-env NODE_ENV=production webpack --config webpack.config.js && mocha --recursive --require=mocha.config.js",
         "build": "cross-env NODE_ENV=production webpack --config webpack.config.js",
         "test": "npm run test:component && npm run test:ai"
-    }
+    },
+    "private": true
 }
