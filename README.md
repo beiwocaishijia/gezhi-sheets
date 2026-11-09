@@ -1,4 +1,46 @@
-# CE Lab — 电子表格二次开发练习
+# CE Lab · AI 表格助手
+
+一个在 Windows 本机运行的中文表格工作台：**GLM、Kimi、豆包、DeepSeek、Qwen** 五家 API 可独立配置，所有 AI 修改都先预览、后应用，并支持一次撤销。
+
+| 功能     | 用法                                                                       |
+| -------- | -------------------------------------------------------------------------- |
+| 批量填列 | 选中记录，提取、分类、摘要、翻译或指定多个输出字段；新增列或明确覆盖已有列 |
+| 文字转表 | 粘贴订单、清单；编辑预览后新建工作表，或映射字段后追加                     |
+| 整理数据 | 统一名称、拆分信息、提示缺失、建议疑似重复；逐项勾选，重复记录不自动删除   |
+| 表格问答 | 归纳选区内容；统计由受限查询计划与程序计算完成                             |
+| 公式助手 | 中文生成、解释和排查公式；首行生成，逐行试算和填充                         |
+| 操作表格 | 新增行列、按条件填值、整行排序和标色；先检查步骤和变化                     |
+
+## 运行工作台
+
+需要 **Windows、Node.js 22.13+（已在 Node.js 24 验证）**。
+
+```powershell
+cd D:\clone文件夹\ce-private
+npm ci
+npm run dev
+```
+
+打开 **http://127.0.0.1:8001**。已有依赖时也可以双击 `启动 CE Lab.cmd`。
+
+首次打开可点击“加载反馈示例”，或导入自己的 Excel/CSV；后续恢复上次打开的工作簿。在“模型设置”填写密钥、模型 ID，再点击“保存并测试连接”。**内置模型仅是官方预设，不代表账户已开通；未进行真实调用的厂商显示“未验证”。**
+
+工作簿、任务和配置在 `%LOCALAPPDATA%\CE-Lab`，与代码仓库分离。API Key 使用 Windows DPAPI 当前用户加密，不保存在浏览器长期存储或导出文件中。每张表支持最多 1000 行、100 列，每个工作簿最多 20 张表。Excel/CSV 文件导入上限 10 MB。
+
+完整使用方法、支持边界、目录和验证步骤见 **[CE Lab 使用与开发说明](docs/CE-LAB.md)**。
+
+```powershell
+npm run test:component   # 原组件回归与事务/文本测试
+npm run test:ai          # 服务、五家协议模拟、文件、统计和写入保护
+npx playwright install chromium --only-shell
+npm run test:browser     # 隔离的端到端浏览器测试，使用模拟厂商
+npm run build:app        # 生产构建
+npm start               # 启动已构建版本
+```
+
+五家均有协议模拟测试；真实账户联通与小批量生成需要在本地填入各自 Key 后验证，模拟结果不代表真实联通。
+
+## 项目来源与组件扩展
 
 这是 [beiwocaishijia](https://github.com/beiwocaishijia) 基于
 [Jspreadsheet CE](https://github.com/jspreadsheet/ce) 维护的个人学习分支，
@@ -9,10 +51,10 @@
 
 自定义单元格编辑器的 `openEditor` 回调现在可以接收第八个参数 `empty`：
 
-- `true`：从空输入框开始编辑，保存之前保留单元格原值。
-- `false` 或省略：从现有内容开始编辑。
-- 原有七参数编辑器保持兼容，事件参数的位置不变。
-- 保存、取消、撤销和重做行为有回归测试覆盖。
+-   `true`：从空输入框开始编辑，保存之前保留单元格原值。
+-   `false` 或省略：从现有内容开始编辑。
+-   原有七参数编辑器保持兼容，事件参数的位置不变。
+-   保存、取消、撤销和重做行为有回归测试覆盖。
 
 完整示例见 [自定义编辑器文档](docs/jspreadsheet/docs/editors.md#starting-a-custom-editor-with-empty-content)。
 
@@ -39,7 +81,7 @@ npm exec -- mocha --require mocha.config.js test/editors.js
 npm exec -- mocha --require mocha.config.js test/calculations.js
 ```
 
-当前验证结果：全量测试 **93 项通过、0 项失败**，其中公式测试 21 项、编辑器测试 6 项。
+原有 **93 项回归测试**保留，另增加事务、显式文本和自定义公式解析器测试。
 此前 `Calculations > Keeps special characters inside string literals` 的失败已修复，
 例如 `="Total: $"&"100"` 现在正确得到 `Total: $100`。
 

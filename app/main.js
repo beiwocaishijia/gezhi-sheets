@@ -251,6 +251,12 @@ function renderFooter() {
         : '选择单元格开始';
     renderScope();
 }
+function fitGrid() {
+    if (state.grid) {
+        const height = Math.max(160, $('#grid').clientHeight - 12) + 'px';
+        if (state.grid.content.style.height !== height) state.grid.content.style.height = height;
+    }
+}
 async function renderGrid() {
     state.loading = true;
     state.selection = null;
@@ -293,6 +299,7 @@ async function renderGrid() {
                         for (const cell of s.readOnlyCells || []) state.grid.setReadOnly(cell, true);
                         state.loading = false;
                         renderFooter();
+                        requestAnimationFrame(fitGrid);
                     }
                     resolve();
                 },
@@ -1156,6 +1163,7 @@ async function importFile(file) {
     }
 }
 function bind() {
+    new ResizeObserver(fitGrid).observe($('#grid'));
     $('#settings').onclick = () => providerSettings();
     $('#configure-key').onclick = () => providerSettings();
     $('#provider').onchange = (e) => {
