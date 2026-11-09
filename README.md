@@ -1,4 +1,44 @@
-# Jspreadsheet CE v5: The JavaScript spreadsheet
+# CE Lab — 电子表格二次开发练习
+
+这是 [beiwocaishijia](https://github.com/beiwocaishijia) 基于
+[Jspreadsheet CE](https://github.com/jspreadsheet/ce) 维护的个人学习分支，
+用于练习组件扩展、问题定位、回归测试与提交历史整理。
+原项目由 Jspreadsheet 及其贡献者开发，原版权声明与 [MIT 许可证](LICENSE) 保留。
+
+## 本分支新增能力
+
+自定义单元格编辑器的 `openEditor` 回调现在可以接收第八个参数 `empty`：
+
+- `true`：从空输入框开始编辑，保存之前保留单元格原值。
+- `false` 或省略：从现有内容开始编辑。
+- 原有七参数编辑器保持兼容，事件参数的位置不变。
+- 保存、取消、撤销和重做行为有回归测试覆盖。
+
+完整示例见 [自定义编辑器文档](docs/jspreadsheet/docs/editors.md#starting-a-custom-editor-with-empty-content)。
+
+## 本地开发与验证
+
+```bash
+npm install
+npm exec -- cross-env NODE_ENV=production webpack --config webpack.config.js
+npm exec -- mocha --recursive --require mocha.config.js
+```
+
+只运行本次新增的编辑器测试：
+
+```bash
+npm exec -- mocha --require mocha.config.js test/editors.js
+```
+
+当前验证结果：新增编辑器测试 6 项通过；全量测试 84 项通过、1 项失败。
+已有的 `Calculations > Keeps special characters inside string literals` 测试在本次修改前也失败：
+安装的 `@jspreadsheet/formula@2.0.2` 会移除字符串中的 `$`，例如把 `Total: $100` 算成 `Total: 100`。
+此问题仍待单独修复。
+
+本分支沿用 `jspreadsheet-ce` 包名。请从当前仓库构建；直接安装上游 npm 包不会包含本分支新增功能。
+以下保留上游组件的使用说明，便于学习和对照。
+
+## Jspreadsheet CE v5: The JavaScript spreadsheet
 
 <b>Jexcel CE</b> has been renamed to <b>Jspreadsheet CE</b><br><br>
 
