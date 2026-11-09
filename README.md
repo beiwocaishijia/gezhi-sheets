@@ -16,6 +16,9 @@
 
 完整示例见 [自定义编辑器文档](docs/jspreadsheet/docs/editors.md#starting-a-custom-editor-with-empty-content)。
 
+公式字符串现在可以保留 `$`、`&`、双引号、反斜杠和 Unicode 文本。
+引号中的 `A1`、`A1:B2` 等内容不会被当作单元格引用或范围，实际引用仍支持计算和更新。
+
 ## 本地开发与验证
 
 ```bash
@@ -24,16 +27,21 @@ npm exec -- cross-env NODE_ENV=production webpack --config webpack.config.js
 npm exec -- mocha --recursive --require mocha.config.js
 ```
 
-只运行本次新增的编辑器测试：
+只运行编辑器测试：
 
 ```bash
 npm exec -- mocha --require mocha.config.js test/editors.js
 ```
 
-当前验证结果：新增编辑器测试 6 项通过；全量测试 84 项通过、1 项失败。
-已有的 `Calculations > Keeps special characters inside string literals` 测试在本次修改前也失败：
-安装的 `@jspreadsheet/formula@2.0.2` 会移除字符串中的 `$`，例如把 `Total: $100` 算成 `Total: 100`。
-此问题仍待单独修复。
+只运行公式测试：
+
+```bash
+npm exec -- mocha --require mocha.config.js test/calculations.js
+```
+
+当前验证结果：全量测试 **93 项通过、0 项失败**，其中公式测试 21 项、编辑器测试 6 项。
+此前 `Calculations > Keeps special characters inside string literals` 的失败已修复，
+例如 `="Total: $"&"100"` 现在正确得到 `Total: $100`。
 
 本分支沿用 `jspreadsheet-ce` 包名。请从当前仓库构建；直接安装上游 npm 包不会包含本分支新增功能。
 以下保留上游组件的使用说明，便于学习和对照。

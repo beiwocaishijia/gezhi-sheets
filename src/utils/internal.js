@@ -105,6 +105,16 @@ const parseNumber = function (value, columnNumber) {
     return value;
 };
 
+// The basic formula engine rewrites operators and ranges even inside quoted text.
+// Encode string contents as JavaScript escapes so those rewrites cannot change them.
+const quoteFormulaString = function (value) {
+    return '"' + String(value).replace(/[\s\S]/g, (character) => '\\u' + ('0000' + character.charCodeAt(0).toString(16)).slice(-4)) + '"';
+};
+
+const encodeFormulaStrings = function (expression) {
+    return expression.replace(/"(?:[^"]|"")*"/g, (literal) => quoteFormulaString(literal.slice(1, -1).replace(/""/g, '"')));
+};
+
 /**
  * Parse formulas
  */
@@ -128,41 +138,39 @@ export const executeFormula = function (expression, x, y) {
         formulaLoopProtection[parentId] = true;
 
         // Convert range tokens
-        const tokensUpdate = function (tokens) {
-            for (let index = 0; index < tokens.length; index++) {
-                const f = [];
-                const token = tokens[index].split(':');
-                const e1 = getIdFromColumnName(token[0], true);
-                const e2 = getIdFromColumnName(token[1], true);
+        const expandRange = function (range) {
+            const f = [];
+            const token = range.split(':');
+            const e1 = getIdFromColumnName(token[0], true);
+            const e2 = getIdFromColumnName(token[1], true);
 
-                let x1, x2;
+            let x1, x2;
 
-                if (e1[0] <= e2[0]) {
-                    x1 = e1[0];
-                    x2 = e2[0];
-                } else {
-                    x1 = e2[0];
-                    x2 = e1[0];
-                }
-
-                let y1, y2;
-
-                if (e1[1] <= e2[1]) {
-                    y1 = e1[1];
-                    y2 = e2[1];
-                } else {
-                    y1 = e2[1];
-                    y2 = e1[1];
-                }
-
-                for (let j = y1; j <= y2; j++) {
-                    for (let i = x1; i <= x2; i++) {
-                        f.push(getColumnNameFromId([i, j]));
-                    }
-                }
-
-                expression = expression.replace(tokens[index], f.join(','));
+            if (e1[0] <= e2[0]) {
+                x1 = e1[0];
+                x2 = e2[0];
+            } else {
+                x1 = e2[0];
+                x2 = e1[0];
             }
+
+            let y1, y2;
+
+            if (e1[1] <= e2[1]) {
+                y1 = e1[1];
+                y2 = e2[1];
+            } else {
+                y1 = e2[1];
+                y2 = e1[1];
+            }
+
+            for (let j = y1; j <= y2; j++) {
+                for (let i = x1; i <= x2; i++) {
+                    f.push(getColumnNameFromId([i, j]));
+                }
+            }
+
+            return f.join(',');
         };
 
         // Range with $ remove $ (string literals are kept untouched)
@@ -170,13 +178,12 @@ export const executeFormula = function (expression, x, y) {
             return literal ? literal : column + row;
         });
 
-        let tokens = expression.match(/([A-Z]+[0-9]+):([A-Z]+[0-9]+)/g);
-        if (tokens && tokens.length) {
-            tokensUpdate(tokens);
-        }
+        expression = expression.replace(/("(?:[^"]|"")*")|([A-Z]+[0-9]+):([A-Z]+[0-9]+)/g, function (match, literal) {
+            return literal ? literal : expandRange(match);
+        });
 
-        // Get tokens
-        tokens = expression.match(/([A-Z]+[0-9]+)/g);
+        // Quoted references are text, not dependencies (including apparent self-references).
+        const tokens = encodeFormulaStrings(expression).match(/([A-Z]+[0-9]+)/g);
 
         // Direct self-reference protection
         if (tokens && tokens.indexOf(parentId) > -1) {
@@ -232,7 +239,7 @@ export const executeFormula = function (expression, x, y) {
                                 if (obj.parent.config.autoCasting != false && number) {
                                     formulaExpressions[tokens[i]] = number;
                                 } else {
-                                    formulaExpressions[tokens[i]] = '"' + value + '"';
+                                    formulaExpressions[tokens[i]] = quoteFormulaString(value);
                                 }
                             }
                         }
@@ -251,7 +258,7 @@ export const executeFormula = function (expression, x, y) {
             let res;
 
             try {
-                res = formula(expression.substr(1), formulaExpressions, x, y, obj);
+                res = formula(encodeFormulaStrings(expression.substr(1)), formulaExpressions, x, y, obj);
 
                 if (typeof res === 'function') {
                     res = '#ERROR';

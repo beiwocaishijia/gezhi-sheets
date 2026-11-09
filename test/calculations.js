@@ -3,6 +3,24 @@ const { expect } = require('chai');
 const jspreadsheet = require('../dist/index.js');
 
 describe('Calculations', () => {
+    const addedFormulaGlobals = [];
+
+    before(() => {
+        // The engine registers real formula functions on window; JSDOM's Node global is separate.
+        for (const name of ['SUM', 'IF']) {
+            if (!(name in globalThis)) {
+                globalThis[name] = window[name];
+                addedFormulaGlobals.push(name);
+            }
+        }
+    });
+
+    after(() => {
+        for (const name of addedFormulaGlobals) {
+            delete globalThis[name];
+        }
+    });
+
     it('Testing formula chain', () => {
         let test = jspreadsheet(root, {
             worksheets: [
@@ -44,6 +62,106 @@ describe('Calculations', () => {
         expect(test[0].getValue('B2', true)).to.equal('Value: $10');
         expect(test[0].getValue('C2', true)).to.equal('Smith &amp; Co 10');
         expect(test[0].getValue('D2', true)).to.equal('a=b!');
+    });
+
+    it('Does not treat quoted references as dependencies or self-references', () => {
+        const sheet = jspreadsheet(root, {
+            worksheets: [
+                {
+                    data: [
+                        ['="A1:A2 / $A$1 / B1"', '="A1"'],
+                        ['12', '13'],
+                    ],
+                },
+            ],
+        })[0];
+
+        expect(sheet.getValue('A1', true)).to.equal('A1:A2 / $A$1 / B1');
+        expect(sheet.getValue('B1', true)).to.equal('A1');
+        expect(sheet.formula.A2).to.equal(undefined);
+        expect(sheet.formula.B1).to.equal(undefined);
+    });
+
+    it('Evaluates operators and absolute references outside string literals', () => {
+        const sheet = jspreadsheet(root, {
+            worksheets: [{ data: [[2, 3, '=IF($A$1<>$B$1,"$A$1 <> $B$1: ","equal")&($A$1^$B$1)']] }],
+        })[0];
+
+        expect(sheet.getValue('C1', true)).to.equal('$A$1 &lt;&gt; $B$1: 8');
+        sheet.setValue('A1', 3);
+        expect(sheet.getValue('C1', true)).to.equal('equal27');
+    });
+
+    it('Preserves quoted ranges while expanding and recalculating actual ranges', () => {
+        const sheet = jspreadsheet(root, {
+            worksheets: [
+                {
+                    data: [
+                        [2, '="A1:A2 = "&SUM($A$1:$A$2)'],
+                        [3, ''],
+                    ],
+                },
+            ],
+        })[0];
+
+        expect(sheet.getValue('B1', true)).to.equal('A1:A2 = 5');
+        sheet.setValue('A2', 7);
+        expect(sheet.getValue('B1', true)).to.equal('A1:A2 = 9');
+    });
+
+    it('Preserves empty and numeric strings, escaped quotes, backslashes, and Unicode', () => {
+        const sheet = jspreadsheet(root, { worksheets: [{ data: [['']] }] })[0];
+        const values = ['', '00100', 'Say "hi" and ""', 'C:\\new\\A1:B2', '你好 😀\n\t\u2028\u2029', '$ & <> ^ ! ='];
+
+        for (const value of values) {
+            const expression = '="' + value.replace(/"/g, '""') + '"';
+            expect(sheet.executeFormula(expression, 0, 0), expression).to.equal(value);
+        }
+    });
+
+    it('Preserves referenced text and calculated strings through formula chains', () => {
+        const value = 'A1:B2 $ & <> ^ ! "ok" C:\\new';
+        const sheet = jspreadsheet(root, {
+            autoCasting: false,
+            worksheets: [{ data: [[value, '=A1&" tail"', '=B1&"!"']] }],
+        })[0];
+
+        expect(sheet.executeFormula('=C1', 3, 0)).to.equal(value + ' tail!');
+        sheet.setValue('A1', 'D1:E2 "changed"');
+        expect(sheet.executeFormula('=C1', 3, 0)).to.equal('D1:E2 "changed" tail!');
+    });
+
+    it('Exposes readable literals to formula hooks and protects their replacement expressions', () => {
+        let observed;
+        const sheet = jspreadsheet(root, {
+            worksheets: [{ data: [['', 5]] }],
+            onbeforeformula(instance, expression) {
+                observed = expression;
+                return '="Value: $ & "&B1';
+            },
+        })[0];
+
+        expect(sheet.executeFormula('="Cost $: "&$B$1', 0, 0)).to.equal('Value: $ & 5');
+        expect(observed).to.equal('="Cost $: "&B1');
+    });
+
+    it('Keeps formula cancellation returning the expression with its original literal text', () => {
+        const sheet = jspreadsheet(root, {
+            worksheets: [{ data: [['']] }],
+            onbeforeformula: () => false,
+        })[0];
+        const expression = '="A1:A2 $ & ""hi"""';
+
+        expect(sheet.executeFormula(expression, 0, 0)).to.equal(expression);
+    });
+
+    it('Still rejects real self-references and circular references', () => {
+        const sheet = jspreadsheet(root, {
+            worksheets: [{ data: [['=B1', '=A1']] }],
+        })[0];
+
+        expect(sheet.executeFormula('=A1', 0, 0)).to.equal('#ERROR');
+        expect(sheet.executeFormula('=A1', 2, 0)).to.equal('#ERROR');
     });
 
     describe('Test updating formulas when adding new rows', () => {
