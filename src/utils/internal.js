@@ -263,9 +263,10 @@ export const executeFormula = function (expression, x, y) {
             let res;
 
             try {
-                res = typeof obj.parent.config.formulaEvaluator === 'function'
-                    ? obj.parent.config.formulaEvaluator(expression, x, y, obj)
-                    : formula(encodeFormulaStrings(expression.substr(1)), formulaExpressions, x, y, obj);
+                res =
+                    typeof obj.parent.config.formulaEvaluator === 'function'
+                        ? obj.parent.config.formulaEvaluator(expression, x, y, obj)
+                        : formula(encodeFormulaStrings(expression.substr(1)), formulaExpressions, x, y, obj);
 
                 if (typeof res === 'function') {
                     res = '#ERROR';

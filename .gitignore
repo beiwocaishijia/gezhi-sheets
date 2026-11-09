@@ -1,4 +1,8 @@
 .idea
-/package-lock.json
+/app-dist/
+/coverage/
+/test-results/
+/playwright-report/
+/.env
 node_modules
 /vue/package-lock.json

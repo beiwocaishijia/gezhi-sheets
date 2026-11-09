@@ -1,3 +1,4 @@
+const Decimal = require('decimal.js');
 const FUNCTIONS = ['SUM', 'AVERAGE', 'MIN', 'MAX', 'COUNT', 'COUNTA', 'IF', 'ROUND', 'ABS', 'AND', 'OR', 'NOT'];
 const columnName = (x) => {
     let s = '';
@@ -174,7 +175,11 @@ function evaluateFormula(source, data, trail = new Set()) {
             case 'ROUND': {
                 const digits = number(args[1] ?? 0);
                 if (!Number.isInteger(digits) || Math.abs(digits) > 15) throw new Error('小数位超出范围');
-                return Math.round(number(args[0]) * 10 ** digits) / 10 ** digits;
+                return new Decimal(number(args[0]))
+                    .div(new Decimal(10).pow(-digits))
+                    .toDecimalPlaces(0, Decimal.ROUND_HALF_UP)
+                    .mul(new Decimal(10).pow(-digits))
+                    .toNumber();
             }
             case 'AND':
                 return args.every(Boolean);

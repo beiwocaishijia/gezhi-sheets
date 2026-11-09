@@ -1,2 +1,7 @@
 dist/
 docs/
+app-dist/
+test-results/
+playwright-report/
+coverage/
+package-lock.json
