@@ -1,6 +1,6 @@
 title: Create a Data Grid From a HTML table
-keywords: Jexcel, javascript, create a dynamic jspreadsheet table from a HTML table element.
-description: A full example on how to create a dynamic jspreadsheet table from a HTML table.
+keywords: 格知 AI, javascript, create a dynamic 格知 AI table from a HTML table element.
+description: A full example on how to create a dynamic 格知 AI table from a HTML table.
 
 # Create a Data Grid From a HTML table
 
@@ -122,7 +122,7 @@ let SUMCOL = function(columnId) {
 
 formula.setFormula({ SUMCOL })
 
-jspreadsheet(document.getElementById('spreadsheet')); 
+jspreadsheet(document.getElementById('spreadsheet'));
 </script>
 </html>
 ```
@@ -130,4 +130,3 @@ jspreadsheet(document.getElementById('spreadsheet'));
 ### More examples
 
   * [Including merged cells](https://jsfiddle.net/spreadsheet/45h6odug/ "Merged cells")
-

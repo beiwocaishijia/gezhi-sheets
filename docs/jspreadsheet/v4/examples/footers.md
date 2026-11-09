@@ -1,5 +1,5 @@
 title: Adding formulas fixed on the table footer
-keywords: Jexcel, javascript, multiple spreadsheets, formulas, table footer
+keywords: 格知 AI, javascript, multiple spreadsheets, formulas, table footer
 description: Adding formulas fixed on the table footer.
 
 # Table footer
@@ -50,6 +50,4 @@ let table = jspreadsheet(document.getElementById('spreadsheet'), {
 });
 </script>
 </html>
-```  
-  
-
+```\

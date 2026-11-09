@@ -1,5 +1,5 @@
 title: Common Spreadsheet Helper Methods
-keywords: Jspreadsheet, Jexcel, data grid, JavaScript, Excel-like features, spreadsheet, data table, documentation, spreadsheet helpers, useful methods
+keywords: 格知 AI, data grid, JavaScript, Excel-like features, spreadsheet, data table, documentation, spreadsheet helpers, useful methods
 description: This section provides helper methods for everyday spreadsheet scripting, including formatting, transformations, and general spreadsheet utilities.
 
 # Spreadsheet Helpers
@@ -13,8 +13,8 @@ This section provides essential methods for common spreadsheet operations, such 
 
 `jspreadsheet.helpers.getColumnName(i: number): string;`
 
-**Description:**  
-Returns the column letter corresponding to the given column index.  
+**Description:**\
+Returns the column letter corresponding to the given column index.\
 Useful for converting numeric indices (e.g., 0, 1, 2) into Excel-style letters (e.g., A, B, C).
 
 **Parameters:**
@@ -31,7 +31,7 @@ Useful for converting numeric indices (e.g., 0, 1, 2) into Excel-style letters (
 
 `jspreadsheet.helpers.getCellNameFromCoords(x: Number, y: Number) => String`
 
-**Description:**  
+**Description:**\
 Generates a cell name (e.g., A1) from specified zero-based x (column) and y (row) coordinates.
 
 **Parameters:**
@@ -50,7 +50,7 @@ Generates a cell name (e.g., A1) from specified zero-based x (column) and y (row
 
 `jspreadsheet.helpers.getCoordsFromCellName(cellName: String) => [Number, Number]`
 
-**Description:**  
+**Description:**\
 Converts a cell name (e.g., A1) into zero-based coordinates.
 
 **Parameters:**
@@ -68,7 +68,7 @@ Converts a cell name (e.g., A1) into zero-based coordinates.
 
 `jspreadsheet.helpers.getCoordsFromRange(range: String, adjust?: boolean) => [Number, Number, Number, Number]`
 
-**Description:**  
+**Description:**\
 Converts a range string into its corresponding zero-based coordinates.
 
 **Parameters:**
@@ -87,7 +87,7 @@ Converts a range string into its corresponding zero-based coordinates.
 
 `jspreadsheet.helpers.createFromTable(element: HTMLElement, options: Object) => Object`
 
-**Description:**  
+**Description:**\
 Creates a new spreadsheet configuration based on an HTML table element.
 
 **Parameters:**
@@ -106,7 +106,7 @@ Creates a new spreadsheet configuration based on an HTML table element.
 
 `jspreadsheet.helpers.parseCSV(str: string, delimiter?: string): string[][];`
 
-**Description:**  
+**Description:**\
 Converts a CSV string into a JavaScript array.
 
 **Parameters:**
@@ -125,7 +125,7 @@ Converts a CSV string into a JavaScript array.
 
 `jspreadsheet.helpers.getTokensFromCoords(x1: Number, y1: Number, x2: Number, y2: Number, wsName?: String) => Array`
 
-**Description:**  
+**Description:**\
 Generates cell tokens from a range of coordinates.
 
 **Parameters:**

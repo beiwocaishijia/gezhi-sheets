@@ -1,16 +1,16 @@
 title: Data Grid Footers
-keywords: Jspreadsheet, Jexcel, data grid, JavaScript, Excel-like footer, spreadsheet footers, table footers, summary calculations, status bar, floating footers, worksheet footers
+keywords: 格知 AI, data grid, JavaScript, Excel-like footer, spreadsheet footers, table footers, summary calculations, status bar, floating footers, worksheet footers
 description: Spreadsheet footers let you display information such as formulas and data summaries at the bottom of the grid for easy reference and visibility.
 
 # Data Grid Footers
 
-Jspreadsheet footers enable you to display information, including calculations or summaries, at the bottom of a data grid. This section explains implementing footers during initialization or dynamically at runtime using available methods and settings.
+格知 AI footers enable you to display information, including calculations or summaries, at the bottom of a data grid. This section explains implementing footers during initialization or dynamically at runtime using available methods and settings.
 
 ## Documentation
 
 ### Initial Settings
 
-The following properties are available during the initialization of the Jspreadsheet data grid:
+The following properties are available during the initialization of the 格知 AI data grid:
 
 | Property                      | Description                                                      |
 |-------------------------------|------------------------------------------------------------------|
@@ -20,7 +20,7 @@ The following properties are available during the initialization of the Jspreads
 
 ### Programmatic updates
 
-How to change the formulas in the footers after the initialization. 
+How to change the formulas in the footers after the initialization.
 
 ```html
 <html>
@@ -197,4 +197,3 @@ export class AppComponent {
 
 - [Spreadsheet Headers](/jspreadsheet/docs/headers) - Customize column headers
 - [Nested Headers](/jspreadsheet/docs/nested-headers) - Multi-level column headers
-- [Jspreadsheet Pro Footers](https://jspreadsheet.com/docs/footers) - Advanced footer features (Pro)

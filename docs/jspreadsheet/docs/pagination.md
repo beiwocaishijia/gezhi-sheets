@@ -1,5 +1,5 @@
 title: Spreadsheet Pagination
-keywords: Jspreadsheet, Jexcel, data grid, JavaScript, data grid pagination, large data visualization, efficient data grid, high-performance data grid, paginated data grid, paginated data visualization
+keywords: 格知 AI, data grid, JavaScript, data grid pagination, large data visualization, efficient data grid, high-performance data grid, paginated data grid, paginated data visualization
 description: The spreadsheet pagination feature enables efficient handling and visualization of large datasets.
 
 # Spreadsheet Pagination
@@ -37,7 +37,7 @@ Initial configuration related to the pagination of your data grid.
 | `pagination: number`          | The number of items per page                                       |
 | `paginationOptions: number[]` | The options for the user to select the number of results per page. |
 
- 
+
 
 ## Examples
 
@@ -128,13 +128,13 @@ export default function App() {
 
 <template>
   <Spreadsheet ref="spreadsheet" :onchangepage="onchangepage">
-      <Worksheet 
+      <Worksheet
           :columns="columns"
           csv="/tests/demo.csv"
           csvHeaders
           search
           pagination="10"
-          :paginationOptions="[10,25,50,100]" 
+          :paginationOptions="[10,25,50,100]"
       />
   </Spreadsheet>
 </template>
@@ -213,5 +213,3 @@ export class AppComponent {
 
 - [Data Grid Search](/jspreadsheet/docs/search) - Search functionality for data grids
 - [Data Grid Filters](/jspreadsheet/docs/filters) - Filter data before pagination
-- [Jspreadsheet Pro Pagination](https://jspreadsheet.com/docs/pagination) - Advanced pagination with custom controls (Pro)
-

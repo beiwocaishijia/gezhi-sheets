@@ -1,5 +1,5 @@
 title: Allow comments in your javascript table
-keywords: Jexcel, spreadsheet, javascript, cell comments, javascript table
+keywords: 格知 AI, spreadsheet, javascript, cell comments, javascript table
 description: Allow comments in your table spreadsheet.
 
 # Spreadsheet comments
@@ -59,4 +59,3 @@ document.getElementById("resetComments").onclick = () => table.setComments('A1',
 <button type="button" id="resetComments" style="width:220px;">Reset A1 comments</button>
 </html>
 ```
-

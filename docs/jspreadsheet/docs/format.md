@@ -1,10 +1,10 @@
 title: Data Grid Cell Masking
-keywords: Jspreadsheet, Jexcel, data grid, JavaScript, cell formatting, currency format, date format, date mask, number formatting, spreadsheet currency, data formatting, format mask, data display customization, Jspreadsheet formatting
-description: Learn how to format and customize cell data in Jspreadsheet. Explore techniques for formatting numbers, currency, dates, and more to improve the presentation of your data grid.
+keywords: 格知 AI, data grid, JavaScript, cell formatting, currency format, date format, date mask, number formatting, spreadsheet currency, data formatting, format mask, data display customization, 格知 AI formatting
+description: Learn how to format and customize cell data in 格知 AI. Explore techniques for formatting numbers, currency, dates, and more to improve the presentation of your data grid.
 
 # Cell Formatting
 
-Jspreadsheet offers flexible cell formatting features similar to Excel and Google Sheets, with customizable options for better data presentation. You can format numbers, currencies, dates, and more to suit specific application requirements, enabling enhanced control over how data is displayed and integrated. 
+格知 AI offers flexible cell formatting features similar to Excel and Google Sheets, with customizable options for better data presentation. You can format numbers, currencies, dates, and more to suit specific application requirements, enabling enhanced control over how data is displayed and integrated.
 
 ## Overview
 
@@ -16,22 +16,14 @@ The following properties are applied uniformly to all cells in a column.
 |-------------------|-----------------------------------------------------------------------------------------------------------------------|
 | mask?: object     | This property force the mask during the edition.                                                                      |
 | format?: object   | This property will mask the content of a cell after the edition.                                                      |
-| locale? object    | This property apply the JavaScript Intl.FormatNumber to the cells.                                                    | 
+| locale? object    | This property apply the JavaScript Intl.FormatNumber to the cells.                                                    |
 | render?: function | Intercepts and modifies the text of all cells in a column.<br>`render(td, value, x, y, worksheet, options) => void`   |
-
-
-{.pro}
-> #### Differences in the Pro Version
->
-> Jspreadsheet Pro allows cell-level format and other advanced format customizations.\
-> \
-> [Learn more](https://jspreadsheet.com/docs/format){.button}
 
 ## Documentation
 
 ### Mask and Format Settings
 
-In Jspreadsheet CE, the `mask` property enforces a specific input pattern during cell editing using spreadsheet-like tokens. The `format` property applies formatting rules to cell content after editing.   Below are examples of tokens that can be used:
+In 格知 AI, the `mask` property enforces a specific input pattern during cell editing using spreadsheet-like tokens. The `format` property applies formatting rules to cell content after editing.   Below are examples of tokens that can be used:
 
 | Valid examples |
 |----------------|
@@ -167,7 +159,7 @@ export class AppComponent {
 
 #### Currency Formatting
 
-To use the `currency` style in Jspreadsheet, specify the `currency` property. Optionally, you can use the `currencyDisplay` and `currencySign` properties to control the display format of the currency unit.
+To use the `currency` style in 格知 AI, specify the `currency` property. Optionally, you can use the `currencyDisplay` and `currencySign` properties to control the display format of the currency unit.
 
 ```html
 <div id="spreadsheet1"></div>
@@ -266,7 +258,7 @@ export class AppComponent {
 
 ### Custom Formatting with `render()`
 
-Jspreadsheet supports custom masking through the `render` method, allowing you to customize cell content display.
+格知 AI supports custom masking through the `render` method, allowing you to customize cell content display.
 
 {.ignore}
 ```javascript
@@ -439,24 +431,24 @@ const columns = ref([
       title:"Currency INR",
       type: "number",
       locale: 'en-IN',
-      options: { style:'currency', currency: 'INR' } 
+      options: { style:'currency', currency: 'INR' }
   },
   {
       title: "Currency BRL",
       type: "number",
       locale: 'pt-BR',
-      options: { style: 'currency', currency: 'BRL' } 
+      options: { style: 'currency', currency: 'BRL' }
   },
   {
       title: "Percent US",
       type: "number",
-      mask: "0.00%" 
+      mask: "0.00%"
   },
   {
       title: "Units Liter US",
       type: "number",
       locale: 'en-US',
-      options: { style: 'unit', unit: 'liter', unitDisplay: 'long' } 
+      options: { style: 'unit', unit: 'liter', unitDisplay: 'long' }
   },
   {
       type: "number",
@@ -698,38 +690,11 @@ export class AppComponent {
 }
 ```
 
-{.pro}
-> **Upgrade to Jspreadsheet Pro for Conditional Formatting**
->
-> Jspreadsheet CE provides column-level formatting with masks and locale settings. **Jspreadsheet Pro** adds powerful visual formatting capabilities:
->
-> **Conditional Formatting Features:**
-> - **Visual Rules:** Automatically highlight cells based on values (greater than, less than, between, equal to)
-> - **Color Scales:** Gradient color scales for data visualization (2-color and 3-color scales)
-> - **Data Bars:** In-cell bar charts showing relative values
-> - **Icon Sets:** Traffic lights, arrows, flags, and custom icons based on cell values
-> - **Custom Rules:** Formula-based rules for complex conditional formatting
-> - **Cell-Level Formatting:** Apply different formats to individual cells, not just columns
-> - **Style Templates:** Pre-defined formatting styles and themes
->
-> **Advanced Format Options:**
-> - **Rich Text Formatting:** Bold, italic, underline, strikethrough, superscript, subscript
-> - **Cell-Specific Masks:** Different formatting masks for individual cells
-> - **Background Colors & Borders:** Cell-level styling with custom colors and border styles
-> - **Text Alignment:** Per-cell horizontal and vertical alignment
-> - **Font Controls:** Font family, size, and color per cell
->
-> Perfect for dashboards, reports, and data analysis applications requiring visual data presentation.
->
-> **[Explore Pro Formatting →](https://jspreadsheet.com/docs/format)** | **[Compare Editions →](https://jspreadsheet.com/docs/getting-started)** | **[View Pricing →](https://jspreadsheet.com/pricing)**
-
 ## Related Tools
 
 - [JavaScript Input Mask](https://jsuites.net/docs/javascript-mask) - Standalone input masks with Excel-like tokens
 - [JavaScript Rich Forms](https://jsuites.net/docs/rich-form) - Form validation and change tracking
 - [LemonadeJS Forms](https://lemonadejs.com/docs/forms) - Reactive form binding
-- [Jspreadsheet Pro Format](https://jspreadsheet.com/docs/format) - Advanced cell formatting and conditional formatting (Pro)
 - [Data Validations](https://jspreadsheet.com/docs/validations) - Cell validation rules (Pro)
 
-These tools use the same Excel-like mask tokens as Jspreadsheet CE, making it easy to maintain consistent formatting across your application.
-
+These tools use the same Excel-like mask tokens as 格知 AI, making it easy to maintain consistent formatting across your application.

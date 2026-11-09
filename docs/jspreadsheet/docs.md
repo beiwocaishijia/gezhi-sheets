@@ -1,141 +1,26 @@
-title: The JavasScript Spreadsheet Documentation
-keywords: Jexcel, javascript, excel-like, spreadsheet, table, data grid
-description: Jspreadsheet CE is an extensible JavaScript component for building sophisticated data grid interfaces with Excel-like controls.
-canonical: https://bossanova.uk/jspreadsheet/docs
+title: 格知 AI · 表格组件接口
+keywords: 格知 AI, JavaScript, 表格组件, API, 兼容接口
+description: 格知 AI 的表格组件集成与接口参考。
 
-# Jspreadsheet v5: The JavaScript Spreadsheet
+# 格知 AI · 表格组件接口
 
-**Jexcel** has been renamed to **Jspreadsheet**.
+完整工作台的安装与功能说明见 [使用指南](../USER-GUIDE.md)。此目录保留底层表格 API 和历史版本参考，供组件开发使用。
 
+浏览器接口继续使用 `jspreadsheet` 标识；历史示例中的包名、CDN 地址和框架导入路径保留用于兼容，不代表格知 AI 已发布对应 npm 包或商业版。
 
-## Jspreadsheet CE Use Cases
+| 主题 | 文档 |
+| --- | --- |
+| 组件入门 | [本地构建与集成](docs/getting-started.md) |
+| 数据与单元格 | [数据](docs/data.md) · [单元格](docs/cells.md) · [选区](docs/selection.md) |
+| 编辑与显示 | [编辑器](docs/editors.md) · [样式](docs/style.md) · [行](docs/rows.md) · [列](docs/columns.md) |
+| 计算与历史 | [公式](docs/formulas.md) · [撤销与重做](docs/history.md) |
+| 应用扩展 | [组件扩展](../COMPONENT-EXTENSIONS.md) |
 
-Jspreadsheet CE is an extensible framework for building sophisticated data-oriented interfaces with Excel-like controls. By bringing familiar spreadsheet features to your application, you can drastically reduce development time while delivering an interface that users already know how to use, leading to faster adoption and increased productivity. You can use Jspreadsheet in many different applications, such as:
+以下为表格组件的兼容版本记录，不是 AI 工作台的发布记录。版权与许可原文见 [LICENSE](../../LICENSE)。
 
-- An editable data grid-based interface to simplify inventory management and production planning in a manufacturing company's ERP system.
-- At an educational institution, Jspreadsheet powers grade management systems where teachers can efficiently import and modify student data.
-- A logistics company uses Jspreadsheet to create dynamic delivery route planning tables with real-time updates.
-- In a research laboratory, scientists use Jspreadsheet to collect and analyze experimental data with custom validation rules.
-- At a retail chain, managers use Spreadsheet-based tools to coordinate staff schedules across multiple locations.
+## 表格组件兼容版本记录
 
-
-## Installation
-
-
-### From the NPM
-
-```bash
-npm install jspreadsheet-ce@5
-```
-
-### From a CDN
-
-{.ignore}
-```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jspreadsheet-ce@5/dist/jspreadsheet.min.css" type="text/css" />
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jspreadsheet-ce@5/dist/index.min.js"></script>
-```
-
-
-## Data Grid with Spreadsheets Controls
-
-How to embed a simple javascript spreadsheet in your application. Find more [examples](/jspreadsheet/docs/examples) here.
-
-```html
-<html>
-<script src="https://bossanova.uk/jspreadsheet/v5/jspreadsheet.js"></script>
-<link rel="stylesheet" href="https://bossanova.uk/jspreadsheet/v5/jspreadsheet.css" type="text/css" />
-<script src="https://jsuites.net/v5/jsuites.js"></script>
-<link rel="stylesheet" href="https://jsuites.net/v5/jsuites.css" type="text/css" />
-
-<div id="spreadsheet"></div>
-
-<script>
-jspreadsheet(document.getElementById('spreadsheet'), {
-    tabs: true,
-    toolbar: true,
-    worksheets: [{
-        minDimensions: [6,6],
-    }],
-});
-</script>
-</html>
-```
-```jsx
-import React, { useRef } from "react";
-import { Spreadsheet, Worksheet, jspreadsheet } from "@jspreadsheet-ce/react";
-import "jsuites/dist/jsuites.css";
-import "jspreadsheet-ce/dist/jspreadsheet.css";
-
-export default function App() {
-    // Spreadsheet array of worksheets
-    const spreadsheet = useRef();
-
-    // Render component
-    return (
-        <>
-            <Spreadsheet ref={spreadsheet} tabs={true} toolbar={true}>
-                <Worksheet minDimensions={[6, 6]} />
-            </Spreadsheet>
-        </>
-    );
-}
-```
-```vue
-<template>
-    <Spreadsheet ref="spreadsheet" :tabs="true" :toolbar="true">
-        <Worksheet :minDimensions="[6, 6]"/>
-    </Spreadsheet>
-</template>
-
-<script>
-import { Spreadsheet, Worksheet } from "@jspreadsheet-ce/vue";
-import "jsuites/dist/jsuites.css";
-import "jspreadsheet-ce/dist/jspreadsheet.css";
-
-export default {
-    components: {
-        Spreadsheet,
-        Worksheet,
-    },
-}
-</script>
-```
-```angularjs
-import { Component, ViewChild, ElementRef } from "@angular/core";
-import jspreadsheet from "jspreadsheet-ce";
-import "jsuites/dist/jsuites.css";
-import "jspreadsheet-ce/dist/jspreadsheet.css";
-
-@Component({
-    selector: "app-root",
-    template: `<div #spreadsheet></div>`
-})
-export class AppComponent {
-    @ViewChild("spreadsheet") spreadsheet: ElementRef;
-    // Worksheets
-    worksheets: jspreadsheet.worksheetInstance[];
-    // Create a new JavaScript data grid
-    ngAfterViewInit() {
-        // Create spreadsheet
-        this.worksheets = jspreadsheet(this.spreadsheet.nativeElement, {
-            tabs: true,
-            toolbar: true,
-            worksheets: [{
-                minDimensions: [6,6],
-            }],
-        });
-    }
-}
-```
-
-## Copyright and License
-
-Jspreadsheet CE is released under the MIT license.
-
-## Jspreadsheet Changelog
-
-### Jspreadsheet 5.0.0
+### 格知 AI 表格组件 5.0.0
 - Separation of spreadsheet and worksheets;
 - New worksheet methods and events;
 - Dedicated wrappers for React and Vue for better framework integration;
@@ -144,17 +29,17 @@ Jspreadsheet CE is released under the MIT license.
 
 [More information](/jspreadsheet/docs/upgrade-from-v4-to-v5)
 
-### Jspreadsheet 4.6.0
-- Jexcel renamed to Jspreadsheet.
+### 格知 AI 表格组件 4.6.0
+组件命名兼容更新。
 - Integration with Jsuites v4.
 
-### Jspreadsheet 4.2.3
+### 格知 AI 表格组件 4.2.3
 - The spreadsheet plugin is now compatible with Jsuites v3.
 - New flags and security implementations.
 - New DOM element references in the toolbar.
 - Worksheet events are now tabbed.
 
-### Jspreadsheet 4.0.0
+### 格知 AI 表格组件 4.0.0
 Special thanks to [FDL - Fonds de Dotation du Libre](https://www.fdl-lef.org/) for their support and sponsorship, which made the new version possible with many exciting features.
 
 - Workbook/tab support for spreadsheets.
@@ -172,25 +57,25 @@ Special thanks to [FDL - Fonds de Dotation du Libre](https://www.fdl-lef.org/) f
 - New events: `onevent`, `onchangepage`, `onbeforesave`, `onsave`.
 - More examples and documentation.
 
-### Jspreadsheet 3.9.0
+### 格知 AI 表格组件 3.9.0
 - New methods.
 - General fixes.
 
-### Jspreadsheet 3.6.0
+### 格知 AI 表格组件 3.6.0
 - Improved spreadsheet formula parsing.
 - New spreadsheet events.
 - New initialization options.
 - General fixes.
 
-### Jspreadsheet 3.2.3
+### 格知 AI 表格组件 3.2.3
 - `getMeta`, `setMeta` methods.
 - NPM package with jSuites.
 - General fixes.
 
-### Jspreadsheet 3.0.1
-Jspreadsheet v3 is a complete rebuild of the JavaScript spreadsheet (previously a jQuery plugin). Due to the changes, full compatibility could not be ensured. If upgrading, your code may require some updates. For more information, refer to the article on upgrading from Jspreadsheet v2 or Handsontable.
+### 格知 AI 表格组件 3.0.1
+格知 AI 表格组件 v3 is a complete rebuild of the JavaScript spreadsheet (previously a jQuery plugin). Due to the changes, full compatibility could not be ensured. If upgrading, your code may require some updates. For more information, refer to the article on upgrading from 格知 AI 表格组件 v2 or Handsontable.
 
-**New features in Jspreadsheet v3:**
+**New features in 格知 AI 表格组件 v3:**
 - Drag and drop columns.
 - Resizable rows.
 - Merge columns.
@@ -215,11 +100,11 @@ Jspreadsheet v3 is a complete rebuild of the JavaScript spreadsheet (previously 
 - Examples for React, Vue, and Angular.
 - XLSX support via a custom SheetJS integration (experimental).
 
-### Jspreadsheet 2.1.0
+### 格知 AI 表格组件 2.1.0
 - Mobile touch improvements.
 - Paste fixes and a new CSV parser.
 
-### Jspreadsheet 2.0.0
+### 格知 AI 表格组件 2.0.0
 - New radio column type.
 - New dropdown with autocomplete and multiple selection options.
 - Header/body separation for better scroll and column resize behavior.
@@ -231,15 +116,15 @@ Jspreadsheet v3 is a complete rebuild of the JavaScript spreadsheet (previously 
 - Custom toolbar for tables.
 - Responsive calendar picker.
 
-### Jspreadsheet 1.5.7
+### 格知 AI 表格组件 1.5.7
 - Improvements to checkbox column type.
 - Updates to table destruction in jQuery.
 
-### Jspreadsheet 1.5.1
+### 格知 AI 表格组件 1.5.1
 - Spreadsheet data overflow and fixed headers.
 - Navigation improvements.
 
-### Jspreadsheet 1.5.0
+### 格知 AI 表格组件 1.5.0
 - Relative `insertRow`, `deleteRow`, `insertColumn`, `deleteColumn`.
 - Redo and undo support for `insertRow`, `deleteRow`, `insertColumn`, `deleteColumn`, `moveRow`.
 - New formula column recursive chain.

@@ -1,16 +1,16 @@
 title: Data Grid Toolbars
-keywords: Jspreadsheet, Jexcel, data grid, javascript, excel-like toolbar, spreadsheet toolbar, table toolbar, toolbars, data grid toolbars, customizable toolbars, toolbar customization, toolbar integration, interactive data grid, JavaScript data grid, dynamic toolbar, toolbar controls.
-description: Learn how to create and customize toolbar controls in Jspreadsheet. This guide covers adding custom buttons, configuring built-in tools, and extending the toolbar to fit your application's needs.
+keywords: 格知 AI, data grid, javascript, excel-like toolbar, spreadsheet toolbar, table toolbar, toolbars, data grid toolbars, customizable toolbars, toolbar customization, toolbar integration, interactive data grid, JavaScript data grid, dynamic toolbar, toolbar controls.
+description: Learn how to create and customize toolbar controls in 格知 AI. This guide covers adding custom buttons, configuring built-in tools, and extending the toolbar to fit your application's needs.
 
 # Data Grid Toolbars
 
-This section covers all methods, settings, and events for the data grid toolbar, including advanced customization options, control integration, and key configuration settings. 
+This section covers all methods, settings, and events for the data grid toolbar, including advanced customization options, control integration, and key configuration settings.
 
 {.green}
 > **Icons**
-> 
+>
 > The use of Material icons style sheet is required for utilizing the toolbar.
-> 
+>
 > ```<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons" />```
 
 ## Documentation
@@ -24,7 +24,7 @@ The following methods manage the visibility state of the toolbar:
 | `showToolbar`  | Displays the toolbar.<br/>`worksheet.parent.showToolbar() : void`  |
 | `hideToolbar`  | Hides the toolbar.<br/>`worksheet.parent.hideToolbar() : void`     |
 
- 
+
 
 ### Settings
 
@@ -69,7 +69,7 @@ Customize toolbar items during initialization using the properties below.
 
 ### Toolbar visibility
 
-The example below shows how to enable the default data grid toolbar and programmatically control its visibility after initialization. 
+The example below shows how to enable the default data grid toolbar and programmatically control its visibility after initialization.
 
 ```html
 <html>
@@ -185,7 +185,7 @@ export class AppComponent {
 
 ### Toolbar Custom Handler
 
-The toolbar property can be a function that allows you to add custom items to the default toolbar without rebuilding it from scratch. See the example below. 
+The toolbar property can be a function that allows you to add custom items to the default toolbar without rebuilding it from scratch. See the example below.
 
 ```html
 <html>
@@ -671,4 +671,3 @@ export class AppComponent {
 ## Related Tools
 
 - [JavaScript Toolbar](https://jsuites.net/docs/toolbar) - Standalone toolbar component with customizable items
-- [Jspreadsheet Pro Toolbar](https://jspreadsheet.com/docs/toolbar) - Advanced toolbar customization with plugins (Pro)

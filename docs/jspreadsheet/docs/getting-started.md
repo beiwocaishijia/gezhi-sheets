@@ -1,126 +1,50 @@
-title: Getting Started with Jspreadsheet CE  
-keywords: Jspreadsheet CE, Jexcel, JavaScript data grid, spreadsheets, JavaScript tables, Excel-like grids, web-based spreadsheets, data grid controls, interactive spreadsheet features  
-description: Learn how to create interactive data grids with powerful spreadsheet controls using Jspreadsheet CE.
+title: 格知 AI · 表格组件入门
+keywords: 格知 AI, JavaScript, 表格组件, 集成
+description: 在本地构建并集成格知 AI 的表格组件。
 
-# Getting Started with Jspreadsheet CE v5
+# 格知 AI · 表格组件入门
 
-## Overview
+使用完整 AI 工作台请先阅读 [使用指南](../../USER-GUIDE.md)。本页面向在自己的页面中使用底层表格组件的开发者。
 
-Jspreadsheet CE, formerly jExcel, is a free, lightweight JavaScript spreadsheet library to help developers bring Excel-like data grids and spreadsheet features to their applications. The library enables developers to build robust data management interfaces using React, Angular or pure JavaScript.
+## 本地构建
 
-### Why Choose Jspreadsheet CE?
+在本仓库目录运行：
 
-- Create rich, interactive data grid interfaces
-- Handle complex data inputs with Excel-like functionality
-- Direct Excel compatibility: Copy and paste using standard shortcuts
-- Proven success across thousands of implementations
-- Lightweight, fast, and intuitive
-- Easy integration with third-party plugins
-- Built for collaboration and sharing
-
-## Jspreadsheet Editions
-
-### Jspreadsheet CE - Community Edition
-This page documents Jspreadsheet CE (v5), the free, open-source spreadsheet library:
-- Core spreadsheet functionality
-- Excel-like data grids
-- MIT license
-- Community support
-
-**Perfect for:**
-- Open source projects
-- Learning and prototyping
-- Basic spreadsheet needs
-- Budget-conscious projects
-
-### Upgrade to Jspreadsheet Pro
-[Jspreadsheet Pro](https://jspreadsheet.com/docs/getting-started) offers professional features not available in CE:
-- **Advanced Editors:** Dropdown with conditional logic, date/time, rich text, HTML, color pickers
-- **Enhanced Formulas:** 500+ Excel-compatible functions, cross-worksheet calculations
-- **Conditional Formatting:** Visual rules, data bars, color scales
-- **Data Validation:** Advanced rules, custom validation
-- **Multiple Worksheets:** Tabs, cross-sheet references
-- **Import/Export:** Full Excel compatibility, CSV, JSON
-- **Performance:** Optimized for large datasets
-- **Professional Support:** Dedicated support team, priority bug fixes
-- **Commercial License:** For commercial applications
-
-**[Explore Jspreadsheet Pro Features →](https://jspreadsheet.com/docs/getting-started)** | **[Compare Editions →](https://jspreadsheet.com/pricing)**
-
-### LemonadeJS Data Grid - Lightweight Alternative
-For simple data display without Excel features, [LemonadeJS Data Grid](https://lemonadejs.net/docs/plugins/data-grid) offers:
-- Lightweight (5KB)
-- Reactive data binding
-- Basic search and pagination
-- Perfect for simple CRUD interfaces
-
-**[View LemonadeJS Data Grid →](https://lemonadejs.net/docs/plugins/data-grid)**
-
----
-
-### Feature Comparison
-
-| Feature | CE | Pro | LemonadeJS Grid |
-|---------|----|----|-----------------|
-| Formulas | Basic | ✓✓ 500+ functions | ❌ |
-| Conditional Formatting | ❌ | ✓ | ❌ |
-| Advanced Editors | Basic | ✓✓ Full suite | ❌ |
-| Multiple Worksheets | ✓ | ✓ | ❌ |
-| Excel Import/Export | Basic | ✓✓ Full | ❌ |
-| Data Validation | Basic | ✓✓ Advanced | ❌ |
-| License | MIT | Commercial | MIT |
-| Support | Community | ✓ Dedicated | Community |
-| Size | Medium | Full-featured | 5KB |
-
----
-
-
-## Installation
-
-Choose one of the following installation options:
-
-### NPM
-
-Install jspreadsheet using NPM:
-
-```bash
-npm install jspreadsheet-ce@5.0.0-beta.3
+```powershell
+npm ci
+npm run build
 ```
 
-### CDN
+构建结果位于 `dist/`。将组件资源与依赖正确放入你的网站静态目录；浏览器继续使用 `jspreadsheet` 接口。
 
-Include jspreadsheet directly from JSDelivr CDN:
+## 页面集成示例
 
-{.ignore}
+以下路径以从仓库根目录提供静态资源为例，实际集成时按部署位置调整。
+
 ```html
-<script src="https://cdn.jsdelivr.net/npm/jspreadsheet-ce@5.0.0-beta.3/dist/index.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jspreadsheet-ce@5.0.0-beta.3/dist/jspreadsheet.min.css" type="text/css" />
-<script src="https://cdn.jsdelivr.net/npm/jsuites/dist/jsuites.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsuites/dist/jsuites.min.css" type="text/css" />
+<link rel="stylesheet" href="/node_modules/jsuites/dist/jsuites.css">
+<link rel="stylesheet" href="/dist/jspreadsheet.css">
+<script src="/node_modules/jsuites/dist/jsuites.js"></script>
+<script src="/node_modules/@jspreadsheet/formula/dist/index.js"></script>
+<script src="/dist/index.js"></script>
+<div id="sheet"></div>
+<script>
+jspreadsheet(document.getElementById('sheet'), {
+    worksheets: [{ data: [['客户', '需求']], minDimensions: [2, 10] }]
+});
+</script>
 ```
 
-### Download
+AI 面板、本机保存和模型服务位于应用层，需要通过 `npm run dev` 或生产服务运行，不包含在独立表格组件中。
 
-Download and run jspreadsheet on your server or local machine:
-
-https://bossanova.uk/jspreadsheet/v5/jspreadsheet.zip
-
-
-## License
-
-This software is distributed under the MIT license.
-
-
-## Documentation
-
-### Global methods and properties
+## 接口参考
 
 | Method Description                                                                                                                       |
 |------------------------------------------------------------------------------------------------------------------------------------------|
 | Create a new spreadsheet.<br/>`jspreadsheet(element: HTMLDivElement \| HTMLTableElement, options: SpreadsheetOptions): WorksheetInstance[];`                                                     |
 | Destroy a given spreadsheet.<br/>`jspreadsheet.destroy(element: JspreadsheetInstanceElement, destroyEventHandlers?: boolean): void;`                                     |
 | Destroy all spreadsheets in all namespaces.<br/>`jspreadsheet.destroyAll(): void;`                                                              |
-| Translate Jspreadsheet components and extensions.<br/>`jspreadsheet.setDictionary(translations: Record<string, string>): void;`                                 |
+| Translate 格知 AI components and extensions.<br/>`jspreadsheet.setDictionary(translations: Record<string, string>): void;`                                 |
 | Get a worksheet instance by name and namespace.<br/>`jspreadsheet.getWorksheetInstanceByName(worksheetName: string \| null \| undefined, namespace: string): WorksheetInstance \| Record<string, WorksheetInstance>;` |
 
 
@@ -128,7 +52,7 @@ This software is distributed under the MIT license.
 
 ### Create a new data grid
 
-You can create a new data grid with spreadsheet-like controls from an HTML table element, a JS array, a CSV, a JSON file or an Excel XLSX file.  
+You can create a new data grid with spreadsheet-like controls from an HTML table element, a JS array, a CSV, a JSON file or an Excel XLSX file.\
 
 ```html
 <html>
@@ -154,7 +78,7 @@ jspreadsheet(document.getElementById('spreadsheet'), {
 
 ### Destroying The Data Grid
 
-The following example shows how to dynamically destroy and recreate a new data grid. 
+The following example shows how to dynamically destroy and recreate a new data grid.
 
 ```html
 <html>

@@ -1,5 +1,5 @@
 title: Nested headers and column header updates
-keywords: Jexcel, spreadsheet, javascript, header updates, nested headers, javascript table
+keywords: 格知 AI, spreadsheet, javascript, header updates, nested headers, javascript table
 description: Enabled nested headers in your spreadsheet and learn how to set or get header values
 
 # Headers
@@ -8,8 +8,8 @@ description: Enabled nested headers in your spreadsheet and learn how to set or 
 
 The online spreadsheet implements nested headers natively though the directive **nestedHeaders** , as example below:
 
-  
-  
+
+
 
 ### Source code
 
@@ -73,4 +73,3 @@ let table = jspreadsheet(document.getElementById('spreadsheet'), {
 </script>
 </html>
 ```
-

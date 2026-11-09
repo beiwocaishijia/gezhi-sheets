@@ -1,6 +1,6 @@
-title: Handling events on Jspreadsheet
-keywords: Jexcel, javascript, excel-like, spreadsheet, table, grid, events
-description: Learn how to handle events on Jspreadsheet
+title: Handling events on 格知 AI
+keywords: 格知 AI, javascript, excel-like, spreadsheet, table, grid, events
+description: Learn how to handle events on 格知 AI
 
 # Handling events
 
@@ -132,4 +132,3 @@ jspreadsheet(document.getElementById('spreadsheet'), {
 One method to handle all events on the online spreadsheet.
 
 **NOTE** : Open the console to see the events.
-

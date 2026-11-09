@@ -1,5 +1,5 @@
-title: Jspreadsheet | Examples | Handling readonly column and cells on your spreadsheet
-keywords: Jexcel, jquery, javascript, excel-like, spreadsheet, jquery plugin, events
+title: 格知 AI | Examples | Handling readonly column and cells on your spreadsheet
+keywords: 格知 AI, jquery, javascript, excel-like, spreadsheet, jquery plugin, events
 description: Understanding how to set a readonly column or multiple custom cells
 
 [Back to Examples](/jspreadsheet/v2/examples)
@@ -11,12 +11,12 @@ description: Understanding how to set a readonly column or multiple custom cells
 ```html
 <html>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jexcel/2.1.0/js/jquery.jexcel.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jexcel/2.1.0/css/jquery.jexcel.min.css" type="text/css" />
-    
+
     <div id="my"></div>
-    
+
     <script>
     let data = [
         ['Mazda', 2001, 2000, '2006-01-01'],
@@ -24,7 +24,7 @@ description: Understanding how to set a readonly column or multiple custom cells
         ['Honda Fit', 2009, 3000, '2004-01-01'],
         ['Honda CRV', 2010, 6000, '2003-01-01'],
     ];
-    
+
     $('#my').jexcel({
         data:data,
         colHeaders: ['Description','Year','Price', 'Buy'],
@@ -36,7 +36,7 @@ description: Understanding how to set a readonly column or multiple custom cells
             { type: 'checkbox' },
         ]
     });
-    
+
     //Set readonly a specific column
     $('#my').jexcel('updateSettings', {
         cells: function (cell, col, row) {
@@ -48,7 +48,7 @@ description: Understanding how to set a readonly column or multiple custom cells
     });
     </script>
 </html>
-```  
+```\
 
 ## Online demo on jsFiddle
 

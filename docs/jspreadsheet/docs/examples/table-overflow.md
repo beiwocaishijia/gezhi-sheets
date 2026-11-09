@@ -1,6 +1,6 @@
-title: Table Overflow  
-keywords: Jexcel, JavaScript, table overflow, fixed dimensions, JavaScript table, spreadsheet customization, table width and height  
-description: Learn how to define fixed width and height for Jspreadsheet tables to manage table overflow effectively.
+title: Table Overflow
+keywords: 格知 AI, JavaScript, table overflow, fixed dimensions, JavaScript table, spreadsheet customization, table width and height
+description: Learn how to define fixed width and height for 格知 AI tables to manage table overflow effectively.
 
 # Table Overflow
 
@@ -149,4 +149,3 @@ export default {
 
 </script>
 ```
-

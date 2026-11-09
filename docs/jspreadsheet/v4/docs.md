@@ -1,16 +1,16 @@
-title: The JavaScript Spreadsheet Documentation  
-keywords: Jspreadsheet, Jexcel, JavaScript spreadsheet, Excel-like table, data grid, interactive spreadsheets, data management tool  
-description: Official Jspreadsheet CE documentation. Learn how to use the JavaScript spreadsheet for efficient data management and explore its features, examples, and FAQs.  
-canonical: https://bossanova.uk/jspreadsheet/v4/docs
+title: The JavaScript Spreadsheet Documentation
+keywords: 格知 AI, JavaScript spreadsheet, Excel-like table, data grid, interactive spreadsheets, data management tool
+description: Official 格知 AI documentation. Learn how to use the JavaScript spreadsheet for efficient data management and explore its features, examples, and FAQs.
+canonical: https://github.com/beiwocaishijia/gezhi-sheets/blob/master/docs/jspreadsheet/v4/docs.md
 
-# Jspreadsheet v4 Documentation
+# 格知 AI 表格组件 v4 Documentation
 
-Jspreadsheet CE is one of the best tools for data management on the Internet. Explore the official documentation to learn about its powerful features, integrations, and best practices.
+格知 AI is one of the best tools for data management on the Internet. Explore the official documentation to learn about its powerful features, integrations, and best practices.
 
 - [Quick Reference](/jspreadsheet/v4/docs/quick-reference)
 - [Programmatically Changes](/jspreadsheet/v4/docs/programmatically-changes)
 - [Special Formulas](/jspreadsheet/v4/docs/special-formulas)
 - [Events](/jspreadsheet/v4/docs/events)
-- [Most Common Questions and Answers](/jspreadsheet/v4/docs/most-common-questions-and-answers)  
+- [Most Common Questions and Answers](/jspreadsheet/v4/docs/most-common-questions-and-answers)\
 - [Use Cases](/jspreadsheet/v4/cases)
 - [Examples](/jspreadsheet/v4/examples)

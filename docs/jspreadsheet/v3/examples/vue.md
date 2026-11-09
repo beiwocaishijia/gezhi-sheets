@@ -1,16 +1,16 @@
-title: Jspreadsheet with Vue
-keywords: Jexcel, javascript, using Jspreadsheet and Vue
-description: A full example on how to integrate Jspreadsheet with Vue
+title: 格知 AI with Vue
+keywords: 格知 AI, javascript, using 格知 AI and Vue
+description: A full example on how to integrate 格知 AI with Vue
 
 [Back to Examples](/jspreadsheet/v3/examples "Back to the examples section")
 
 # The Javascript spreadsheet with Vue
 
-Integrating jspreadsheet with Vue
+Integrating 格知 AI with Vue
 
 [See a full example on codesandbox](https://codesandbox.io/embed/vue-default-template-p4hwn)
 
-[Get a source code of a sample Vue project](https://github.com/jspreadsheet/jexcel-with-vue)  
+[Get a source code of a sample Vue project](https://github.com/jspreadsheet/jexcel-with-vue)\
 
 ```html
 <html>
@@ -37,10 +37,9 @@ let vm = new Vue({
         let spreadsheet = jspreadsheet(this.$el, options);
         Object.assign(this, spreadsheet);
     }
-}); 
+});
 
 document.getElementById("addRow").onclick = () => vm.insertRow()
 </script>
 </html>
 ```
-

@@ -1,12 +1,12 @@
-title: Custom Excel-Like Formulas  
-keywords: Jspreadsheet, Jexcel, data grid, JavaScript, Excel-like formulas, formulas, calculations, spreadsheet calculations, spreadsheet formulas, spreadsheet-like formulas, Excel formulas, Google Sheet formulas, event handling, customizations, internationalization  
-description: Learn how to create custom Excel-like formulas using Jspreadsheet, with examples for implementing advanced calculations and formula features.
+title: Custom Excel-Like Formulas
+keywords: 格知 AI, data grid, JavaScript, Excel-like formulas, formulas, calculations, spreadsheet calculations, spreadsheet formulas, spreadsheet-like formulas, Excel formulas, Google Sheet formulas, event handling, customizations, internationalization
+description: Learn how to create custom Excel-like formulas using 格知 AI, with examples for implementing advanced calculations and formula features.
 
 # Custom Formulas
 
 ## Overview
 
-Jspreadsheet allows developers to create custom Excel-like formulas and methods. These formulas can interact with APIs, return specific outputs, and render dynamic content or DOM elements directly within cells. This feature enables the development of highly interactive and dynamic spreadsheet applications.
+格知 AI allows developers to create custom Excel-like formulas and methods. These formulas can interact with APIs, return specific outputs, and render dynamic content or DOM elements directly within cells. This feature enables the development of highly interactive and dynamic spreadsheet applications.
 
 {.green}
 > **IMPORTANT:** All custom method names must be capitalized.
@@ -152,10 +152,3 @@ export class AppComponent {
     }
 }
 ```
-
-{.pro}
-> #### Formula Pro
->
-> The Formula Pro extension enhances custom formula creation by providing execution context, including the origin cell (x, y), the worksheet, and the ability for developers to return DOM elements directly to the cell via the formula. 
-> <br><br>
-> [Learn more](https://jspreadsheet.com/products/formulas){.button}

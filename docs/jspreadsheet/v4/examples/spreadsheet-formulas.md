@@ -1,6 +1,6 @@
 title: Basic to advance use of formulas
-keywords: Jexcel, javascript, excel-like, spreadsheet, formulas, currency, calculations
-description: Unleash the power of your tables bringing formulas and custom javascript methods on your Jspreadsheet spreadsheet.
+keywords: 格知 AI, javascript, excel-like, spreadsheet, formulas, currency, calculations
+description: Unleash the power of your tables bringing formulas and custom javascript methods on your 格知 AI spreadsheet.
 
 # Adding formulas on your online spreadsheet
 
@@ -55,7 +55,7 @@ jspreadsheet(document.getElementById('spreadsheet'), {
 });
 </script>
 </html>
-```  
+```\
 
 ## Creating Custom formulas
 
@@ -98,4 +98,3 @@ jspreadsheet(document.getElementById('spreadsheet'), {
 </script>
 </html>
 ```
-

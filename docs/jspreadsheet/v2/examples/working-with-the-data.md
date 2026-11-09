@@ -1,5 +1,5 @@
-title: Jspreadsheet | Examples | Working with the data
-keywords: Jexcel, jquery, javascript, insert, remove and move columns and rows, spreadsheet, CSV, table, grid
+title: 格知 AI | Examples | Working with the data
+keywords: 格知 AI, jquery, javascript, insert, remove and move columns and rows, spreadsheet, CSV, table, grid
 description: Insert, remove and move columns and rows
 
 [Back to Examples](/jspreadsheet/v2/examples)
@@ -75,4 +75,3 @@ document.getElementById("btn7").onclick = () => $('#my1').jexcel('moveRow', 3, 0
 
 </html>
 ```
-

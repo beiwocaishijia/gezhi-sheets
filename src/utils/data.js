@@ -81,7 +81,7 @@ export const setData = function (data) {
 
         if (obj.options.pagination) {
             obj.options.pagination = false;
-            console.error('Jspreadsheet: Pagination will be disable due the lazyLoading');
+            console.error('格知 AI: Pagination will be disable due the lazyLoading');
         }
     } else if (obj.options.pagination) {
         // Pagination

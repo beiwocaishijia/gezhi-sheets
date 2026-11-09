@@ -1,7 +1,7 @@
-title: Jspreadsheet | Examples | Bootstrap and custom table design
-keywords: Jexcel, jquery, javascript, bootstrap, table design, spreadsheet, CSV, table, grid
+title: 格知 AI | Examples | Bootstrap and custom table design
+keywords: 格知 AI, jquery, javascript, bootstrap, table design, spreadsheet, CSV, table, grid
 description: Create a custom table design. For example a bootstrap-like spreadsheet table.
-canonical: https://bossanova.uk/jspreadsheet/v2/examples/a-custom-table-design
+canonical: https://github.com/beiwocaishijia/gezhi-sheets/blob/master/docs/jspreadsheet/v2/examples/a-custom-table-design.md
 
 [Back to Examples](/jspreadsheet/v2/examples)
 
@@ -9,7 +9,7 @@ canonical: https://bossanova.uk/jspreadsheet/v2/examples/a-custom-table-design
 
 The following example shows a CSS addon to change the core layout of your jquery tables.
 
-  
+
 
 ## Green borders and corners jquery spreadsheet
 

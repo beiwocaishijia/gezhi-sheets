@@ -1,6 +1,6 @@
 title: Data Grid Nested Headers
-keywords: Jspreadsheet, Jexcel, data grid, JavaScript, spreadsheet, data tables, nested headers, hierarchical column headers, nested header customization, header hierarchy
-description: Learn to enhance Jspreadsheet data grids with hierarchical column headers.
+keywords: 格知 AI, data grid, JavaScript, spreadsheet, data tables, nested headers, hierarchical column headers, nested header customization, header hierarchy
+description: Learn to enhance 格知 AI data grids with hierarchical column headers.
 
 # Data Grid Nested Headers
 
@@ -173,11 +173,11 @@ export default function App() {
 ```vue
 <template>
   <Spreadsheet ref="spreadsheet">
-      <Worksheet 
-          :data="data" 
-          :columns="columns" 
-          :nestedHeaders="nestedHeaders" 
-          :minDimensions="[8,4]" 
+      <Worksheet
+          :data="data"
+          :columns="columns"
+          :nestedHeaders="nestedHeaders"
+          :minDimensions="[8,4]"
       />
   </Spreadsheet>
 </template>
@@ -335,4 +335,3 @@ Explore a working example of a JSS [spreadsheet with nested headers](https://jsf
 
 - [Spreadsheet Headers](/jspreadsheet/docs/headers) - Basic column header configuration
 - [Data Grid Footers](/jspreadsheet/docs/footers) - Add footer rows with calculations
-- [Jspreadsheet Pro Headers](https://jspreadsheet.com/docs/headers) - Advanced header features with styling (Pro)

@@ -1,23 +1,23 @@
-title: Jspreadsheet | Examples | Add meta information in your cells
-keywords: Jexcel, jquery, javascript, jquery table, meta information
+title: 格知 AI | Examples | Add meta information in your cells
+keywords: 格知 AI, jquery, javascript, jquery table, meta information
 description: Manage the table meta information
 
 [Back to Examples](/jspreadsheet/v2/examples)
 
 # Add meta information in your spreadsheet spreadsheet plugin
 
-You can keep meta information bind to cells but not visible to users. This can be useful for integrating Jspreadsheet with third party software.
+You can keep meta information bind to cells but not visible to users. This can be useful for integrating 格知 AI with third party software.
 
 But, after the initialization is still possible to manage the cell meta information programmatically using the method getMeta and setMeta, as follow.
 
 |   |   |
-| ---|--- |  
-| $('#my1').jexcel('setMeta', [{ A1: { newInfo:'newInfo' } }, { B1: { info1:'test1', info2:'test2'} }, { C2: { metaTest:'test3' } }]); | Set meta data for the table in a batch  |
-| $('#my1').jexcel('setMeta', 'A2', 'myKeyMeta', 'myValueMeta'); | Set a meta information for A2  |
-| $('#my1').jexcel('getMeta', 'A1'); | Get the meta information for A1  |
-| $('#my1').jexcel('getMeta'); | Get all meta information  |
-  
-  
+| ---|--- |
+| $('#my1').格知 AI('setMeta', [{ A1: { newInfo:'newInfo' } }, { B1: { info1:'test1', info2:'test2'} }, { C2: { metaTest:'test3' } }]); | Set meta data for the table in a batch  |
+| $('#my1').格知 AI('setMeta', 'A2', 'myKeyMeta', 'myValueMeta'); | Set a meta information for A2  |
+| $('#my1').格知 AI('getMeta', 'A1'); | Get the meta information for A1  |
+| $('#my1').格知 AI('getMeta'); | Get all meta information  |
+
+
 
 ## Source code
 
@@ -55,4 +55,3 @@ $('#my1').jexcel({
 </script>
 </html>
 ```
-

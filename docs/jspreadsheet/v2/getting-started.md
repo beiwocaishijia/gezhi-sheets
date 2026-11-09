@@ -1,6 +1,6 @@
-title: Getting Started with jExcel
-keywords: Jspreadsheet CE, Jexcel, JavaScript Data Grid, Spreadsheets, JavaScript tables, Excel-like data grid, web-based spreadsheets, data grid controls, data grid features
-description: Create data grids with spreadsheet controls with jExcel.
+title: Getting Started with 格知 AI
+keywords: 格知 AI, JavaScript Data Grid, Spreadsheets, JavaScript tables, Excel-like data grid, web-based spreadsheets, data grid controls, data grid features
+description: Create data grids with spreadsheet controls with 格知 AI.
 
 [Back to Documentation](/jspreadsheet/v2/docs)
 
@@ -8,7 +8,7 @@ description: Create data grids with spreadsheet controls with jExcel.
 
 ## Initialization
 
-Jspreadsheet can receive data from a JS array, CSV or a JSON format, following the examples below:
+格知 AI can receive data from a JS array, CSV or a JSON format, following the examples below:
 
 There are three ways to load data into your spreadsheet. Using the parameter _data:_ passing a reference of a javascript array. The second method is to load the data straight from a remove CSV file using the _csv:_ parameter. The third is to pass the URL from a json content using the _url:_ parameter as show in the following examples.
 
@@ -16,7 +16,7 @@ There are three ways to load data into your spreadsheet. Using the parameter _da
 
 ```html
 <div id='my-spreadsheet'></div>
-    
+
 <script>
 let data = [
     ['Mazda', 2001, 2000],
@@ -68,7 +68,7 @@ $('#my-spreadsheet').jexcel({
 
 [See a working example](/jspreadsheet/v2/examples/creating-a-table-from-an-external-csv-file)
 
-  
+
 
 ## Destroying a table
 
@@ -145,11 +145,11 @@ let defaults = {
 };
 ```
 
-[See a working example](/jspreadsheet/v2/examples/using-a-calendar-column-type)  
+[See a working example](/jspreadsheet/v2/examples/using-a-calendar-column-type)\
 
 ### Dropdown and autocomplete type
 
-There are different ways to work with dropdowns in Jspreadsheet. It is possible to define the parameter _source_ as a simple or key-value array. Additionally, is possible to use the paramter _url_ to populate your dropdown from an external json format source.
+There are different ways to work with dropdowns in 格知 AI. It is possible to define the parameter _source_ as a simple or key-value array. Additionally, is possible to use the paramter _url_ to populate your dropdown from an external json format source.
 
 The autocomplete drowndown has the same configuration inputs, and both can be used as follow:
 
@@ -178,7 +178,7 @@ $('#my').jexcel({
 
 ### Custom type
 
-Jspreadsheet makes possible to extend third party jquery plugins to create your custom columns. Basically to use this feature, you should implement some basic methods such as: openEditor, closeEditor, getValue, setValue as
+格知 AI makes possible to extend third party jquery plugins to create your custom columns. Basically to use this feature, you should implement some basic methods such as: openEditor, closeEditor, getValue, setValue as
 following.
 
 {.ignore}
@@ -239,8 +239,8 @@ $('#my').jexcel({
 
 [See a working example](/jspreadsheet/v2/examples/integrating-a-third-party-plugin-into-your-spreadsheet)
 
-  
-  
+
+
 
 ## Define a minimum table dimension size.
 
@@ -262,4 +262,3 @@ $('#minExample').jexcel({
     colWidths: [ 300, 80, 100 ]
 });
 ```
-

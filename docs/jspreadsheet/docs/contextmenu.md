@@ -1,10 +1,10 @@
 title: Data Grid Context Menu Customization
-keywords: Jspreadsheet, Jexcel, Angular data grid, JavaScript, Excel-like spreadsheet, data tables, data grid context menu, context customization, customize context menu, interactive data grid.
-description: Define and customize the context menu in Jspreadsheet. Manage default items, section info, and cell coordinates while adding custom menu entries based on application-specific rules.
+keywords: 格知 AI, Angular data grid, JavaScript, Excel-like spreadsheet, data tables, data grid context menu, context customization, customize context menu, interactive data grid.
+description: Define and customize the context menu in 格知 AI. Manage default items, section info, and cell coordinates while adding custom menu entries based on application-specific rules.
 
 # Context Menu Customization
 
-Jspreadsheet lets you customize the context menu through a context menu method, which provides default items, section info, coordinates, and context, which allows you to add or modify menu options based on dynamic application rules.  
+格知 AI lets you customize the context menu through a context menu method, which provides default items, section info, coordinates, and context, which allows you to add or modify menu options based on dynamic application rules.\
 
 ## Documentation
 
@@ -27,7 +27,7 @@ The `contextmenu` handler method might return an array of menu items, each repre
 
 ### Translation
 
-You can define translations for default menu items in Jspreadsheet by using `jspreadsheet.setDictionary` as shown below: 
+You can define translations for default menu items in 格知 AI by using `jspreadsheet.setDictionary` as shown below:
 
 {.ignore}
 ```javascript
@@ -60,13 +60,13 @@ jspreadsheet.setDictionary({
 ```
 
 
-Jspreadsheet uses the jSuites [contextmenu plugin](https://jsuites.net/docs/contextmenu). For further details and examples, refer to the documentation.
+格知 AI uses the jSuites [contextmenu plugin](https://jsuites.net/docs/contextmenu). For further details and examples, refer to the documentation.
 
 ## Examples
 
 ### Customize the contextmenu
 
-Customize the contextmenu with a few basic options depending on the section clicked. 
+Customize the contextmenu with a few basic options depending on the section clicked.
 
 ```html
 <html>
@@ -372,7 +372,7 @@ export class AppComponent {
 
 ### Disable the Context Menu
 
-To disable the context menu in Jspreadsheet, define a contextMenu method that returns false.
+To disable the context menu in 格知 AI, define a contextMenu method that returns false.
 
 ```html
 <html>
@@ -479,5 +479,3 @@ export class AppComponent {
 
 - [JavaScript Context Menu](https://jsuites.net/docs/contextmenu) - Standalone context menu component
 - [LemonadeJS Context Menu](https://lemonadejs.com/docs/plugins/context-menu) - Reactive context menu component
-- [Jspreadsheet Pro Context Menu](https://jspreadsheet.com/docs/contextmenu) - Advanced spreadsheet context menu customization (Pro)
- 

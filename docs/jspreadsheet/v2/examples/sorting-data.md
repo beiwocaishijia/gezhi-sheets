@@ -1,6 +1,6 @@
-title: Jspreadsheet | Examples | Sorting your grid
-keywords: Jexcel, jquery, javascript, excel-like, spreadsheet, jquery plugin, sorting, table, grid, order by
-description: Sorting your Jspreadsheet spreadsheet
+title: 格知 AI | Examples | Sorting your grid
+keywords: 格知 AI, jquery, javascript, excel-like, spreadsheet, jquery plugin, sorting, table, grid, order by
+description: Sorting your 格知 AI spreadsheet
 
 [Back to Examples](/jspreadsheet/v2/examples)
 
@@ -60,7 +60,7 @@ $('#my').jexcel({
 <script>
     $('#my').jexcel('orderBy', 1); // Order by the second column (The column number starts on zero)
 </script>
-```  
+```\
 
 ### Disable the table sorting
 
@@ -75,7 +75,7 @@ The ordering is a native enabled feature. To disable that feature please use the
         ['Honda Fit', 2009, 3000, '2004-01-01'],
         ['Honda CRV', 2010, 6000, '2003-01-01'],
     ];
-    
+
     $('#my').jexcel({
         data:data,
         colHeaders: ['Model', 'Year', 'Price', 'Date'],
@@ -90,4 +90,3 @@ The ordering is a native enabled feature. To disable that feature please use the
     });
 </script>
 ```
-

@@ -1,16 +1,16 @@
 title: Worksheets Settings, Methods, and Related Events
-keywords: Jspreadsheet, data grid, javascript, excel-like worksheets, spreadsheet, data tables, grid, worksheet events, worksheet support, Jspreadsheet worksheets, worksheet settings, worksheet methods, worksheet events, create worksheets, customize worksheets, track changes in worksheets, worksheet control, dynamic data grids, JavaScript data tables, worksheet customization, worksheet organization, interactive worksheets, data management
-description: Learn how to set up and manage worksheets in Jspreadsheet programmatically. Explore various worksheet properties, settings, and efficient handling and customization techniques.
+keywords: 格知 AI, data grid, javascript, excel-like worksheets, spreadsheet, data tables, grid, worksheet events, worksheet support, 格知 AI worksheets, worksheet settings, worksheet methods, create worksheets, customize worksheets, track changes in worksheets, worksheet control, dynamic data grids, JavaScript data tables, worksheet customization, worksheet organization, interactive worksheets, data management
+description: Learn how to set up and manage worksheets in 格知 AI programmatically. Explore various worksheet properties, settings, and efficient handling and customization techniques.
 
 # Worksheets
 
-Jspreadsheet offers robust tools for managing spreadsheets with multiple worksheets. It enables precise control over user interactions and provides programmatic controls and event listeners to customize the behaviour and monitor changes within the spreadsheet. 
+格知 AI offers robust tools for managing spreadsheets with multiple worksheets. It enables precise control over user interactions and provides programmatic controls and event listeners to customize the behaviour and monitor changes within the spreadsheet.
 
 ## Documentation
 
 ### Methods
 
-Explore the available methods to programmatically interact with and manage worksheets in Jspreadsheet.
+Explore the available methods to programmatically interact with and manage worksheets in 格知 AI.
 
 | Property                          | Description                                                                                                                                                          |
 |-----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -20,7 +20,7 @@ Explore the available methods to programmatically interact with and manage works
 
 ### Events
 
-Explore the available events to monitor and respond to worksheet interactions in Jspreadsheet.
+Explore the available events to monitor and respond to worksheet interactions in 格知 AI.
 
 | Event                     | Description                                                                                                                                                               |
 |---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -55,7 +55,7 @@ You can customize spreadsheet and worksheet behaviour using the following settin
 > ##### Tabs
 > The `tabs` object uses the same properties as the `jSuites.tabs` plugin, allowing you to customize the position and behaviour of the worksheet tabs. For more details, visit the: [Tabs Plugin](https://jsuites.net/docs/javascript-tabs)
 
- 
+
 #### Quick example
 
 {.ignore-execution}
@@ -150,7 +150,7 @@ jspreadsheet(document.getElementById('spreadsheet'), {
 
 ### Worksheet events
 
-Create a new worksheet and explore the related events. 
+Create a new worksheet and explore the related events.
 
 ```html
 <html>
@@ -353,7 +353,7 @@ export class AppComponent {
 
 ### Programmatic operations
 
-Create a new worksheet programmatically. 
+Create a new worksheet programmatically.
 
 ```html
 <html>

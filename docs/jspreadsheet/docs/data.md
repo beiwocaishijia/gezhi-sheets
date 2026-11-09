@@ -1,10 +1,10 @@
 title: Spreadsheet Data Operations
-keywords: Jspreadsheet, Jexcel, data grid, JavaScript, Excel-like formulas, spreadsheet data, worksheet data, data management, update cell data, manage worksheet data, programmatically update data
-description: Learn how to load, manage, and manipulate worksheet data in Jspreadsheet. Explore methods for programmatic data updates and integrate spreadsheet functionality with your web applications using related events.
+keywords: 格知 AI, data grid, JavaScript, Excel-like formulas, spreadsheet data, worksheet data, data management, update cell data, manage worksheet data, programmatically update data
+description: Learn how to load, manage, and manipulate worksheet data in 格知 AI. Explore methods for programmatic data updates and integrate spreadsheet functionality with your web applications using related events.
 
 # Data Management
 
-This section details the methods, events, and settings for loading, updating, and managing data in Jspreadsheet data grids.
+This section details the methods, events, and settings for loading, updating, and managing data in 格知 AI data grids.
 
 ## Loading the Data
 
@@ -50,7 +50,7 @@ These methods assist in managing data in your grid or spreadsheet.
 You can find a list of javascript events related to the data operations.
 
 | Event                     | Description                                                                                                                                           |
-|---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------| 
+|---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `onbeforechange`{.nowrap} | Occurs before a column value is changed. If any value is returned, it will be the cell's new value.<br/>@param `instance` - Instance of the worksheet where the changes will occur.<br/>@param `cell` - HTML element that represents the cell being changed.<br/>@param `colIndex` - Cell column index being changed.<br/>@param `rowIndex` - Cell row index being changed.<br/>@param `newValue` - Value being applied to the cell<br/>`onbeforechange(instance: WorksheetInstance, cell: HTMLTableCellElement, colIndex: string \| number, rowIndex: string \| number, newValue: CellValue): undefined \| CellValue;`         |
 | `onchange`                | Occurs after a column value is changed.<br/>@param `instance` - Instance of the worksheet where the change occurred.<br/>@param `cell` - HTML element that represents the cell being changed.<br/>@param `colIndex` - Cell column index being changed.<br/>@param `rowIndex` - Cell row index being changed.<br/>@param `newValue` - New cell value.<br/>@param `oldValue` - Old cell value.<br/>`onchange(instance: WorksheetInstance, cell: HTMLTableCellElement, colIndex: string \| number, rowIndex: string \| number, newValue: CellValue, oldValue: CellValue): void;` |
 | `onafterchanges`          | Occurs after all changes are applied in the tables.<br/>@param `instance` - Instance of the worksheet where the change occurred.<br/>@param `changes` - list of changes.<br/>`onafterchanges(instance: WorksheetInstance, changes: CellChange[]): void;`                             |
@@ -72,7 +72,7 @@ A list of settings that can be utilized when initializing the data grid.
 
 ### Create a data grid from an 2D array.
 
-Create a spreadsheet from a JavaScript array 
+Create a spreadsheet from a JavaScript array
 
 ```html
 <html>
@@ -211,7 +211,7 @@ export class AppComponent {
 
 ### Create a data grid from a CSV file
 
-How to create a data grid from a remote CSV file 
+How to create a data grid from a remote CSV file
 
 ```html
 <html>
@@ -313,7 +313,7 @@ export class AppComponent {
 
 ### Create a data grid from a HTML table
 
-How to create data grid from an existing HTML table element 
+How to create data grid from an existing HTML table element
 
 ```html
 <html>
@@ -522,7 +522,7 @@ export class AppComponent {
 
 ### Batch update
 
-How to update multiple cells with a single call 
+How to update multiple cells with a single call
 
 ```html
 <html>
@@ -701,40 +701,3 @@ export class AppComponent {
     }
 }
 ```
-
-{.pro}
-> **Upgrade to Jspreadsheet Pro for Advanced Data Operations**
->
-> Jspreadsheet CE supports basic data loading from arrays, CSV, JSON, and HTML tables. **Jspreadsheet Pro** adds enterprise-grade data management capabilities:
->
-> **Excel Import/Export:**
-> - **Full Excel Compatibility:** Import/export native .xlsx and .xls files with formulas, formatting, and styles preserved
-> - **Multiple Worksheet Support:** Import/export workbooks with multiple sheets
-> - **Formula Translation:** Excel formulas automatically converted to Jspreadsheet format
-> - **Style Preservation:** Cell colors, fonts, borders, and formatting maintained on import/export
-> - **Chart Import:** Import Excel charts and graphs
-> - **Named Ranges:** Support for Excel named ranges and defined names
->
-> **Advanced Data Loading:**
-> - **Database Integration:** Direct integration with MySQL, PostgreSQL, SQL Server, MongoDB
-> - **API Integration:** RESTful API support with authentication and pagination
-> - **Real-Time Data:** WebSocket support for live data updates
-> - **Lazy Loading:** Load large datasets incrementally for better performance
-> - **Background Processing:** Async data loading with progress indicators
->
-> **Data Export Options:**
-> - **PDF Export:** Export spreadsheets to formatted PDF documents
-> - **XML Export:** Export data in XML format
-> - **Custom Formats:** Build custom export formats with templates
-> - **Batch Export:** Export multiple worksheets at once
-> - **Server-Side Export:** Generate exports on the server for large datasets
->
-> **Data Validation & Quality:**
-> - **Data Validation Rules:** Enforce data integrity with validation rules
-> - **Duplicate Detection:** Find and merge duplicate records
-> - **Data Cleansing:** Auto-trim, case normalization, format correction
-> - **Import Validation:** Validate data during import with error reporting
->
-> Perfect for business applications requiring Excel compatibility and enterprise data management.
->
-> **[Explore Pro Data Features →](https://jspreadsheet.com/docs/import-and-export)** | **[Compare Editions →](https://jspreadsheet.com/docs/getting-started)** | **[View Pricing →](https://jspreadsheet.com/pricing)**

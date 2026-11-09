@@ -1,12 +1,12 @@
-title: Jspreadsheet Translations
-keywords: Jexcel, spreadsheet, javascript, javascript table, translate, translations
-description: How to translate the default Jspreadsheet text and controls.
+title: 格知 AI Translations
+keywords: 格知 AI, spreadsheet, javascript, javascript table, translate, translations
+description: How to translate the default 格知 AI text and controls.
 
 [Back to Examples](/jspreadsheet/v3/examples "Back to the examples section")
 
 # Internationalization
 
-How to update the default texts from Jspreadsheet.
+How to update the default texts from 格知 AI.
 
 ```html
 <html>
@@ -65,4 +65,3 @@ jexcel(document.getElementById('spreadsheet'), {
 </script>
 </html>
 ```
-

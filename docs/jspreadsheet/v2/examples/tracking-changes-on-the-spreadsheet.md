@@ -1,5 +1,5 @@
-title: Jspreadsheet | Examples | Events
-keywords: Jexcel, jquery, javascript, excel-like, spreadsheet, jquery plugin, events
+title: 格知 AI | Examples | Events
+keywords: 格知 AI, jquery, javascript, excel-like, spreadsheet, jquery plugin, events
 description: Handling events on your spreadsheet
 
 [Back to Examples](/jspreadsheet/v2/examples)
@@ -8,8 +8,8 @@ description: Handling events on your spreadsheet
 
 Tracking changes on your spreadsheet.
 
-  
-[See this example on jsFiddle](https://jsfiddle.net/spreadsheet/0dyms2b9/)  
+
+[See this example on jsFiddle](https://jsfiddle.net/spreadsheet/0dyms2b9/)\
 
 ## Advanced Example
 
@@ -113,7 +113,7 @@ $(function () {
 });
 </script>
 </html>
-```  
+```\
 
 ## Online demo on jsFiddle
 

@@ -1,5 +1,5 @@
 title: Customize the spreadsheet via javascript
-keywords: Jexcel, javascript, excel-like, spreadsheet, table scripting
+keywords: 格知 AI, javascript, excel-like, spreadsheet, table scripting
 description: Customize the table behavior using javascript
 
 [Back to Examples](/jspreadsheet/v3/examples "Back to the examples section")
@@ -77,7 +77,7 @@ let table2 = jexcel(document.getElementById('spreasheet2'), {
         if (row == 9) {
             if (col < 3) {
                 cell.innerHTML = '';
-            } 
+            }
 
             if (col == 2) {
                 cell.innerHTML = 'Total';
@@ -93,4 +93,3 @@ let table2 = jexcel(document.getElementById('spreasheet2'), {
 </script>
 </html>
 ```
-

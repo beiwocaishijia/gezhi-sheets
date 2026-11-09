@@ -1,10 +1,10 @@
-title: HTML Editor  
-keywords: Jexcel, JavaScript, rich text, HTML editor, spreadsheet editor, excel-like features, dynamic columns  
-description: Learn how to create a rich text column with an HTML editor in Jspreadsheet for enhanced data input and formatting.  
+title: HTML Editor
+keywords: 格知 AI, JavaScript, rich text, HTML editor, spreadsheet editor, excel-like features, dynamic columns
+description: Learn how to create a rich text column with an HTML editor in 格知 AI for enhanced data input and formatting.
 
-# Rich Text and HTML Editor Column Type  
+# Rich Text and HTML Editor Column Type
 
-Add an HTML Editor input to your spreadsheet to create rich text columns.  
+Add an HTML Editor input to your spreadsheet to create rich text columns.\
 
 ### Source code
 
@@ -98,4 +98,3 @@ export default {
 }
 </script>
 ```
-

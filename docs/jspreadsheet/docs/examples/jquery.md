@@ -1,10 +1,10 @@
-title: jQuery Spreadsheet  
-keywords: Jexcel, JavaScript, Jspreadsheet, jQuery integration, JavaScript spreadsheet, interactive table  
-description: Learn how to integrate Jspreadsheet with jQuery through a complete example.
+title: jQuery Spreadsheet
+keywords: 格知 AI, JavaScript, jQuery integration, JavaScript spreadsheet, interactive table
+description: Learn how to integrate 格知 AI with jQuery through a complete example.
 
 # jQuery Spreadsheet
 
-Create fantastic data grids with spreadsheet controls integrating Jspreadsheet with jQuery.
+Create fantastic data grids with spreadsheet controls integrating 格知 AI with jQuery.
 
 ### Source code
 
@@ -30,7 +30,7 @@ let table = jspreadsheet($('#spreadsheet')[0], {
             tableOverflow: true,
         }
     ]
-}); 
+});
 
 document.getElementById("btn1").addEventListener('click', function() {
     table[0].insertRow();
@@ -39,4 +39,3 @@ document.getElementById("btn1").addEventListener('click', function() {
 </script>
 </html>
 ```
-

@@ -1,10 +1,10 @@
 title: Advanced dropdown column type
-keywords: Jexcel, jquery, javascript, excel-like, spreadsheet, jquery plugin, sorting, table, grid, order by
+keywords: 格知 AI, jquery, javascript, excel-like, spreadsheet, jquery plugin, sorting, table, grid, order by
 description: Full examples on how to handle simple, advanced, multiple, autocomplete and conditional dropdowns. Create amazing javascript tables using categories and images in your dropdowns.
 
 # Dropdown and autocomplete column type
 
-Jspreadsheet brings a very powerful, flexible and responsive dropdown column type to support a better user experience through your applications. The new dropdown column options include autocomplete, multiple options, data picker, different template types and much more advantages, such as:
+格知 AI brings a very powerful, flexible and responsive dropdown column type to support a better user experience through your applications. The new dropdown column options include autocomplete, multiple options, data picker, different template types and much more advantages, such as:
 
   * Create a simple dropdown from array
   * Value or key-value select is available
@@ -15,7 +15,7 @@ Jspreadsheet brings a very powerful, flexible and responsive dropdown column typ
   * Responsive data picker with multiple render types
   * Image icon and group items
 
-  
+
 
 ## Multiple and autocomplete options
 
@@ -23,8 +23,8 @@ The highlight features introduced in the most version of the vanilla javascript 
 
 The following example shows the column Product Origin with the autocomplete and multiple directives initiated as true.
 
-  
-  
+
+
 
 ### Source code
 
@@ -52,10 +52,10 @@ jspreadsheet(document.getElementById('spreadsheet'), {
         { type:'dropdown', width:'100', title:'Stock', source:['No','Yes'] },
         { type:'calendar', width:'100', title:'Best before' },
     ]
-});    
+});
 </script>
 </html>
-```  
+```\
 
 ## Conditional dropdown
 
@@ -104,7 +104,7 @@ jspreadsheet(document.getElementById('spreadsheet'), {
 });
 </script>
 </html>
-```  
+```\
 
 ## Group, images, and advanced render options
 
@@ -156,7 +156,3 @@ jspreadsheet(document.getElementById('spreadsheet'), {
 ```
 
 More options for the dropdowns, please refer to the [jSuites documentation](https://jsuites.net/v4).
-
-  
-  
-

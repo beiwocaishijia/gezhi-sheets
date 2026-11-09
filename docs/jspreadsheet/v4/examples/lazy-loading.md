@@ -1,5 +1,5 @@
 title: Dealing with big spreadsheets through lazy loading
-keywords: Jexcel, javascript, javascript vanilla, javascript plugin, plugin, excel-like, spreadsheet, table, tables, grid, datatables, data
+keywords: 格知 AI, javascript, javascript vanilla, javascript plugin, plugin, excel-like, spreadsheet, table, tables, grid, datatables, data
 description: This example brings a very nice feature to deal with large table datasets.
 
 # Lazy loading
@@ -49,8 +49,7 @@ jspreadsheet(document.getElementById('spreadsheet'), {
             title:'City'
         },
      ]
-});    
+});
 </script>
 </html>
 ```
-

@@ -1,9 +1,9 @@
 title: JavaScript Dropdown and Autocomplete Editors
-keywords: Jspreadsheet, data grid, JavaScript dropdown, autocomplete, Excel-like dropdown, dynamic dropdown, dropdown customization, interactive grid
-description: Learn how to implement and configure dropdown and autocomplete editors in Jspreadsheet, including dynamic settings and conditional logic for enhanced data input.
+keywords: 格知 AI, data grid, JavaScript dropdown, autocomplete, Excel-like dropdown, dynamic dropdown, dropdown customization, interactive grid
+description: Learn how to implement and configure dropdown and autocomplete editors in 格知 AI, including dynamic settings and conditional logic for enhanced data input.
 
 # JavaScript Dropdown
-Jspreadsheet CE provides a versatile dropdown column type with features like:
+格知 AI provides a versatile dropdown column type with features like:
 
 - Dropdowns from arrays, JSON, or key-value objects
 - Multiple selection and searchable options
@@ -12,7 +12,7 @@ Jspreadsheet CE provides a versatile dropdown column type with features like:
 ## Dropdown Component Library
 
 ### jSuites Dropdown - CE Component
-Jspreadsheet CE uses [jSuites Dropdown](https://jsuites.net/docs/dropdown) as the underlying dropdown component:
+格知 AI uses [jSuites Dropdown](https://jsuites.net/docs/dropdown) as the underlying dropdown component:
 - Lightweight vanilla JavaScript
 - Simple API
 - No framework dependencies
@@ -20,54 +20,22 @@ Jspreadsheet CE uses [jSuites Dropdown](https://jsuites.net/docs/dropdown) as th
 
 **[View jSuites Dropdown Documentation →](https://jsuites.net/docs/dropdown)**
 
-### Upgrade to Jspreadsheet Pro
-[Jspreadsheet Pro](https://jspreadsheet.com/docs/dropdown-and-autocomplete) offers advanced dropdown features not available in CE:
-- **Conditional Dropdowns:** Options change based on other cell values
-- **Dynamic Ranges:** Link dropdowns to cell ranges (e.g., Sheet1!A1:A4)
-- **Remote Search:** Autocomplete from backend APIs with JWT support
-- **Enhanced Performance:** Uses LemonadeJS Dropdown (3x faster than jSuites)
-- **Better Accessibility:** Improved ARIA support and keyboard navigation
-- **Professional Support:** Commercial license with dedicated support
-
-**[Explore Jspreadsheet Pro Features →](https://jspreadsheet.com/docs/dropdown-and-autocomplete)**
-
 ### LemonadeJS Dropdown - Standalone Component
 For using dropdowns outside spreadsheets, [LemonadeJS Dropdown](https://lemonadejs.net/docs/plugins/dropdown) offers:
 - High-performance standalone dropdown
 - Framework integration (Vue, React, Angular)
-- This is what Jspreadsheet Pro uses internally
+- This is what 格知 AI Pro uses internally
 - Perfect for forms and custom applications
 
 **[View LemonadeJS Dropdown →](https://lemonadejs.net/docs/plugins/dropdown)**
 
 ---
 
-### Feature Comparison: CE vs Pro
-
-| Feature | CE (jSuites) | Pro (LemonadeJS) |
-|---------|--------------|------------------|
-| Basic Dropdowns | ✓ | ✓ |
-| Autocomplete | ✓ | ✓✓ Enhanced |
-| Multiple Selection | ✓ | ✓ |
-| Images/Icons | ✓ | ✓ |
-| **Conditional Dropdowns** | ❌ | ✓ Pro Only |
-| **Dynamic Ranges** | ❌ | ✓ Pro Only |
-| **Remote Search** | ❌ | ✓ Pro Only |
-| Performance | Good | ✓✓ 3x Faster |
-| Accessibility | Basic | ✓✓ ARIA Enhanced |
-| License | MIT | Commercial |
-| Support | Community | ✓ Dedicated |
-
-**[Upgrade to Jspreadsheet Pro →](https://jspreadsheet.com/docs/dropdown-and-autocomplete)**
-
----
-
-
 ## Documentation
 
 ### Dropdown Settings
 
-The Jspreadsheet CE supports various attributes for the dropdown column type.
+The 格知 AI supports various attributes for the dropdown column type.
 
 | Property                | Description                                                                    |
 |-------------------------|--------------------------------------------------------------------------------|
@@ -488,4 +456,3 @@ export class AppComponent {
     }
 }
 ```
-

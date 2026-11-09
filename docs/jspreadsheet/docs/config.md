@@ -1,6 +1,6 @@
 title: Data Grid Settings
-keywords: Jspreadsheet, data grid customization, React, Vue, JavaScript spreadsheet, Excel-like functionality, configuration settings, spreadsheet customization, data grid options
-description: Explore the configuration settings in Jspreadsheet for customizing data grids. Learn how to enable, disable, and adjust features to enhance flexibility for both spreadsheets and individual worksheets.
+keywords: 格知 AI, data grid customization, React, Vue, JavaScript spreadsheet, Excel-like functionality, configuration settings, spreadsheet customization, data grid options
+description: Explore the configuration settings in 格知 AI for customizing data grids. Learn how to enable, disable, and adjust features to enhance flexibility for both spreadsheets and individual worksheets.
 
 # Data Grid Settings
 
@@ -217,4 +217,3 @@ export class AppComponent {
     }
 }
 ```
- 

@@ -1,5 +1,5 @@
 title: Header updates & column dragging
-keywords: Jexcel, spreadsheet, javascript, header updates, programmatically header updates, enable column dragging
+keywords: 格知 AI, spreadsheet, javascript, header updates, programmatically header updates, enable column dragging
 description: Header updates and column dragging
 
 # Header updates
@@ -64,6 +64,4 @@ getHeaderBtn.onclick = () => alert(table.getHeader(document.getElementById('colu
 <input type='button' value='Set header title' id="setHeaderBtn" />
 <input type='button' value='Get header title' id="getHeaderBtn" />
 </html>
-```  
-  
-
+```\

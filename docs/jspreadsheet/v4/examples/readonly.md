@@ -1,5 +1,5 @@
 title: Readonly Columns
-keywords: Jexcel, spreadsheet, javascript, javascript table, readonly
+keywords: 格知 AI, spreadsheet, javascript, javascript table, readonly
 description: Example how to setup readonly cells
 
 # Readonly columns and cells
@@ -53,9 +53,8 @@ jspreadsheet(document.getElementById('spreadsheet'), {
         if (x == 2 && y == 2) {
             cell.classList.add('readonly');
         }
-    } 
+    }
 });
 </script>
 </html>
 ```
-

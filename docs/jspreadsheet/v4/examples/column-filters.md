@@ -1,6 +1,6 @@
 title: Applying Filters on Columns
-keywords: Jexcel, JavaScript, column filters, filters, dynamic tables, online spreadsheet
-description: Learn how to enable column filters in Jspreadsheet to enhance functionality in your online spreadsheets.
+keywords: 格知 AI, JavaScript, column filters, filters, dynamic tables, online spreadsheet
+description: Learn how to enable column filters in 格知 AI to enhance functionality in your online spreadsheets.
 
 # Column Filters
 
@@ -51,4 +51,3 @@ jspreadsheet(document.getElementById('spreadsheet'), {
 </script>
 </html>
 ```
-

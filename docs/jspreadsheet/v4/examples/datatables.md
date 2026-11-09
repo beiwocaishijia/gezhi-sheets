@@ -1,5 +1,5 @@
 title: Searchable datatable
-keywords: Jexcel, javascript, javascript vanilla, javascript plugin, plugin, excel-like, spreadsheet, table, tables, grid, datatables, data
+keywords: 格知 AI, javascript, javascript vanilla, javascript plugin, plugin, excel-like, spreadsheet, table, tables, grid, datatables, data
 description: Full spreadsheet example with search and pagination to bring great compatibility for those who love datatables.
 
 # Spreadsheet Search and Pagination
@@ -35,8 +35,7 @@ jspreadsheet(document.getElementById('spreadsheet'), {
         { type:'text', width:100 },
         { type:'text', width:100 },
      ]
-});    
+});
 </script>
 </html>
 ```
-

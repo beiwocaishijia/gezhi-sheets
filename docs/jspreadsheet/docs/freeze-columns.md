@@ -1,17 +1,10 @@
-title: Jspreadsheet Freeze Columns
-keywords: Jspreadsheet, freeze columns, data grid customization, JavaScript spreadsheets, Excel-like freeze functionality, floating columns, spreadsheet column freezing
-description: This section provides comprehensive information on freezing columns in Jspreadsheet, including programmatic settings, methods, and related events.
+title: 格知 AI Freeze Columns
+keywords: 格知 AI, freeze columns, data grid customization, JavaScript spreadsheets, Excel-like freeze functionality, floating columns, spreadsheet column freezing
+description: This section provides comprehensive information on freezing columns in 格知 AI, including programmatic settings, methods, and related events.
 
 # Freeze Columns
 
-Freezing columns in a spreadsheet keeps specific columns visible as you scroll. This section covers the settings, methods, and events for managing frozen columns. 
-
-{.pro}
-> #### What you can find on the Pro Version
-> 
-> The **Pro version** of Jspreadsheet provides programmatic methods, events, and manual controls for `freezing columns`, enabling users to adjust this setting directly through the interface.    
-> \
-> [Learn more](https://jspreadsheet.com/docs/freeze-columns){.button}
+Freezing columns in a spreadsheet keeps specific columns visible as you scroll. This section covers the settings, methods, and events for managing frozen columns.
 
 ## Documentation
 
@@ -31,7 +24,7 @@ Below are the initial settings related to freezing columns.
 
 ### Basic Freeze Columns Example
 
-A straightforward example of how to use frozen columns in Jspreadsheet.
+A straightforward example of how to use frozen columns in 格知 AI.
 
 ```html
 <html>
@@ -131,6 +124,3 @@ export class AppComponent {
 ```
 
 ## Related Tools
-
-- [Jspreadsheet Pro Freeze Columns](https://jspreadsheet.com/docs/freeze-columns) - Advanced freeze with user controls (Pro)
-- [Jspreadsheet Pro Freeze Rows](https://jspreadsheet.com/docs/freeze-rows) - Freeze header rows with interactive controls (Pro)

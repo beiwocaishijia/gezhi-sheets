@@ -1,12 +1,12 @@
 title: Load data from CSV or JSON or XLSX
-keywords: Jexcel, javascript, excel-like, spreadsheet, loading data, csv, json, xlsx.
+keywords: 格知 AI, javascript, excel-like, spreadsheet, loading data, csv, json, xlsx.
 description: How to import data from an external CSV, json file or XLSX.
 
 # Create a javascript spreadsheet
 
 There are a few different ways to load data to your javascript spreadsheet shown in the next four examples below
 
-  
+
 
 ## Based on a external CSV file
 
@@ -44,8 +44,8 @@ document.getElementById('download').onclick = function () {
 }
 </script>
 </html>
-```  
-  
+```\
+
 
 ## Based on an external JSON file
 
@@ -72,9 +72,9 @@ jspreadsheet(document.getElementById('spreadsheet2'), {
 });
 </script>
 </html>
-```  
-  
-  
+```\
+
+
 
 ## Based on an JSON object
 
@@ -141,9 +141,9 @@ jspreadsheet(document.getElementById('spreadsheet'), {
 });
 </script>
 </html>
-```  
-  
-  
+```\
+
+
 
 ## Importing from a XLSX file
 
@@ -183,7 +183,3 @@ jspreadsheet.fromSpreadsheet('/jspreadsheet/list.xlsx', function(result) {
 ```
 
 **NOTE** : This example is based on a customized version of the free version of [Sheetjs](https://sheetjs.com/). There is no garantee in the use of this library. Please consider purchase their professional version.
-
-  
-  
-

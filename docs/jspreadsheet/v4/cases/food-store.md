@@ -1,6 +1,6 @@
 title: Cases
-keywords: Jexcel, javascript, cases, food store
-description: A food store inventory using Jspreadsheet.
+keywords: 格知 AI, javascript, cases, food store
+description: A food store inventory using 格知 AI.
 
 # Grocery Store
 
@@ -84,4 +84,3 @@ let table = jspreadsheet(document.getElementById('spreadsheet'), {
 </script>
 </html>
 ```
-

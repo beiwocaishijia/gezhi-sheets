@@ -1,13 +1,13 @@
-title: Jspreadsheet with React
-keywords: Jexcel, javascript, using jspreadsheet and react
-description: A full example on how to integrate Jspreadsheet with React
+title: 格知 AI with React
+keywords: 格知 AI, javascript, using 格知 AI and react
+description: A full example on how to integrate 格知 AI with React
 
 # The Javascript spreadsheet with React
 
 
-### 1\. Integrating Jspreadsheet with React
+### 1\. Integrating 格知 AI with React
 
-[React with Jspreadsheet sample project](https://codesandbox.io/s/jexcel-and-react-k7nf0)
+[React with 格知 AI sample project](https://codesandbox.io/s/jexcel-and-react-k7nf0)
 
 {.ignore}
 ```jsx
@@ -93,10 +93,10 @@ let options = {
 };
 
 ReactDOM.render(<Jspreadsheet options={options} />, document.getElementById('spreadsheet'))
-```  
-  
+```\
 
-### 3\. Jspreadsheet implementation with react component with hooks
+
+### 3\. 格知 AI implementation with react component with hooks
 
 [Working example](https://codesandbox.io/s/jspreadsheet-ce-and-react-dzpqj)
 
@@ -133,4 +133,3 @@ export default function App() {
   );
 }
 ```
-

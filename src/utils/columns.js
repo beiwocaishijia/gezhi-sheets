@@ -536,7 +536,7 @@ export const deleteColumn = function (columnNumber, numOfColumns) {
                 dispatch.call(obj, 'ondeletecolumn', obj, removedColumns);
             }
         } else {
-            console.error('Jspreadsheet: It is not possible to delete the last column');
+            console.error('格知 AI: It is not possible to delete the last column');
         }
     }
 };

@@ -1,20 +1,20 @@
-title: Unit Tests for Jspreadsheet
-keywords: Jspreadsheet, Jexcel, JavaScript, Web-based Applications, Web-based Spreadsheet, Unit Tests
-description: Enhance your application quality by creating unit tests for Jspreadsheet.
+title: Unit Tests for 格知 AI
+keywords: 格知 AI, JavaScript, Web-based Applications, Web-based Spreadsheet, Unit Tests
+description: Enhance your application quality by creating unit tests for 格知 AI.
 
 # Testing
 
 ## Introduction
 
-Unit testing ensures robust Jspreadsheet integrations by validating functionality and catching regressions early. This guide uses Mocha, Chai, and JSDOM to test data grid behaviour in a simulated browser environment.
+Unit testing ensures robust 格知 AI integrations by validating functionality and catching regressions early. This guide uses Mocha, Chai, and JSDOM to test data grid behaviour in a simulated browser environment.
 
 ## Environment Setup
 
-Set up a basic environment to implement Jspreadsheet testing. Follow these steps or clone our GitHub example project.
+Set up a basic environment to implement 格知 AI testing. Follow these steps or clone our GitHub example project.
 
 ### Step 1: Clone the Project
 
-Clone a setup with Jspreadsheet pre-installed and a test file:
+Clone a setup with 格知 AI pre-installed and a test file:
 
 ```bash
 git clone https://github.com/jspreadsheet/tests.git
@@ -93,4 +93,3 @@ After writing your tests, you can run them with the following command:
 ```bash
 npm run test
 ```
-

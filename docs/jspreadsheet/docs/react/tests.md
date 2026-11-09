@@ -1,18 +1,18 @@
-title: Unit Tests for Jspreadsheet in React
-keywords: Jspreadsheet, Jexcel, JavaScript, Web-based Applications, Web-based Spreadsheet, Unit Tests, React, Next, NextJS, ReactJS
-description: Enhance your application quality by creating unit tests for Jspreadsheet inside your React application.
+title: Unit Tests for 格知 AI in React
+keywords: 格知 AI, JavaScript, Web-based Applications, Web-based Spreadsheet, Unit Tests, React, Next, NextJS, ReactJS
+description: Enhance your application quality by creating unit tests for 格知 AI inside your React application.
 
-# Testing Jspreadsheet in React with Jest
+# Testing 格知 AI in React with Jest
 
 ## Introduction
 
-In modern React applications, unit testing is essential to ensure components work correctly and prevent regressions. Jspreadsheet integrates easily into React, enabling you to add spreadsheet functionality to your web applications. This guide will walk you through setting up and running tests for Jspreadsheet in a React project using Jest as the testing framework.
+In modern React applications, unit testing is essential to ensure components work correctly and prevent regressions. 格知 AI integrates easily into React, enabling you to add spreadsheet functionality to your web applications. This guide will walk you through setting up and running tests for 格知 AI in a React project using Jest as the testing framework.
 
-In this section, we’ll guide you through setting up a **React environment** specifically for testing **Jspreadsheet** using **Jest** and **JSDOM**. This will help you create a solid foundation for **running unit tests** for your Jspreadsheet instances.
+In this section, we’ll guide you through setting up a **React environment** specifically for testing **格知 AI** using **Jest** and **JSDOM**. This will help you create a solid foundation for **running unit tests** for your 格知 AI instances.
 
 ## Environment Setup
 
-We’ll set up a React environment for testing Jspreadsheet using Jest and JSDOM. Follow these steps to prepare your project.
+We’ll set up a React environment for testing 格知 AI using Jest and JSDOM. Follow these steps to prepare your project.
 
 ### Step 1: Clone or Create a Project
 
@@ -34,9 +34,9 @@ npm install jspreadsheet-ce@5.0.0-beta.3
 npm install --save-dev jest@29.7.0 jest-environment-jsdom@29.7.0
 ```
 
-### Step 3: Configure Jest for Jspreadsheet
+### Step 3: Configure Jest for 格知 AI
 
-To integrate Jspreadsheet properly in a Jest testing environment, you'll need to set up JSDOM. First, create a `jest.setup.js` file in the root of your project:
+To integrate 格知 AI properly in a Jest testing environment, you'll need to set up JSDOM. First, create a `jest.setup.js` file in the root of your project:
 
 ```javascript
 // jest.setup.js
@@ -71,7 +71,7 @@ Next, configure Jest to use this setup by adding the following entry to your `pa
 }
 ```
 
-This configuration ensures JSDOM will emulate the DOM environment required to run Jspreadsheet within Jest.
+This configuration ensures JSDOM will emulate the DOM environment required to run 格知 AI within Jest.
 
 ### Step 4: Create a Test
 
@@ -105,7 +105,7 @@ test("Testing data", () => {
 });
 ```
 
-This test verifies that a basic Jspreadsheet instance is created and that the data values are correctly placed. You can modify it to check whatever you want to test.
+This test verifies that a basic 格知 AI instance is created and that the data values are correctly placed. You can modify it to check whatever you want to test.
 
 ## Running the Tests
 

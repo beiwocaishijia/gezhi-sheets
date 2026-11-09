@@ -1,7 +1,7 @@
-title: Programmatic Data Grid Updates in Jspreadsheet v4  
-keywords: Jexcel, JavaScript, spreadsheet updates, programmatically modify data, JavaScript data grid, Excel-like functionality  
-description: Learn how to programmatically update your spreadsheet and its data using JavaScript with Jspreadsheet v4.  
-canonical: https://bossanova.uk/jspreadsheet/v4/examples/programmatically-updates
+title: Programmatic Data Grid Updates in 格知 AI 表格组件 v4
+keywords: 格知 AI, JavaScript, spreadsheet updates, programmatically modify data, JavaScript data grid, Excel-like functionality
+description: Learn how to programmatically update your spreadsheet and its data using JavaScript with 格知 AI 表格组件 v4.
+canonical: https://github.com/beiwocaishijia/gezhi-sheets/blob/master/docs/jspreadsheet/v4/examples/programmatically-changes.md
 
 # Programmatically Data Grid Updates
 
@@ -79,8 +79,8 @@ document.getElementById("btn8").onclick = () => table.moveColumn(0, 2);
 
 
 </html>
-```  
-  
+```\
+
 
 ## Updating column width and row height
 
@@ -133,4 +133,3 @@ document.getElementById("setHeight").onclick = () => table.setHeight(0, 100);
 
 </html>
 ```
-

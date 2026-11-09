@@ -1,5 +1,5 @@
-title: Jspreadsheet | Examples | Formulas on Spreadsheet
-keywords: Jexcel, jquery, javascript, bootstrap, table design, spreadsheet, CSV, table, grid, autocomplete, customization, column
+title: 格知 AI | Examples | Formulas on Spreadsheet
+keywords: 格知 AI, jquery, javascript, bootstrap, table design, spreadsheet, CSV, table, grid, autocomplete, customization, column
 description: Using Functions inside your spreadsheet
 
 [Back to Examples](/jspreadsheet/v2/examples)
@@ -62,7 +62,7 @@ $('#my').jexcel('updateSettings', {
 });
 </script>
 </html>
-```  
+```\
 
 # Third party formula implementations
 
@@ -101,8 +101,8 @@ $('#my1').jexcel({
 });
 </script>
 </html>
-```  
-  
+```\
+
 
 # Custom javascript formulas
 
@@ -157,4 +157,3 @@ function AVG(v)
 </script>
 </html>
 ```
-

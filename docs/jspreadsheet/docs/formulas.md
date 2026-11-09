@@ -1,33 +1,18 @@
-title: Excel-Like Formulas in Jspreadsheet CE
-keywords: Jspreadsheet, Jexcel, data grid, JavaScript, Excel-like formulas, spreadsheet formulas, calculations, spreadsheet calculations, custom formulas, web-based spreadsheets, internationalization
-description: Implement Excel-like formulas in your web app with Jspreadsheet CE for dynamic, browser-based spreadsheets.
+title: Excel-Like Formulas in 格知 AI
+keywords: 格知 AI, data grid, JavaScript, Excel-like formulas, spreadsheet formulas, calculations, spreadsheet calculations, custom formulas, web-based spreadsheets, internationalization
+description: Implement Excel-like formulas in your web app with 格知 AI for dynamic, browser-based spreadsheets.
 
 # Excel-Like Formulas
 
-Jspreadsheet supports Excel-like formulas compatible with popular spreadsheet applications such as Excel and Google Sheets. These features enable advanced calculation capabilities, including:
+格知 AI supports Excel-like formulas compatible with popular spreadsheet applications such as Excel and Google Sheets. These features enable advanced calculation capabilities, including:
 
 - Excel-style Formulas: Customizable formulas resembling Excel.
 - Formula Auto-update: Adjusts on cell actions such as copy and paste.
 - Custom Formulas: Create your custom formulas.
 
-{.pro}
-> #### Formula Pro
->
-> Jspreadsheet Pro's Formula Pro Extension provides a suite of advanced features designed to enhance spreadsheet functionality, including:
->
-> - Full-stack applications;
-> - Secure private scopes;
-> - Cross-sheet calculations;
-> - complex matrix operations;
-> - Advanced operators ('%', '@');
-> - Dynamic range calculations (e.g., A:A, 1:1);
->
->\
-> [More about Formula Pro](https://jspreadsheet.com/products/formulas){.button}
-
 ## Documentation
 
-This section details the settings, methods, and events associated with spreadsheet calculations in Jspreadsheet. All formula names, including custom ones, should be capitalized for security and standardization.
+This section details the settings, methods, and events associated with spreadsheet calculations in 格知 AI. All formula names, including custom ones, should be capitalized for security and standardization.
 
 ### Settings
 
@@ -265,35 +250,6 @@ export class AppComponent {
 
 Explore additional sections related to spreadsheet calculations.
 
-### Jspreadsheet CE
+### 格知 AI
 
 - [Custom Excel-Like Formulas](/jspreadsheet/docs/custom-formulas)
-
-### Jspreadsheet PRO
-
-- [Custom Excel-Like Formulas](https://jspreadsheet.com/docs/custom-formulas)
-- [Formula Selector](https://jspreadsheet.com/docs/formula-picker)
-- [The Calculation Queue State](https://jspreadsheet.com/docs/calculations)
-- [Namespaces](https://jspreadsheet.com/docs/namespaces)
-- [The Formula Pro Extension](https://jspreadsheet.com/products/formulas)
-- [Defined Names](https://jspreadsheet.com/docs/defined-names)
-
-{.pro}
-> **Upgrade to Jspreadsheet Pro for 500+ Excel-Compatible Functions**
->
-> Jspreadsheet CE provides basic formulas like SUM, AVERAGE, and arithmetic operations. **Jspreadsheet Pro** expands this with full Excel compatibility:
->
-> - **Lookup Functions:** VLOOKUP, HLOOKUP, INDEX, MATCH, XLOOKUP
-> - **Conditional Formulas:** SUMIF, COUNTIF, AVERAGEIF, SUMIFS, COUNTIFS, IFS
-> - **Financial Functions:** NPV, IRR, PMT, FV, PV, RATE
-> - **Date/Time Functions:** Advanced date calculations, NETWORKDAYS, EDATE, EOMONTH
-> - **Text Functions:** String manipulation, CONCATENATE, TEXTJOIN, REGEX
-> - **Statistical Functions:** STDEV, VAR, PERCENTILE, QUARTILE
-> - **Cross-Worksheet Calculations:** Reference cells across multiple worksheets (e.g., Sheet2!A1:B10)
-> - **Dynamic Ranges:** Full column/row references (e.g., A:A, 1:1)
-> - **Array Formulas:** Matrix operations and bulk calculations
->
-> Perfect for business applications requiring full Excel compatibility and advanced spreadsheet functionality.
->
-> **[Explore Pro Formula Features →](https://jspreadsheet.com/docs/formulas)** | **[Compare Editions →](https://jspreadsheet.com/docs/getting-started)** | **[View Pricing →](https://jspreadsheet.com/pricing)**
- 

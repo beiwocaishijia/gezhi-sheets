@@ -1,6 +1,6 @@
 title: Freeze columns
-keywords: Jexcel, javascript, javascript vanilla, javascript plugin, plugin, excel-like, spreadsheet, table, tables, grid, datatables, data, frezee columns
-description: Setup freeze columns in Jspreadsheet
+keywords: 格知 AI, javascript, javascript vanilla, javascript plugin, plugin, excel-like, spreadsheet, table, tables, grid, datatables, data, frezee columns
+description: Setup freeze columns in 格知 AI
 
 # Freeze columns
 
@@ -29,4 +29,3 @@ jspreadsheet(document.getElementById('spreadsheet'), {
 </script>
 </html>
 ```
-

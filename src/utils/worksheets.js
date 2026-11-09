@@ -212,14 +212,14 @@ const createTable = function () {
     obj.textarea.tabIndex = '-1';
     obj.textarea.ariaHidden = 'true';
 
-    // Powered by Jspreadsheet
+    // Product information
     const ads = document.createElement('a');
-    ads.setAttribute('href', 'https://bossanova.uk/jspreadsheet/');
+    ads.setAttribute('href', 'https://github.com/beiwocaishijia/gezhi-sheets');
     obj.ads = document.createElement('div');
     obj.ads.className = 'jss_about';
 
     const span = document.createElement('span');
-    span.innerHTML = 'Jspreadsheet CE';
+    span.innerHTML = '格知 AI';
     ads.appendChild(span);
     obj.ads.appendChild(ads);
 
@@ -332,7 +332,7 @@ const prepareTable = function () {
 
     // Lazy loading
     if (obj.options.lazyLoading == true && obj.options.tableOverflow != true && obj.parent.config.fullscreen != true) {
-        console.error('Jspreadsheet: The lazyloading only works when tableOverflow = yes or fullscreen = yes');
+        console.error('格知 AI: The lazyloading only works when tableOverflow = yes or fullscreen = yes');
         obj.options.lazyLoading = false;
     }
 

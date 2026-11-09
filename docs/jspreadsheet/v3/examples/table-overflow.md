@@ -1,12 +1,12 @@
 title: Table overflow with Jspreadshee Version 3
-keywords: Jexcel, javascript, javascript vanilla, javascript, table, table overflow
-description: How define a fixed width and height for the Jspreadsheet grids.
+keywords: 格知 AI, javascript, javascript vanilla, table, table overflow
+description: How define a fixed width and height for the 格知 AI grids.
 
 [Back to Examples](/jspreadsheet/v3/examples "Back to the examples section")
 
 # Table overflow
 
-Define width and height for your Jspreadsheet table
+Define width and height for your 格知 AI table
 
 ```html
 <html>
@@ -49,4 +49,3 @@ jexcel(document.getElementById('spreadsheet'), {
 </script>
 </html>
 ```
-

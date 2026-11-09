@@ -1,13 +1,13 @@
-title: Sponsors  
-keywords: Jspreadsheet sponsors, open-source sponsorship, FDL sponsors, ETH Scientific IT Services, Initiative Tree, Market Control  
-description: Learn about the most recent sponsors supporting Jspreadsheet, including FDL - Libre Endowment Fund, ETH Scientific IT Services, Initiative Tree, and Market Control.
-canonical: https://bossanova.uk/jspreadsheet/sponsors
+title: Sponsors
+keywords: 格知 AI sponsors, open-source sponsorship, FDL sponsors, ETH Scientific IT Services, Initiative Tree, Market Control
+description: Learn about the most recent sponsors supporting 格知 AI, including FDL - Libre Endowment Fund, ETH Scientific IT Services, Initiative Tree, and Market Control.
+canonical: https://github.com/beiwocaishijia/gezhi-sheets/blob/master/docs/jspreadsheet/sponsors.md
 
 # Sponsors
 
 The most recent sponsors:
 
-![](https://www.fdl-lef.org/FDL-Logo.Colorised.Forest?format=png)  
+![](https://www.fdl-lef.org/FDL-Logo.Colorised.Forest?format=png)\
 
 **FDL - Fonds de Dotation du Libre - Libre Endowment Fund**
 
@@ -19,4 +19,4 @@ FDL works in synergy with its sister non-profit organization, "AWL" (Action pour
 
 **Initiative Tree**
 
-**Market Control**  
+**Market Control**\

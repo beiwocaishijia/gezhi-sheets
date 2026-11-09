@@ -1,12 +1,12 @@
 title: Embed images to your spreadsheet using base64
-keywords: Jexcel, javascript, excel-like, spreadsheet, image upload, base64, embed images
+keywords: 格知 AI, javascript, excel-like, spreadsheet, image upload, base64, embed images
 description: This examples shows how to embed and upload images to your spreadsheet
 
 # Embed images into your spreadsheet
 
 The following examples shows how to embed images into your spreadsheet.
 
-  
+
 
 ## Load a local image to your table
 
@@ -36,16 +36,16 @@ jspreadsheet(document.getElementById('spreadsheet'), {
         { type:'image', width:120, title:'Cover' },
 
      ]
-});    
+});
 </script>
 </html>
-```  
-  
+```\
+
 
 ## Embed remote images to your table
 
 Automatic image rendering from a remote URL using updateTable method
-  
+
 
 ### Source code
 
@@ -77,4 +77,3 @@ jspreadsheet(document.getElementById('spreadsheet'), {
 </script>
 </html>
 ```
-

@@ -1,10 +1,10 @@
 title: Data Sorting
-keywords: Jspreadsheet, spreadsheet, javascript, javascript table sorting, spreadsheet sorting, data grid sorting, custom sorting, data organization, sortable data grid, javascript data grid, column sorting, row sorting, excel-like sorting, Jexcel sorting, spreadsheet controls, data grid controls, dynamic data sorting
-description: Explore comprehensive information on Jspreadsheet data sorting, including sorting events, programmatic sorting, customization methods, and initial settings.
+keywords: 格知 AI, spreadsheet, javascript, javascript table sorting, spreadsheet sorting, data grid sorting, custom sorting, data organization, sortable data grid, javascript data grid, column sorting, row sorting, excel-like sorting, 格知 AI sorting, spreadsheet controls, data grid controls, dynamic data sorting
+description: Explore comprehensive information on 格知 AI data sorting, including sorting events, programmatic sorting, customization methods, and initial settings.
 
 # Data Sorting
 
-Jspreadsheet CE enables developers to create custom sorting handlers to override the default data grid sorting behaviour. Rows can be sorted through the context menu, double-clicking column headers, or programmatically using the orderBy method. 
+格知 AI enables developers to create custom sorting handlers to override the default data grid sorting behaviour. Rows can be sorted through the context menu, double-clicking column headers, or programmatically using the orderBy method.
 
 ## Documentation
 
@@ -15,7 +15,7 @@ The following method can be invoked to execute sorting programmatically:
 | Method  | Description                                                                                                                                                                                              |
 | --------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | orderBy | Sort the data grid. <br/>@param {number} columnNumber - Sort by column number <br/>@param {boolean} direction: false (asc), true (desc) <br/>`orderBy(columnNumber: Number, direction: Boolean) : void` |
- 
+
 
 ### Events
 
@@ -23,7 +23,7 @@ The following method can be invoked to execute sorting programmatically:
 | -------------|-----------------------------------------------------------------------------------------------|
 | onsort       | `onsort(worksheet: Object, column: Number, direction: Number, newValue: Array) : void`        |
 
- 
+
 ### Initial Settings
 
 You can define the sorting behaviour of your spreadsheet using the following properties:
@@ -426,4 +426,3 @@ export class AppComponent {
 ## Related Tools
 
 - [Data Grid Filters](/jspreadsheet/docs/filters) - Filter data before sorting
-- [Jspreadsheet Pro Sorting](https://jspreadsheet.com/docs/sorting) - Advanced sorting with multi-column support (Pro)

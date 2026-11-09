@@ -1,6 +1,6 @@
-title: Handling events on Jspreadsheet
-keywords: Jexcel, javascript, excel-like, spreadsheet, table, grid, events
-description: Learn how to handle events on Jspreadsheet
+title: Handling events on 格知 AI
+keywords: 格知 AI, javascript, excel-like, spreadsheet, table, grid, events
+description: Learn how to handle events on 格知 AI
 
 [Back to Examples](/jspreadsheet/v3/examples "Back to the examples section")
 
@@ -121,8 +121,8 @@ jexcel(document.getElementById('spreadsheet'), {
 });
 </script>
 </html>
-```  
-  
+```\
+
 ## Advanced Example
 
 Update the chart on every change in your spreadsheet, using the onchange handler
@@ -226,4 +226,3 @@ chart = Highcharts.chart('container', {
 </script>
 </html>
 ```
-

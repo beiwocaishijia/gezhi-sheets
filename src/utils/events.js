@@ -244,7 +244,7 @@ const mouseDownControls = function (e) {
                         }
                     } else if (libraryBase.jspreadsheet.current.options.columnDrag != false && info.height - e.offsetY < 6) {
                         if (isColMerged.call(libraryBase.jspreadsheet.current, columnId).length) {
-                            console.error('Jspreadsheet: This column is part of a merged cell.');
+                            console.error('格知 AI: This column is part of a merged cell.');
                         } else {
                             // Reset selection
                             libraryBase.jspreadsheet.current.resetSelection();
@@ -334,9 +334,9 @@ const mouseDownControls = function (e) {
                         e.target.parentNode.classList.add('resizing');
                     } else if (libraryBase.jspreadsheet.current.options.rowDrag != false && info.width - e.offsetX < 6) {
                         if (isRowMerged.call(libraryBase.jspreadsheet.current, rowId).length) {
-                            console.error('Jspreadsheet: This row is part of a merged cell');
+                            console.error('格知 AI: This row is part of a merged cell');
                         } else if (libraryBase.jspreadsheet.current.options.search == true && libraryBase.jspreadsheet.current.results) {
-                            console.error('Jspreadsheet: Please clear your search before perform this action');
+                            console.error('格知 AI: Please clear your search before perform this action');
                         } else {
                             // Reset selection
                             libraryBase.jspreadsheet.current.resetSelection();
@@ -488,7 +488,7 @@ const mouseMoveControls = function (e) {
                     const columnId = e.target.getAttribute('data-x');
                     if (columnId) {
                         if (isColMerged.call(libraryBase.jspreadsheet.current, columnId).length) {
-                            console.error('Jspreadsheet: This column is part of a merged cell.');
+                            console.error('格知 AI: This column is part of a merged cell.');
                         } else {
                             for (let i = 0; i < libraryBase.jspreadsheet.current.headers.length; i++) {
                                 libraryBase.jspreadsheet.current.headers[i].classList.remove('dragging-left');
@@ -520,7 +520,7 @@ const mouseMoveControls = function (e) {
                     const rowId = e.target.getAttribute('data-y');
                     if (rowId) {
                         if (isRowMerged.call(libraryBase.jspreadsheet.current, rowId).length) {
-                            console.error('Jspreadsheet: This row is part of a merged cell.');
+                            console.error('格知 AI: This row is part of a merged cell.');
                         } else {
                             const target = e.target.clientHeight / 2 > e.offsetY ? e.target.parentNode.nextSibling : e.target.parentNode;
                             if (libraryBase.jspreadsheet.current.dragging.element != target) {

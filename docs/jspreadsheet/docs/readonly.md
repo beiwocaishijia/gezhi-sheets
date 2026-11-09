@@ -1,6 +1,6 @@
 title: Data Grid Read-only Cells
-keywords: Jspreadsheet, JavaScript, plugins, spreadsheet, read-only cells, data grid, data protection, cell permissions, non-editable cells
-description: Learn to configure read-only columns or cells in Jspreadsheet, protecting data and restricting user edits for specific cells in your data grid.
+keywords: 格知 AI, JavaScript, plugins, spreadsheet, read-only cells, data grid, data protection, cell permissions, non-editable cells
+description: Learn to configure read-only columns or cells in 格知 AI, protecting data and restricting user edits for specific cells in your data grid.
 
 # Read Only Cells
 
@@ -72,7 +72,7 @@ jspreadsheet(document.getElementById('spreadsheet'), {
             if (x == 2 && y == 2) {
                 cell.classList.add('readonly');
             }
-        } 
+        }
     }]
 });
 </script>
@@ -140,10 +140,10 @@ export default function App() {
 ```vue
 <template>
   <Spreadsheet ref="spreadsheet">
-      <Worksheet 
-          :data="data" 
-          :columns="columns" 
-          :updateTable="updateTable" 
+      <Worksheet
+          :data="data"
+          :columns="columns"
+          :updateTable="updateTable"
       />
   </Spreadsheet>
 </template>
@@ -284,4 +284,3 @@ export class AppComponent {
     }
 }
 ```
-

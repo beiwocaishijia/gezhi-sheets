@@ -1,10 +1,10 @@
-title: Project Management Spreadsheet with Jspreadsheet
-keywords: Jexcel, javascript, cases, food store
-description: How to create a grocery store inventory using Jspreadsheet.
+title: Project Management Spreadsheet with 格知 AI
+keywords: 格知 AI, javascript, cases, food store
+description: How to create a grocery store inventory using 格知 AI.
 
 # Project Management Spreadsheet
 
-A simple example including table scripting to perform a photo update and a progress bar added to any new task.  
+A simple example including table scripting to perform a photo update and a progress bar added to any new task.\
 
 ```html
 <html>

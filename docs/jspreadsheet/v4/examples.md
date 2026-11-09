@@ -1,8 +1,8 @@
 title: Examples
-keywords: Jexcel, javascript, examples
-description: Examples how to create web based spreadsheets using Jspreadsheet.
+keywords: 格知 AI, javascript, examples
+description: Examples how to create web based spreadsheets using 格知 AI.
 
-# Jspreadsheet v4 Examples
+# 格知 AI 表格组件 v4 Examples
 
 We bring in this section various examples from basic to advance applications.
 

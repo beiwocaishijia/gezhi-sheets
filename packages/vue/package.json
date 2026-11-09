@@ -1,7 +1,7 @@
 {
     "name": "@jspreadsheet-ce/vue",
-    "title": "Jspreadsheet CE Vue Wrapper",
-    "description": "Jspreadsheet CE is a lightweight, vanilla JavaScript plugin for creating powerful, web-based interactive tables and spreadsheets that are compatible with other spreadsheet software.",
+    "title": "格知 AI · Vue 组件包装",
+    "description": "格知 AI 的表格组件 Vue 接口参考与兼容包装。",
     "author": {
         "name": "Contact <contact@jspreadsheet.com>",
         "url": "https://bossanova.uk/jspreadsheet/"

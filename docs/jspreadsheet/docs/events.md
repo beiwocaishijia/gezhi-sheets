@@ -1,54 +1,54 @@
-title: Spreadsheet Events  
-keywords: Jspreadsheet, JavaScript data grid, spreadsheet events, event handling, interactive spreadsheets, Excel-like features, JavaScript integration, feature customization, event-driven programming, data grid events  
-description: Discover Jspreadsheet's robust event system, enabling seamless integration, advanced customization, and dynamic user interaction.  
-canonical: https://bossanova.uk/jspreadsheet/docs/events
+title: Spreadsheet Events
+keywords: 格知 AI, JavaScript data grid, spreadsheet events, event handling, interactive spreadsheets, Excel-like features, JavaScript integration, feature customization, event-driven programming, data grid events
+description: Discover 格知 AI's robust event system, enabling seamless integration, advanced customization, and dynamic user interaction.
+canonical: https://github.com/beiwocaishijia/gezhi-sheets/blob/master/docs/jspreadsheet/docs/events.md
 
 # Spreadsheet Events
 
-Jspreadsheet provides a comprehensive event system designed to enhance integration and customization. These events allow developers to create dynamic, interactive spreadsheets by responding to user actions and modifying spreadsheet behaviour in real-time.
+格知 AI provides a comprehensive event system designed to enhance integration and customization. These events allow developers to create dynamic, interactive spreadsheets by responding to user actions and modifying spreadsheet behaviour in real-time.
 
 ## Events
 
-| Event                     | Description                                                                                           |  
-|---------------------------|-------------------------------------------------------------------------------------------------------|  
-| `onload`                  | Triggered when a spreadsheet is loaded.                                                               |  
-| `onbeforechange`          | Triggered before a cell value is changed.                                                             |  
-| `onchange`                | Triggered after a cell value is changed.                                                              |  
-| `onafterchanges`          | Triggered after all pending changes are applied to the table.                                         |  
-| `onpaste`                 | Triggered after a paste action in the table.                                                          |  
-| `onbeforepaste`           | Triggered before a paste action is performed. Useful for parsing input data. It returns the parsed data. |  
-| `oninsertrow`             | Triggered after a new row is inserted.                                                                |  
-| `onbeforeinsertrow`       | Triggered before a new row is inserted. Cancel the insert by returning `false`.                       |  
-| `ondeleterow`             | Triggered after a row is deleted.                                                                     |  
-| `onbeforedeleterow`       | Triggered before a row is deleted. Cancel the delete by returning `false`.                            |  
-| `oninsertcolumn`          | Triggered after a new column is inserted.                                                             |  
-| `onbeforeinsertcolumn`    | Triggered before a new column is inserted. Cancel the insert by returning `false`.                    |  
-| `ondeletecolumn`          | Triggered after a column is deleted.                                                                  |  
-| `onbeforedeletecolumn`    | Triggered before a column is deleted. Cancel the delete by returning `false`.                         |  
-| `onmoverow`               | Triggered after a row is moved.                                                                       |  
-| `onmovecolumn`            | Triggered after a column is moved.                                                                    |  
-| `onresizerow`             | Triggered after a row height change.                                                                  |  
-| `onresizecolumn`          | Triggered after a column width change.                                                                |  
-| `onselection`             | Triggered when selection changes.                                                                     |  
-| `onsort`                  | Triggered after a column is sorted.                                                                   |  
-| `onfocus`                 | Triggered when the table gains focus.                                                                 |  
-| `onblur`                  | Triggered when the table loses focus.                                                                 |  
-| `onmerge`                 | Triggered when cells are merged.                                                                      |  
+| Event                     | Description                                                                                           |
+|---------------------------|-------------------------------------------------------------------------------------------------------|
+| `onload`                  | Triggered when a spreadsheet is loaded.                                                               |
+| `onbeforechange`          | Triggered before a cell value is changed.                                                             |
+| `onchange`                | Triggered after a cell value is changed.                                                              |
+| `onafterchanges`          | Triggered after all pending changes are applied to the table.                                         |
+| `onpaste`                 | Triggered after a paste action in the table.                                                          |
+| `onbeforepaste`           | Triggered before a paste action is performed. Useful for parsing input data. It returns the parsed data. |
+| `oninsertrow`             | Triggered after a new row is inserted.                                                                |
+| `onbeforeinsertrow`       | Triggered before a new row is inserted. Cancel the insert by returning `false`.                       |
+| `ondeleterow`             | Triggered after a row is deleted.                                                                     |
+| `onbeforedeleterow`       | Triggered before a row is deleted. Cancel the delete by returning `false`.                            |
+| `oninsertcolumn`          | Triggered after a new column is inserted.                                                             |
+| `onbeforeinsertcolumn`    | Triggered before a new column is inserted. Cancel the insert by returning `false`.                    |
+| `ondeletecolumn`          | Triggered after a column is deleted.                                                                  |
+| `onbeforedeletecolumn`    | Triggered before a column is deleted. Cancel the delete by returning `false`.                         |
+| `onmoverow`               | Triggered after a row is moved.                                                                       |
+| `onmovecolumn`            | Triggered after a column is moved.                                                                    |
+| `onresizerow`             | Triggered after a row height change.                                                                  |
+| `onresizecolumn`          | Triggered after a column width change.                                                                |
+| `onselection`             | Triggered when selection changes.                                                                     |
+| `onsort`                  | Triggered after a column is sorted.                                                                   |
+| `onfocus`                 | Triggered when the table gains focus.                                                                 |
+| `onblur`                  | Triggered when the table loses focus.                                                                 |
+| `onmerge`                 | Triggered when cells are merged.                                                                      |
 | `onunmerge`              | Triggered when merge is removed                                                                      |
-| `onchangeheader`          | Triggered when a header is changed.                                                                   |  
-| `onundo`                  | Triggered when an undo action is applied.                                                             |  
-| `onredo`                  | Triggered when a redo action is applied.                                                              |  
-| `oneditionstart`          | Triggered when `openEditor` is called.                                                                |  
-| `oneditionend`            | Triggered when `closeEditor` is called.                                                               |  
-| `onchangestyle`           | Triggered when `setStyle` is called.                                                                  |  
-| `onchangemeta`            | Triggered when `setMeta` is called.                                                                   |  
+| `onchangeheader`          | Triggered when a header is changed.                                                                   |
+| `onundo`                  | Triggered when an undo action is applied.                                                             |
+| `onredo`                  | Triggered when a redo action is applied.                                                              |
+| `oneditionstart`          | Triggered when `openEditor` is called.                                                                |
+| `oneditionend`            | Triggered when `closeEditor` is called.                                                               |
+| `onchangestyle`           | Triggered when `setStyle` is called.                                                                  |
+| `onchangemeta`            | Triggered when `setMeta` is called.                                                                   |
 
 
-## Examples  
+## Examples
 
-### Update External Components  
+### Update External Components
 
-The following example demonstrates integrating Jspreadsheet CE data with an external chart component using `onchange` events.  
+The following example demonstrates integrating 格知 AI data with an external chart component using `onchange` events.\
 
 ```html
 <html>
@@ -261,7 +261,7 @@ export default function App() {
             }
         }
     };
-    
+
     // Render data grid component
     return (
         <>

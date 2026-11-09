@@ -1,18 +1,18 @@
-title: Jspreadsheet Upgrade Guide: v4 to v5
-keywords: Jspreadsheet upgrade, version 4 to 5, Jspreadsheet CE migration, breaking changes, Jspreadsheet compatibility, JavaScript data grid, spreadsheet customization, migration guide
-description: Upgrade guide from Jspreadsheet CE v4 to v5. Learn about breaking changes and updated features for a smooth code transition.
+title: 格知 AI Upgrade Guide: v4 to v5
+keywords: 格知 AI upgrade, version 4 to 5, 格知 AI migration, breaking changes, 格知 AI compatibility, JavaScript data grid, spreadsheet customization, migration guide
+description: Upgrade guide from 格知 AI v4 to v5. Learn about breaking changes and updated features for a smooth code transition.
 
-# Jspreadsheet Upgrade from v4 to v5
+# 格知 AI Upgrade from v4 to v5
 
 ## Overview
 
-The latest update to Jspreadsheet CE introduces significant enhancements, simplifying customization and improving compatibility across all distributions. Key updates include structural refinements, increased extensibility, and standardized functionality. Upgrading from version 4 to version 5 includes breaking changes due to updates in properties, methods, and events. This document outlines the critical adjustments required to transition your existing code to the new version.
+The latest update to 格知 AI introduces significant enhancements, simplifying customization and improving compatibility across all distributions. Key updates include structural refinements, increased extensibility, and standardized functionality. Upgrading from version 4 to version 5 includes breaking changes due to updates in properties, methods, and events. This document outlines the critical adjustments required to transition your existing code to the new version.
 
 >  Be aware that upgrading from version 4 to version 5 introduces breaking changes resulting from updates to properties, methods, and events.
 
 ### Spreadsheet vs. Worksheets
 
-Jspreadsheet CE introduces two distinct levels: the spreadsheet level and the worksheet level. This separation avoids redundancy by centralizing elements that should not be duplicated across each worksheet, such as toolbars or event declarations.
+格知 AI introduces two distinct levels: the spreadsheet level and the worksheet level. This separation avoids redundancy by centralizing elements that should not be duplicated across each worksheet, such as toolbars or event declarations.
 
 #### Version 4
 
@@ -52,7 +52,7 @@ jspreadsheet(document.getElementById('spreadsheet'), {
 
 ### Instances
 
-When creating a new **spreadsheet**, Jspreadsheet returns an array of **worksheet** instances. Each worksheet object includes a `parent` property, allowing access to spreadsheet-level features.
+When creating a new **spreadsheet**, 格知 AI returns an array of **worksheet** instances. Each worksheet object includes a `parent` property, allowing access to spreadsheet-level features.
 
 {.ignore}
 ```javascript
@@ -114,7 +114,7 @@ jspreadsheet(document.getElementById('spreadsheet'), {
 
 ### Plugin and Editor Support
 
-Jspreadsheet CE now includes plugin support, offering developers enhanced flexibility and the ability to extend functionality. Editors align more closely with the Pro version, ensuring more across the different distributions.
+格知 AI now includes plugin support, offering developers enhanced flexibility and the ability to extend functionality. Editors align more closely with the Pro version, ensuring more across the different distributions.
 
 {.ignore}
 ```javascript
@@ -130,7 +130,7 @@ jspreadsheet(document.getElementById('spreadsheet'), {
 
 ## Library Level
 
-### Library Level Property Updates  
+### Library Level Property Updates
 
 | Status                                  | Property                              | Description                                                                                                              |
 |-----------------------------------------|---------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
@@ -151,9 +151,9 @@ jspreadsheet(document.getElementById('spreadsheet'), {
 | *Updated*{.info-label .updated}  | `getCoordsFromColumnName` | Renamed to `getCoordsFromCellName`.                                                                   |
 | *Removed*{.info-label .removed}  | `injectArray`             | Removed as it was not documented.                                                                     |
 
-## Spreadsheet Level  
+## Spreadsheet Level
 
-### Settings  
+### Settings
 
 | Status                  | Property        | Description                                                                                              |
 |-------------------------|-----------------|----------------------------------------------------------------------------------------------------------|
@@ -161,7 +161,7 @@ jspreadsheet(document.getElementById('spreadsheet'), {
 | *New*{.info-label .new} | `debugFormulas` | Enables formula debugging. Debugging was previously always enabled by default but is now disabled.       |
 | *New*{.info-label .new} | `fullscreen`    | Defines a spreadsheet as fullscreen.                                                                     |
 
-### Toolbars  
+### Toolbars
 
 | Status                   | Method        | Description                                      |
 |--------------------------|---------------|--------------------------------------------------|
@@ -207,7 +207,7 @@ All events are now defined at the spreadsheet level. Except for the `onload`, `o
 | *Updated*{.info-label .updated .nowrap} | `onundo`                        | The second argument has been updated based on the method the event refers to.                                                           |
 
 
-## Worksheets Updates  
+## Worksheets Updates
 
 ### Attributes
 
@@ -242,7 +242,7 @@ All events are now defined at the spreadsheet level. Except for the `onload`, `o
 | *Removed*{.info-label .removed}         | `text`                          | Removed as JSS CE now uses `jSuites.translate`.                                                                                                                     |
 | *Removed*{.info-label .removed .nowrap} | `updateTable`                   | This property has been removed.                                                                                                                                     |
 
-### Comments  
+### Comments
 
 | Status                                  | Property                 | Description                                                                                                         |
 |-----------------------------------------|--------------------------|---------------------------------------------------------------------------------------------------------------------|
@@ -319,62 +319,62 @@ The following methods and attributes have been removed from the public scope or 
 
 #### Methods
 
-- `col`  
-- `conditionalSelectionUpdate`  
-- `copyData`  
-- `createCell`  
-- `createCellHeader`  
-- `createNestedHeader`  
-- `createRow`  
-- `createTable`  
-- `createToolbar`  
-- `getColumnOptions`  
-- `getDropDownValue`  
-- `getFreezeWidth`  
-- `getJsonRow`  
-- `getLabelFromCoords`  
-- `hash`  
-- `historyProcessColumn`  
-- `historyProcessRow`  
-- `init`  
-- `isColMerged`  
-- `isRowMerged`  
-- `loadDown`  
-- `loadPage`  
-- `loadUp`  
-- `loadValidation`  
-- `onafterchanges`  
-- `parseNumber`  
-- `parseValue`  
-- `prepareJson`  
-- `prepareTable`  
-- `refresh`  
-- `refreshSelection`  
-- `removeCopySelection`  
-- `removeCopyingSelection`  
-- `row`  
-- `save`  
-- `scrollControls`  
-- `setCheckRadioValue`  
-- `setFooter`  
-- `setHistory`  
-- `updateCell`  
-- `updateCopySelection`  
-- `updateCornerPosition`  
-- `updateFormula`  
-- `updateFormulaChain`  
-- `updateFormulas`  
-- `updateFreezePosition`  
-- `updateMeta`  
-- `updateNestedHeader`  
-- `updateOrder`  
-- `updateOrderArrow`  
-- `updatePagination`  
-- `updateResult`  
-- `updateScroll`  
-- `updateTable`  
-- `updateTableReferences`  
-- `wheelControls`  
+- `col`\
+- `conditionalSelectionUpdate`\
+- `copyData`\
+- `createCell`\
+- `createCellHeader`\
+- `createNestedHeader`\
+- `createRow`\
+- `createTable`\
+- `createToolbar`\
+- `getColumnOptions`\
+- `getDropDownValue`\
+- `getFreezeWidth`\
+- `getJsonRow`\
+- `getLabelFromCoords`\
+- `hash`\
+- `historyProcessColumn`\
+- `historyProcessRow`\
+- `init`\
+- `isColMerged`\
+- `isRowMerged`\
+- `loadDown`\
+- `loadPage`\
+- `loadUp`\
+- `loadValidation`\
+- `onafterchanges`\
+- `parseNumber`\
+- `parseValue`\
+- `prepareJson`\
+- `prepareTable`\
+- `refresh`\
+- `refreshSelection`\
+- `removeCopySelection`\
+- `removeCopyingSelection`\
+- `row`\
+- `save`\
+- `scrollControls`\
+- `setCheckRadioValue`\
+- `setFooter`\
+- `setHistory`\
+- `updateCell`\
+- `updateCopySelection`\
+- `updateCornerPosition`\
+- `updateFormula`\
+- `updateFormulaChain`\
+- `updateFormulas`\
+- `updateFreezePosition`\
+- `updateMeta`\
+- `updateNestedHeader`\
+- `updateOrder`\
+- `updateOrderArrow`\
+- `updatePagination`\
+- `updateResult`\
+- `updateScroll`\
+- `updateTable`\
+- `updateTableReferences`\
+- `wheelControls`\
 
 #### Attributes
 
@@ -409,4 +409,3 @@ Changes in HTML element properties:
 | Status                           | Property                  | Description                                                        |
 |----------------------------------|---------------------------|--------------------------------------------------------------------|
 | *Removed*{.info-label .removed}  | `worksheetElement.jexcel` | Use the `worksheetElement.jspreadsheet` property instead.          |
-

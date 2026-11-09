@@ -1,5 +1,5 @@
-title: Jspreadsheet | Examples | Custom column and integrating plugins on your table
-keywords: Jexcel, jquery, javascript, excel-like, spreadsheet, jquery plugin, sorting, table, grid, order by
+title: 格知 AI | Examples | Custom column and integrating plugins on your table
+keywords: 格知 AI, jquery, javascript, excel-like, spreadsheet, jquery plugin, sorting, table, grid, order by
 description: How to create custom column types based on a third party jquery plugin
 
 [Back to Examples](/jspreadsheet/v2/examples)
@@ -87,4 +87,3 @@ $('#my').jexcel({
 </script>
 </html>
 ```
-

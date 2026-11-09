@@ -1,5 +1,5 @@
 title: Update your table by javascript
-keywords: Jexcel, javascript, excel-like, spreadsheet, javascript programmatically changes
+keywords: 格知 AI, javascript, excel-like, spreadsheet, javascript programmatically changes
 description: How to update your spreadsheet programmatically via JavaScript.
 
 [Back to Examples](/jspreadsheet/v3/examples "Back to the examples section")
@@ -76,7 +76,7 @@ document.getElementById("btn8").onclick = () => table1.moveColumn(0, 2);
 </script>
 
 </html>
-```  
+```\
 
 ## Updating column width and row height
 
@@ -127,4 +127,3 @@ document.getElementById("setHeight").onclick = () => table2.setHeight(0, 100);
 
 </html>
 ```
-

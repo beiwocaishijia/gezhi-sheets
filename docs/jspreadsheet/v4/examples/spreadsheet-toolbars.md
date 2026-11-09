@@ -1,5 +1,5 @@
 title: Enable and customize the toolbar on your spreadsheet
-keywords: Jexcel, javascript, vanilla javascript, excel-like, spreadsheet, datatables, data, table, toolbars
+keywords: 格知 AI, javascript, vanilla javascript, excel-like, spreadsheet, datatables, data, table, toolbars
 description: Full example on how to enable nor customize your javascript spreadsheet toolbar.
 
 # Custom toolbars
@@ -10,14 +10,14 @@ The following example shows how to include and customize a toolbar in your javas
 ## Instructions
 
 The toolbar can be customized with a few parameters.
-|    |     | 
+|    |     |
 | ---|---  |
 | _**type**_|  could be **i** for icon, **select** for a dropdown, **color** or a colorpicker.  |
 | _**content**_|  defines the icon (from material icons) when you use type:i; [click here for all possible keys](https://material.io/tools/icons/)  |
 | _**k**_|  means the style should be apply to the cell;  |
 | _**v**_|  means the value of the style should be apply to the cell; When type:select, you can define an array of possibles values;  |
-| _**onclick**_|  can be used together with type:i to implement any custom method. The method will receive the Jspreadsheet instance and all marked cells by default.  |
-  
+| _**onclick**_|  can be used together with type:i to implement any custom method. The method will receive the 格知 AI instance and all marked cells by default.  |
+
 
 ### Source code
 
@@ -105,7 +105,7 @@ let table = jspreadsheet(document.getElementById('spreadsheet'), {
         },
         {
             type: 'i',
-            content: 'format_align_right', 
+            content: 'format_align_right',
             k: 'text-align',
             v: 'right'
         },
@@ -132,4 +132,3 @@ let table = jspreadsheet(document.getElementById('spreadsheet'), {
 ```
 
 **NOTE:** don't forget to include the material icons style sheet.
-

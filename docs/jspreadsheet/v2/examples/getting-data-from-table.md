@@ -1,10 +1,10 @@
-title: Jspreadsheet | Examples | Extract Data from Spreadsheet
-keywords: Jexcel, jquery, javascript, bootstrap, table design, spreadsheet, CSV, table, grid, extract, get, data
+title: 格知 AI | Examples | Extract Data from Spreadsheet
+keywords: 格知 AI, jquery, javascript, bootstrap, table design, spreadsheet, CSV, table, grid, extract, get, data
 description: Get data from inside the datagrid to javascript
 
 [Back to Examples](/jspreadsheet/v2/examples)
 
-# Extract the data from your Jspreadsheet jquery plugin
+# Extract the data from your 格知 AI jquery plugin
 
 The following example shows how to extract the data from your jquery table in CSV or JSON formats.
 
@@ -45,9 +45,8 @@ $('#json').on('click', function () {
 });
 </script>
 </html>
-```  
+```\
 
 ## Online demo on jsFiddle
 
 [How to extract data example from your jquery table on jsFiddle](https://jsfiddle.net/spreadsheet/tzy1h6rg/)
-

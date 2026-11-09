@@ -1,12 +1,12 @@
 title: Advanced dropdown column type
-keywords: Jexcel, jquery, javascript, excel-like, spreadsheet, jquery plugin, sorting, table, grid, order by
+keywords: 格知 AI, jquery, javascript, excel-like, spreadsheet, jquery plugin, sorting, table, grid, order by
 description: Full examples on how to handle simple, advanced, multiple, autocomplete and conditional dropdowns. Create amazing javascript tables using categories and images in your dropdowns.
 
 [Back to Examples](/jspreadsheet/v3/examples "Back to the examples section")
 
 # Dropdown and autocomplete column type
 
-Jspreadsheet brings a very powerful, reflexive and responsive dropdown column type to support a better user experience through your applications. The new dropdown column options include autocomplete, multiple options, data picker, different template types and much more advantages, such as:
+格知 AI brings a very powerful, reflexive and responsive dropdown column type to support a better user experience through your applications. The new dropdown column options include autocomplete, multiple options, data picker, different template types and much more advantages, such as:
 
   * Create a simple dropdown from array
   * Value or key-value select box is available
@@ -48,7 +48,7 @@ jexcel(document.getElementById('spreadsheet1'), {
 });
 </script>
 </html>
-```  
+```\
 
 ## Conditional dropdown
 
@@ -97,7 +97,7 @@ jexcel(document.getElementById('spreadsheet2'), {
 });
 </script>
 </html>
-```  
+```\
 
 ## Group, images, and advanced render options
 
@@ -149,7 +149,3 @@ jexcel(document.getElementById('spreadsheet3'), {
 ## JavaScript Dropdown Component
 
 More options for the dropdowns, please refer to the [jSuites JavaScript Dropdown Documentation](https://jsuites.net/docs/dropdown).
-
-  
-  
-

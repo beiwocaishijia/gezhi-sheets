@@ -1,6 +1,6 @@
-title: Jspreadsheet | Examples | Creating a web spreadsheet based on an external CSV
-keywords: Jexcel, jquery, javascript, excel-like, spreadsheet, CSV, table, grid
-description: How to load the data from an external CSV file into a Jspreadsheet grid or table.
+title: 格知 AI | Examples | Creating a web spreadsheet based on an external CSV
+keywords: 格知 AI, jquery, javascript, excel-like, spreadsheet, CSV, table, grid
+description: How to load the data from an external CSV file into a 格知 AI grid or table.
 
 [Back to Examples](/jspreadsheet/v2/examples)
 
@@ -41,13 +41,13 @@ $('#download').on('click', function () {
 });
 </script>
 </html>
-```  
+```\
 
 ## Online demo on jsFiddle
 
-  
-  
-  
+
+
+
 
 # Creating a javascript spreadsheet based on an external JSON file
 
@@ -73,4 +73,3 @@ $('#my1').jexcel({
 </script>
 </html>
 ```
-

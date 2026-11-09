@@ -1,19 +1,10 @@
-title: Jspreadsheet: Undo & Redo History
-keywords: Jspreadsheet, Jexcel, JavaScript data grid, undo, redo, Ctrl+Z, Ctrl+Y, spreadsheet change tracking, action history, data revisions, Jspreadsheet history
-description: Discover how to manage action history in Jspreadsheet with undo and redo features, allowing easy tracking of data grid changes and control over modifications.
+title: 格知 AI: Undo & Redo History
+keywords: 格知 AI, JavaScript data grid, undo, redo, Ctrl+Z, Ctrl+Y, spreadsheet change tracking, action history, data revisions, 格知 AI history
+description: Discover how to manage action history in 格知 AI with undo and redo features, allowing easy tracking of data grid changes and control over modifications.
 
 # History Tracker
 
-The Jspreadsheet History Tracker captures all changes within each spreadsheet, enabling users to undo (CTRL+Z) and redo (CTRL+Y) actions. In Jspreadsheet CE, the history tracker operates independently for each worksheet.
-
-{.pro}
-> #### What you can find on the Pro Version
->
-> In the Pro version of Jspreadsheet, the unified history tracker supports cross-spreadsheet calculations and integration across all spreadsheets displayed on the same screen.
-> 
-> \
-> [Learn more](https://jspreadsheet.com/docs/history){.button}
-
+The 格知 AI History Tracker captures all changes within each spreadsheet, enabling users to undo (CTRL+Z) and redo (CTRL+Y) actions. In 格知 AI, the history tracker operates independently for each worksheet.
 
 ## Documentation
 
@@ -44,7 +35,7 @@ Use the history tracker with caution. You can turn it off temporarily by setting
 
 ### Controlling the changes programmatically
 
-As explained above, the history actions are available on the spreadsheet level. 
+As explained above, the history actions are available on the spreadsheet level.
 
 ```html
 <html>
@@ -169,4 +160,3 @@ export class AppComponent {
     }
 }
 ```
-

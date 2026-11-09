@@ -1,17 +1,13 @@
-title: Jspreadsheet Demo Page  
-keywords: Jspreadsheet, JavaScript data grid, spreadsheet controls, interactive data grid, web-based applications, lightweight, responsive controls, agnostic platform, Angular, React, Vue, spreadsheet-like plugin, documentation, examples, license  
-description: Explore working examples of Jspreadsheet in action. See how it delivers interactive, customizable data grid solutions for web-based applications.  
-canonical: https://bossanova.uk/jspreadsheet/demo
+title: 格知 AI · 功能演示
+keywords: 格知 AI, Gezhi Sheets, 功能演示
+description: 查看格知 AI 的实际页面与表格处理流程。
 
-<div class="center">  
+# 格知 AI · 功能演示
 
-{data-text="Demo"}
-# Data Grid Demo
+![格知 AI 工作台](../assets/product-overview.png)
 
-Explore the Jspreadsheet data grid through these interactive demos. Learn how its versatile spreadsheet controls integrate seamlessly with Angular, React, Vue, and other platforms. See practical use cases for building responsive, lightweight, and powerful web-based applications.
+选择数据 → 生成预览 → 检查并应用 → 一次撤销。
 
-<lm-demo></lm-demo>
+![格知 AI 操作演示](../assets/demo.gif)
 
-<div class="space200"></div>  
-
-</div>  
+以上为实际页面交互，使用合成数据和固定模拟响应，不代表真实模型的联通或效果。运行方法见 [使用指南](../USER-GUIDE.md)。

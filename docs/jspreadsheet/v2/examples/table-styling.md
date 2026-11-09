@@ -1,5 +1,5 @@
-title: Jspreadsheet | Examples | Changing the table style
-keywords: Jexcel, jquery, javascript, table design, spreadsheet, table, grid, colours
+title: 格知 AI | Examples | Changing the table style
+keywords: 格知 AI, jquery, javascript, table design, spreadsheet, table, grid, colours
 description: Table styling
 
 [Back to Examples](/v2/examples#more)
@@ -12,12 +12,12 @@ But, after the initialization is still possible to manage the cell style program
 
 |    |     |
 | ---|---  |
-| $('#my1').jexcel('setStyle', 'A1', 'font-weight', 'bold'); | Change A1 fontWeight  |
-| $('#my1').jexcel('setStyle', 'A2', 'background-color', 'yellow'); | Change A2 backgroundColor  |
-| $('#my1').jexcel('setStyle', [ { A1: 'font-weight: bold; color:red;' }, { B2: 'background-color: yellow;' }, { C1: 'text-decoration: underline;' }, { D2: 'text-align:left;' } ]); | Change the table in one batch  |
-| $('#my1').jexcel('getStyle', 'A1');| Get A1 style attributes  |
-| $('#my1').jexcel('getStyle');| Get the whole table attributes  |
-  
+| $('#my1').格知 AI('setStyle', 'A1', 'font-weight', 'bold'); | Change A1 fontWeight  |
+| $('#my1').格知 AI('setStyle', 'A2', 'background-color', 'yellow'); | Change A2 backgroundColor  |
+| $('#my1').格知 AI('setStyle', [ { A1: 'font-weight: bold; color:red;' }, { B2: 'background-color: yellow;' }, { C1: 'text-decoration: underline;' }, { D2: 'text-align:left;' } ]); | Change the table in one batch  |
+| $('#my1').格知 AI('getStyle', 'A1');| Get A1 style attributes  |
+| $('#my1').格知 AI('getStyle');| Get the whole table attributes  |
+
 
 ### Source code
 
@@ -62,8 +62,8 @@ $('#my1').jexcel({
 });
 </script>
 </html>
-```  
-  
+```\
+
 
 ## How to set global CSS rules for your jquery tables
 
@@ -133,7 +133,7 @@ $('#my').jexcel('updateSettings', {
         if (row == 9) {
             if (col < 3) {
                 $(cell).html('');
-            } 
+            }
 
             if (col == 2) {
                 $(cell).html(' **Total** ');
@@ -156,4 +156,3 @@ function ROUND(v, f)
 </script>
 </html>
 ```
-

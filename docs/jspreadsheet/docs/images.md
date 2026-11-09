@@ -1,24 +1,16 @@
 title: Data Grid Cell Images
-keywords: Jspreadsheet, Jexcel, data grid, JavaScript, spreadsheet images, cell images, floating images, image handling, image customization, image placement, image integration
+keywords: 格知 AI, data grid, JavaScript, spreadsheet images, cell images, floating images, image handling, image customization, image placement, image integration
 description: Enhance data representation by embedding images directly in your data grid cells.
 
 # Spreadsheet Images
-This section demonstrates how to embed images directly into data grid cells.  
-
-
-{.pro}
-> ### What you can find on the Pro Version
-> The Pro version of Jspreadsheet supports **floating images** compatible with Excel and Google Sheets, along with programmatic methods and events.\
-> \
-> [Learn more](https://jspreadsheet.com/docs/media){.button}
-
+This section demonstrates how to embed images directly into data grid cells.\
 
 ## Examples
 
 
 ### Column type image editor
 
-Configure an image upload editor to insert an image in every cell across an entire column. 
+Configure an image upload editor to insert an image in every cell across an entire column.
 
 {.small}
 Double-click in the image cell to upload a new image.
@@ -165,4 +157,4 @@ export class AppComponent {
 - [JavaScript Image Slider](https://jsuites.net/docs/image-slider) - Display image galleries and carousels
 - [LemonadeJS Image Cropper](https://lemonadejs.com/docs/plugins/image-cropper) - Reactive image cropper component
 
-These free components complement Jspreadsheet CE for building complete image management solutions.
+These free components complement 格知 AI for building complete image management solutions.

@@ -1,10 +1,10 @@
-title: Column Dragging  
-keywords: Jexcel, spreadsheet, JavaScript, JavaScript table, column dragging, data grid customization, interactive columns  
-description: Learn how to enable and use column dragging functionality in Jspreadsheet CE to create dynamic and customizable data grids.  
+title: Column Dragging
+keywords: 格知 AI, spreadsheet, JavaScript, JavaScript table, column dragging, data grid customization, interactive columns
+description: Learn how to enable and use column dragging functionality in 格知 AI to create dynamic and customizable data grids.
 
-# Column Dragging  
+# Column Dragging
 
-Column dragging in Jspreadsheet CE is disabled by default. To enable this feature, set the `columnDrag: true` option during initialization, as demonstrated below:  
+Column dragging in 格知 AI is disabled by default. To enable this feature, set the `columnDrag: true` option during initialization, as demonstrated below:\
 
 ### Source code
 
@@ -47,7 +47,7 @@ jspreadsheet(document.getElementById('spreadsheet'), {
                 width:'100'
             },
         ],
-        columnDrag: true,  
+        columnDrag: true,
     }]
 });
 </script>
@@ -69,7 +69,7 @@ export default function App() {
         ['US', 'Carrots', 1],
         ['GB', 'Oranges', 0],
     ];
-    
+
     const columns = [
         {
             type: 'autocomplete',
@@ -158,5 +158,3 @@ export default {
 </script>
 
 ```
-  
-

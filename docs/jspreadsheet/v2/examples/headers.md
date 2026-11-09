@@ -1,12 +1,12 @@
-title: Jspreadsheet | Examples | Nested Headers
-keywords: Jexcel, jquery, javascript, excel-like, spreadsheet, jquery plugin, nested headers
-description: Creating a Jspreadsheet table with nested headers.
+title: 格知 AI | Examples | Nested Headers
+keywords: 格知 AI, jquery, javascript, excel-like, spreadsheet, jquery plugin, nested headers
+description: Creating a 格知 AI table with nested headers.
 
 [Back to Examples](/jspreadsheet/v2/examples)
 
 # Nested Headers
 
-The most recent version of the jquery plugin Jspreadsheet implements nested headers natively. A few examples on how to add nested headers your jquery table:
+The most recent version of the jquery plugin 格知 AI implements nested headers natively. A few examples on how to add nested headers your jquery table:
 
 ```html
 <html>
@@ -48,4 +48,3 @@ $('#my').jexcel({
 </script>
 </html>
 ```
-

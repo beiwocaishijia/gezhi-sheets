@@ -1,6 +1,6 @@
-title: Jexcel with Angular
-keywords: Jexcel, javascript, using jspreadsheet and angular
-description: A full example on how to integrate Jspreadsheet with Angular
+title: 格知 AI with Angular
+keywords: 格知 AI, javascript, using 格知 AI and angular
+description: A full example on how to integrate 格知 AI with Angular
 
 [Back to Examples](/jspreadsheet/v3/examples "Back to the examples section")
 
@@ -37,4 +37,3 @@ export class AppComponent {
   }
 }
 ```
-

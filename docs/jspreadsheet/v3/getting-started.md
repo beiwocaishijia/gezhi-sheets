@@ -1,12 +1,12 @@
-title: Getting Started with Jspreadsheet CE
-keywords: Jspreadsheet CE, Jexcel, JavaScript Data Grid, Spreadsheets, JavaScript tables, Excel-like data grid, web-based spreadsheets, data grid controls, data grid features
-description: Create data grids with spreadsheet controls with Jspreadsheet CE.
+title: Getting Started with 格知 AI
+keywords: 格知 AI, JavaScript Data Grid, Spreadsheets, JavaScript tables, Excel-like data grid, web-based spreadsheets, data grid controls, data grid features
+description: Create data grids with spreadsheet controls with 格知 AI.
 
 [Back to Documentation](/jspreadsheet/v3/docs)
 
 # Getting started
 
-Jspreadsheet is a vanilla javascript plugin to embed a online spreadsheet in your web based applications. Bring highly dynamic datasets to your application and improve the user experience of your software.
+格知 AI is a vanilla javascript plugin to embed a online spreadsheet in your web based applications. Bring highly dynamic datasets to your application and improve the user experience of your software.
 
 ```bash
 npm install jspreadsheet-ce
@@ -17,7 +17,7 @@ Download from our github page: <https://github.com/jspreadsheet/ce>
 
 ## Initialization
 
-You can initiate a Jspreadsheet table including data from a HTML table, a JS array, a CSV or a JSON file, following the examples below:
+You can initiate a 格知 AI table including data from a HTML table, a JS array, a CSV or a JSON file, following the examples below:
 
 ### Loading from a javascript array
 
@@ -42,7 +42,7 @@ jexcel(document.getElementById('my-spreadsheet'), {
     ]
 });
 </script>
-```  
+```\
 
 ### Loading from a JSON file
 
@@ -60,7 +60,7 @@ jexcel(document.getElementById('my-spreadsheet'), {
     ]
 });
 </script>
-```  
+```\
 
 ### Loading from a CSV file
 
@@ -83,7 +83,7 @@ jexcel(document.getElementById('my-spreadsheet'), {
 
 [See a working example](/jspreadsheet/v3/examples/import-data)
 
-  
+
 
 ## Destroying a table
 
@@ -123,7 +123,7 @@ jexcel(document.getElementById('spreadsheet'), {
     ]
 });
 </script>
-```  
+```\
 
 ### Headers from a CSV file
 
@@ -131,7 +131,7 @@ If you are loading your data from a CSV file, you can define the **csvHeader:tru
 
 [See a working example](/jspreadsheet/v3/examples/import-data)
 
-  
+
 
 ### Programmatically header updates
 
@@ -139,7 +139,7 @@ The methods **setHeader()** , **getHeader()** and **getHeaders()** are available
 
 [Working example](/jspreadsheet/v3/examples/headers#Programmatically-header-updates)
 
-  
+
 
 ### Nested headers
 
@@ -185,7 +185,7 @@ jexcel(document.getElementById('spreadsheet'), {
     ]
 });
 </script>
-```  
+```\
 
 ### Programmatically column width updates
 
@@ -206,7 +206,7 @@ jexcel(document.getElementById('spreadsheet'), {
     rowResize: true,
 });
 </script>
-```  
+```\
 
 ### Programmatically row height updates
 
@@ -216,9 +216,9 @@ The methods setHeight(), getHeight() are available for the developer to update t
 
 ## Column types
 
-Jspreadsheet has available some extra native column types in addition to the default input text. It means you have extended nice responsive ways to get data into your spreadsheet. In addition to that is available integration methods to facilitate you to bring any custom column to your tables. This makes the Jspreadsheet plugin a very flexible tool to enhance the user experience of your applications.
+格知 AI has available some extra native column types in addition to the default input text. It means you have extended nice responsive ways to get data into your spreadsheet. In addition to that is available integration methods to facilitate you to bring any custom column to your tables. This makes the 格知 AI plugin a very flexible tool to enhance the user experience of your applications.
 
-Jspreadsheet is integrate with jSuites, so it brings some native columns, such as: _**text, numeric, hidden, dropdown, autocomplete, checkbox, radio, calendar, image and color.**_
+格知 AI is integrate with jSuites, so it brings some native columns, such as: _**text, numeric, hidden, dropdown, autocomplete, checkbox, radio, calendar, image and color.**_
 
 {.ignore}
 ```html
@@ -274,11 +274,11 @@ When using the calendar column, you can change the behavior behavior of your cal
 
 [See a working example](/jspreadsheet/v3/examples/date-and-datetime-picker)
 
-  
+
 
 ### Dropdown and autocomplete type
 
-There are different ways to work with dropdowns using Jspreadsheet. It is possible to define the parameter _source_ as a simple or key-value array. It is also possible to use the param _url_ to populate your dropdown from an external json format source. In addition to that it is possible to have conditional values. Basically, the values from one dropdown can be conditional to other dropdowns in your table.
+There are different ways to work with dropdowns using 格知 AI. It is possible to define the parameter _source_ as a simple or key-value array. It is also possible to use the param _url_ to populate your dropdown from an external json format source. In addition to that it is possible to have conditional values. Basically, the values from one dropdown can be conditional to other dropdowns in your table.
 
 You can set the autocomplete dropdown through the initial param _autocomplete:true_ and the multiple picker can be activate by _multiple:true_ property as shown in the following example:
 
@@ -322,7 +322,7 @@ jexcel(document.getElementById('spreadsheet'), {
 
 ### Custom type
 
-Jspreadsheet makes possible to extend third party javascript plugins to create your custom columns. Basically to use this feature, you should implement some basic methods such as: openEditor, closeEditor, getValue, setValue as following.
+格知 AI makes possible to extend third party javascript plugins to create your custom columns. Basically to use this feature, you should implement some basic methods such as: openEditor, closeEditor, getValue, setValue as following.
 
 {.ignore}
 ```html
@@ -380,8 +380,8 @@ spreadsheet = jexcel(document.getElementById('custom'), {
 
 [See a working example](/jspreadsheet/v3/examples/column-types#custom)
 
-  
-  
+
+
 
 ## Define a minimum table dimension size.
 
@@ -403,4 +403,3 @@ jexcel(document.getElementById('minExample'), {
 });
 </script>
 ```
-

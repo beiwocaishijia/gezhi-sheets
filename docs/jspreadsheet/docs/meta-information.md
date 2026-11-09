@@ -1,10 +1,10 @@
 title: Data Grid Cell Meta Information
-keywords: Jspreadsheet, Jexcel, data grid, JavaScript, excel-like features, spreadsheet meta information, cell meta information, hidden metadata in cells, hidden data in Jspreadsheet, data grid meta information, cell metadata management, managing hidden metadata, storing additional information in cells, Jspreadsheet cell properties, cell meta information methods, data grid customization
-description: Jspreadsheet allows you to store hidden metadata in cells, enabling advanced customization and control over data grid behavior.
+keywords: 格知 AI, data grid, JavaScript, excel-like features, spreadsheet meta information, cell meta information, hidden metadata in cells, hidden data in 格知 AI, data grid meta information, cell metadata management, managing hidden metadata, storing additional information in cells, 格知 AI cell properties, cell meta information methods, data grid customization
+description: 格知 AI allows you to store hidden metadata in cells, enabling advanced customization and control over data grid behavior.
 
 # Data Grid Cell Meta Information
 
-The cell meta information feature allows you to store hidden metadata in cells, which is invisible to users. This feature helps track additional information or manage custom states. This guide explains how to set, retrieve, and reset metadata in Jspreadsheet.
+The cell meta information feature allows you to store hidden metadata in cells, which is invisible to users. This feature helps track additional information or manage custom states. This guide explains how to set, retrieve, and reset metadata in 格知 AI.
 
 > Meta information is managed programmatically and does not have a visible interface.
 
@@ -21,7 +21,7 @@ Here are the main methods for managing cell meta information:
 
 ### Events
 
-Jspreadsheet emits an event when cell meta information is changed. This event allows developers to track or react to metadata changes.
+格知 AI emits an event when cell meta information is changed. This event allows developers to track or react to metadata changes.
 
 | Event           | Description                                                                       |
 |-----------------|-----------------------------------------------------------------------------------|
@@ -29,7 +29,7 @@ Jspreadsheet emits an event when cell meta information is changed. This event al
 
 ### Initial Settings
 
-You can initialize Jspreadsheet with predefined meta information for cells. The `meta` property allows setting this information during grid initialization.
+You can initialize 格知 AI with predefined meta information for cells. The `meta` property allows setting this information during grid initialization.
 
 | Property                                    | Description                                 |
 |---------------------------------------------|---------------------------------------------|
@@ -42,7 +42,7 @@ You can initialize Jspreadsheet with predefined meta information for cells. The 
 
 ## Examples
 
-Here are examples of how to use the `getMeta`, `setMeta`, and `resetMeta` methods to manage metadata in Jspreadsheet.
+Here are examples of how to use the `getMeta`, `setMeta`, and `resetMeta` methods to manage metadata in 格知 AI.
 
 ### Basic Meta Information Example
 
@@ -129,10 +129,10 @@ export default function App() {
 ```vue
 <template>
   <Spreadsheet ref="spreadsheet">
-      <Worksheet 
-          :data="data" 
-          :columns="columns" 
-          :meta="meta" 
+      <Worksheet
+          :data="data"
+          :columns="columns"
+          :meta="meta"
       />
   </Spreadsheet>
 </template>
@@ -251,4 +251,4 @@ spreadsheet[0].resetMeta(['A1', 'B2', 'C2']);
 
 ### Working Example
 
-For a working example of how to interact with meta information in a Jspreadsheet grid, check out this [Data Grid Meta Information](https://jsfiddle.net/spreadsheet/vauo24ws/) example on JSFiddle.
+For a working example of how to interact with meta information in a 格知 AI grid, check out this [Data Grid Meta Information](https://jsfiddle.net/spreadsheet/vauo24ws/) example on JSFiddle.

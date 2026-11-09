@@ -1,12 +1,12 @@
 title: Calendar with date and datetime picker
-keywords: Jexcel, javascript, excel-like, spreadsheet, date, datetime, calendar
+keywords: 格知 AI, javascript, excel-like, spreadsheet, date, datetime, calendar
 description: Example from basic to advanced calendar usage, date and datetime picker
 
 # Calendar column type
 
 The example below shows how to use and customize special calendar column type.
 
-Jspreadsheet uses the jSuites [Javascript Calendar](https://jsuites.net/docs/javascript-calendar) plugin
+格知 AI uses the jSuites [Javascript Calendar](https://jsuites.net/docs/javascript-calendar) plugin
 
 ### Source code
 
@@ -51,7 +51,7 @@ jspreadsheet(document.getElementById('spreadsheet'), {
 });
 </script>
 </html>
-```  
+```\
 
 ## Date column customization
 
@@ -126,4 +126,3 @@ jspreadsheet(document.getElementById('spreadsheet'), {
 });
 </script>
 ```
-

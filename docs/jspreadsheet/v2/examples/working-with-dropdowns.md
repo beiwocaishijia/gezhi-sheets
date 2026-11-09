@@ -1,12 +1,12 @@
-title:  Jspreadsheet | Examples | Advanced dropdown column type
-keywords: Jexcel, jquery, javascript, excel-like, spreadsheet, jquery plugin, sorting, table, grid, order by
+title:  格知 AI | Examples | Advanced dropdown column type
+keywords: 格知 AI, jquery, javascript, excel-like, spreadsheet, jquery plugin, sorting, table, grid, order by
 description: Full examples on how to handle simple, advanced, autocomplete and conditional dropdowns.
 
 [Back to Examples](/jspreadsheet/v2/examples)
 
 # Working with dropdowns
 
-Jspreadsheet brings some new very flexible dropdown options that enables you to delivery great user experience though applications. The new dropdown column options include the autocomplete, multiple options, data picker, different template types and much more advantages, such as:
+格知 AI brings some new very flexible dropdown options that enables you to delivery great user experience though applications. The new dropdown column options include the autocomplete, multiple options, data picker, different template types and much more advantages, such as:
 
   * Create a simple dropdown from array
   * Value or key-value select is available
@@ -52,12 +52,12 @@ $('#my1').jexcel({
 });
 </script>
 </html>
-```  
-  
+```\
+
 
 ## Conditional dropdown
 
-Jspreadsheet dropdown column can show different options based on the value of other columns. To use that function you should use a method defined by the filter parameter in the initialization. The following example shows the product column options based on the value selected on the column Category.
+格知 AI dropdown column can show different options based on the value of other columns. To use that function you should use a method defined by the filter parameter in the initialization. The following example shows the product column options based on the value selected on the column Category.
 
 ### Source code
 
@@ -104,4 +104,4 @@ $('#spreadsheet2').jexcel({
 });
 </script>
 </html>
-```  
+```\

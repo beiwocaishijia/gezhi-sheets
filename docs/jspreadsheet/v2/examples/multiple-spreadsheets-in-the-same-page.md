@@ -1,5 +1,5 @@
-title: Jspreadsheet | Examples | Create multiple instances in the same page
-keywords: Jexcel, jquery, javascript, excel-like, spreadsheet, jquery plugin, sorting, table, grid, order by
+title: 格知 AI | Examples | Create multiple instances in the same page
+keywords: 格知 AI, jquery, javascript, excel-like, spreadsheet, jquery plugin, sorting, table, grid, order by
 description: How to create multiple table instances in the same page
 
 [Back to Examples](/jspreadsheet/v2/examples)
@@ -34,4 +34,3 @@ $('#my2').jexcel({
 </script>
 </html>
 ```
-

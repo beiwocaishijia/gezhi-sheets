@@ -1,5 +1,5 @@
 title: Customize the spreadsheet style CSS
-keywords: Jexcel, javascript, excel-like, spreadsheet, table style, css
+keywords: 格知 AI, javascript, excel-like, spreadsheet, table style, css
 description: Bring a very special touch to your applications customizing your javascript spreadsheet.
 
 [Back to Examples](/jspreadsheet/v3/examples "Back to the examples section")
@@ -75,4 +75,3 @@ document.getElementById("getTableStyle").onclick = () => document.getElementById
 </script>
 </html>
 ```
-

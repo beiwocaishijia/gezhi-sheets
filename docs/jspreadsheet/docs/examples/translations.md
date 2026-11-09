@@ -1,8 +1,8 @@
-title: How to Translate the Default Messages in Jspreadsheet  
-keywords: Jexcel, JavaScript, spreadsheet, JavaScript table, translate messages, Jspreadsheet translations, internationalization  
-description: Learn how to translate and customize the default messages in Jspreadsheet for internationalization.
+title: How to Translate the Default Messages in 格知 AI
+keywords: 格知 AI, JavaScript, spreadsheet, JavaScript table, translate messages, 格知 AI translations, internationalization
+description: Learn how to translate and customize the default messages in 格知 AI for internationalization.
 
-# Jspreadsheet Internationalization
+# 格知 AI Internationalization
 
 Learn how to update and customize the default texts in your online spreadsheet for better internationalization.
 

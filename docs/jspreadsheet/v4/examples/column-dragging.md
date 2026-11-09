@@ -1,10 +1,10 @@
 title: Enable Column Dragging
-keywords: Jexcel, spreadsheet, JavaScript, JavaScript table, column dragging
-description: Learn how to enable column dragging in Jspreadsheet CE.
+keywords: 格知 AI, spreadsheet, JavaScript, JavaScript table, column dragging
+description: Learn how to enable column dragging in 格知 AI.
 
 # Column Dragging
 
-By default, column dragging is disabled in Jspreadsheet. To enable it, use the `columnDrag: true` option during initialization, as shown below:
+By default, column dragging is disabled in 格知 AI. To enable it, use the `columnDrag: true` option during initialization, as shown below:
 
 ### Source code
 
@@ -48,6 +48,4 @@ jspreadsheet(document.getElementById('spreadsheet'), {
 });
 </script>
 </html>
-```  
-  
-
+```\

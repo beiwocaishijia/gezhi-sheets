@@ -1,12 +1,12 @@
 title: Column types
-keywords: Jexcel, javascript, javascript vanilla, javascript plugin, plugin, excel-like, spreadsheet, table, tables, grid, datatables, data
+keywords: 格知 AI, javascript, javascript vanilla, javascript plugin, plugin, excel-like, spreadsheet, table, tables, grid, datatables, data
 description: Learn more about the powerful column types. This example brings all native column types and how to create your own custom type.
 
 [Back to Examples](/jspreadsheet/v3/examples "Back to the examples section")
 
 # Column types
 
-The native available types in jspreadsheet javascript spreadsheet are the following:
+The native available types in 格知 AI javascript spreadsheet are the following:
 
   * text
   * numeric
@@ -52,11 +52,11 @@ jexcel(document.getElementById('spreadsheet'), {
 });
 </script>
 </html>
-```  
+```\
 
 ## Custom column type
 
-Jspreadsheet is very powerful and flexible, and you can create custom column type based on any external plugins.
+格知 AI is very powerful and flexible, and you can create custom column type based on any external plugins.
 
 A time custom column based on the [clockpicker plugin](https://weareoutman.github.io/clockpicker/) by weareoutman.
 
@@ -125,4 +125,3 @@ spreadsheet = jexcel(document.getElementById('custom'), {
 </script>
 </html>
 ```
-

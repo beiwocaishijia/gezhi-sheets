@@ -1,14 +1,14 @@
-title: Jspreadsheet CE Theme Editor - Customize Your Data Grid Styles
-keywords: Jspreadsheet, data grid customization, JavaScript spreadsheet, Excel-like applications, theme editor, visual styling, colour customization, dynamic themes, interactive spreadsheets, web-based spreadsheet tool
-description: Customize your Jspreadsheet data grid with the Theme Editor for unique, visually appealing designs, including colour and dynamic theme options that align with your application’s style.
-canonical: https://bossanova.uk/jspreadsheet/docs/themes
+title: 格知 AI Theme Editor - Customize Your Data Grid Styles
+keywords: 格知 AI, data grid customization, JavaScript spreadsheet, Excel-like applications, theme editor, visual styling, colour customization, dynamic themes, interactive spreadsheets, web-based spreadsheet tool
+description: Customize your 格知 AI data grid with the Theme Editor for unique, visually appealing designs, including colour and dynamic theme options that align with your application’s style.
+canonical: https://github.com/beiwocaishijia/gezhi-sheets/blob/master/docs/jspreadsheet/docs/themes.md
 
 # Data Grid Theme Editor
 
-The Data Grid Theme Editor is an online tool for customizing spreadsheet colours in Jspreadsheet. To enable this feature, add the CSS file jspreadsheet.themes.css to your project. Then, configure the CSS variables, as shown in the example below, to implement your custom theme.
+The Data Grid Theme Editor is an online tool for customizing spreadsheet colours in 格知 AI. To enable this feature, add the CSS file jspreadsheet.themes.css to your project. Then, configure the CSS variables, as shown in the example below, to implement your custom theme.
 
 {.green}
-> To use themes in Jspreadsheet, include `jspreadsheet.themes.css` in your project and add the CSS variables as shown in the example below.
+> To use themes in 格知 AI, include `jspreadsheet.themes.css` in your project and add the CSS variables as shown in the example below.
 
 <lm-themes></lm-themes>
 
@@ -114,6 +114,4 @@ export class AppComponent {
 
 ## Related Tools
 
-- [CE Style Guide](/jspreadsheet/docs/style) - Custom cell styling in Jspreadsheet CE
-- [Jspreadsheet Pro Appearance](https://jspreadsheet.com/docs/appearance) - Advanced theming and visual customization (Pro)
-- [Jspreadsheet Pro Themes](https://jspreadsheet.com/docs/themes) - Professional pre-built themes (Pro)
+- [CE Style Guide](/jspreadsheet/docs/style) - Custom cell styling in 格知 AI

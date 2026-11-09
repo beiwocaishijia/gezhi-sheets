@@ -1,50 +1,12 @@
-title: Jspreadsheet - Contact Us  
-keywords: Contact Jspreadsheet, Get in Touch, Technical Support, Sales Inquiries  
-description: Reach out to us for any technical support or sales inquiries related to Jspreadsheet. We're here to help with your questions and needs.
-canonical: https://bossanova.uk/jspreadsheet/contact
+title: 格知 AI · 项目与反馈
+keywords: 格知 AI, Gezhi Sheets, 问题反馈
+description: 格知 AI 的代码仓库与使用文档。
 
-<div class="home">
+# 格知 AI · 项目与反馈
 
+- [代码仓库](https://github.com/beiwocaishijia/gezhi-sheets)
+- [使用指南](../USER-GUIDE.md)
+- [验证记录](../VALIDATION.md)
+- [维护者](https://github.com/beiwocaishijia)
 
-{data-text="Jspreadsheet" .center}
-# Contact Us
-
-<br><br>
-
-<div class="box shadow center" data-number="3">
-<div>
-
-#### Upgrades
-
-Looking for more information? 
-
-Email: [contact@jspreadsheet.com](mailto:contact@jspreadsheet.com)
-
-[Contact Us](mailto:contact@jspreadsheet.com){.button .dark target="_blank"}
-
-</div><div>
-
-#### Technical Support
-
-Professional Technical Support
-
-Email: [support@jspreadsheet.com](mailto:support@jspreadsheet.com)
-
-[Talk to us](mailto:support@jspreadsheet.com){.button .dark target="_blank"}
-
-</div><div>
-
-#### Github
-
-GitHub repository: 
-
-[https://github.com/jspreadsheet/ce](https://github.com/jspreadsheet/ce)
-
-[![GitHub](img/github-logo.svg)](https://github.com/jspreadsheet/ce){target="_blank"}
-
-</div>
-</div>
-
-</div>
-
-<div class="space200 line"></div>
+反馈问题时，请说明操作步骤、预期行为、实际结果及运行环境。截图与日志请去掉 API Key 和个人数据。

@@ -1,5 +1,5 @@
 title: Autocomplete Column
-keywords: Jexcel, jquery, javascript, bootstrap, table design, spreadsheet, CSV, table, grid, autocomplete, customization, column
+keywords: 格知 AI, jquery, javascript, bootstrap, table design, spreadsheet, CSV, table, grid, autocomplete, customization, column
 description: Customize your column type to autocomplete
 
 [Back to Examples](/jspreadsheet/v2/examples)
@@ -40,4 +40,3 @@ $('#my').jexcel({
 </script>
 </html>
 ```
-

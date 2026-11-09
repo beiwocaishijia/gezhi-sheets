@@ -1,6 +1,6 @@
 # 组件扩展与兼容
 
-格知 AI 的工作台在 Jspreadsheet CE 之上构建，保留上游 API、版权与 MIT 许可。应用包名为 `gezhi-sheets`，浏览器组件仍使用 `jspreadsheet` API。
+格知 AI 的工作台提供表格编辑与 AI 处理能力。应用包名为 `gezhi-sheets`，浏览器组件继续使用 `jspreadsheet` 兼容接口；版权与许可原文见 [LICENSE](../LICENSE)。
 
 - `worksheet.batch(callback)`：同步批量修改形成一个历史步骤，异常回滚，支持完整撤销和重做。
 - `formulaEvaluator`：可选的公式求值配置；工作台使用语法解析与白名单，原组件默认行为保持兼容。

@@ -1,5 +1,5 @@
-title: Jspreadsheet | Examples | Mobile Layout
-keywords: Jexcel, jquery, javascript, bootstrap, table design, spreadsheet, CSV, table, grid, mobile
+title: 格知 AI | Examples | Mobile Layout
+keywords: 格知 AI, jquery, javascript, bootstrap, table design, spreadsheet, CSV, table, grid, mobile
 description: Responsive Layout
 
 {.ignore}

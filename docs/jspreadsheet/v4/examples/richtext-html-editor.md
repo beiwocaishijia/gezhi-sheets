@@ -1,5 +1,5 @@
-title: HTML Editor with Jspreadsheet Version 4
-keywords: Jexcel, javascript, excel-like, spreadsheet, html editor, rich text
+title: HTML Editor with 格知 AI Version 4
+keywords: 格知 AI, javascript, excel-like, spreadsheet, html editor, rich text
 description: This examples shows how to create a rich text column
 
 # Rich text and HTML editor column type
@@ -33,4 +33,3 @@ jspreadsheet(document.getElementById('spreadsheet'), options);
 </script>
 </html>
 ```
-

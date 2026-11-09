@@ -1,10 +1,10 @@
-title: Angular Spreadsheet with Jspreadsheet CE
-keywords: Jexcel, javascript, using Jspreadsheet and angular
-description: Integrating Jspreadsheet with Angular working example.
+title: Angular Spreadsheet with 格知 AI
+keywords: 格知 AI, javascript, using 格知 AI and angular
+description: Integrating 格知 AI with Angular working example.
 
-# Angular Spreadsheet with Jspreadsheet CE
+# Angular Spreadsheet with 格知 AI
 
-This example demonstrates how to use the Jspreadsheet library into an Angular application.
+This example demonstrates how to use the 格知 AI library into an Angular application.
 
 [View the live project on CodeSandbox](https://codesandbox.io/s/jexcel-and-angular-cexs1)
 
@@ -21,7 +21,7 @@ Add the following template to your app.component.html:
 
 ### JavaScript
 
-Here is the complete implementation for integrating Jspreadsheet with Angular:
+Here is the complete implementation for integrating 格知 AI with Angular:
 
 {.ignore}
 ```javascript
@@ -48,13 +48,12 @@ export class AppComponent {
     });
   }
 }
-```  
+```\
 
 ### Angular Styles Configuration
 
-To ensure the styles for Jspreadsheet are applied correctly, update the angular.json file to include the Jspreadsheet CSS:
+To ensure the styles for 格知 AI are applied correctly, update the angular.json file to include the 格知 AI CSS:
 
 ```json
 "styles": ["styles.css","./node_modules/jspreadsheet-ce/dist/jspreadsheet.css"],
 ```
-

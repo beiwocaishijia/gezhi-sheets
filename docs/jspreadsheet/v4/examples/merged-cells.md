@@ -1,5 +1,5 @@
 title: How to merge the spreadsheet cells
-keywords: Jexcel, spreadsheet, javascript, javascript table, merged cells
+keywords: 格知 AI, spreadsheet, javascript, javascript table, merged cells
 description: Full example on how to handle merge cells in your javascript tables.
 
 # Merged cells
@@ -56,4 +56,3 @@ document.getElementById("destroyMerged").onclick = () => table.destroyMerged();
 
 </html>
 ```
-

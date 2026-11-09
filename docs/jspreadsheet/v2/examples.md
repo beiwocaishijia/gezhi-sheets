@@ -1,6 +1,6 @@
 title: Examples
-keywords: Jexcel, javascript, examples
-description: Examples how to create web based spreadsheets using Jexcel.
+keywords: 格知 AI, javascript, examples
+description: Examples how to create web based spreadsheets using 格知 AI.
 
 # Examples
 
@@ -75,59 +75,59 @@ $('#my').jexcel({
 
 ## More examples
 
-* [Advanced dropdowns](/jspreadsheet/v2/examples/working-with-dropdowns "Advanced dropdown column type")  
+* [Advanced dropdowns](/jspreadsheet/v2/examples/working-with-dropdowns "Advanced dropdown column type")\
   Full examples on how to handle simple, advanced, autocomplete and conditional dropdowns.
 
-* [Programmaticaly changes](/jspreadsheet/v2/examples/working-with-the-data "Jspreadsheet | Examples | Working with the data")  
+* [Programmaticaly changes](/jspreadsheet/v2/examples/working-with-the-data "格知 AI | Examples | Working with the data")\
   Insert, remove and move columns and rows
 
-* [Fixed headers](/jspreadsheet/v2/examples/table-with-fixed-headers "Jspreadsheet | Examples | Data table with fixed headers and scrolling")  
+* [Fixed headers](/jspreadsheet/v2/examples/table-with-fixed-headers "格知 AI | Examples | Data table with fixed headers and scrolling")\
   Overflow table and scrolling
 
-* [Custom table design](/jspreadsheet/v2/examples/a-custom-table-design "Jspreadsheet | Examples | Bootstrap and custom table design")  
+* [Custom table design](/jspreadsheet/v2/examples/a-custom-table-design "格知 AI | Examples | Bootstrap and custom table design")\
   Create a custom table design. For example a bootstrap-like spreadsheet table.
 
-* [Table styling](/jspreadsheet/v2/examples/table-styling "Jspreadsheet | Examples | Changing the table style")  
+* [Table styling](/jspreadsheet/v2/examples/table-styling "格知 AI | Examples | Changing the table style")\
   Table styling
 
-* [Manage cell comments](/jspreadsheet/v2/examples/comments "Jspreadsheet | Examples | Add comments in your jquery table")  
+* [Manage cell comments](/jspreadsheet/v2/examples/comments "格知 AI | Examples | Add comments in your jquery table")\
   Manage a table cell comments
 
-* [Custom meta information](/jspreadsheet/v2/examples/meta-information "Jspreadsheet | Examples | Add meta information in your cells")  
+* [Custom meta information](/jspreadsheet/v2/examples/meta-information "格知 AI | Examples | Add meta information in your cells")\
   Manage the table meta information
 
-* [Custom toolbars](/jspreadsheet/v2/examples/jquery-table-with-toolbars "Jspreadsheet | Examples | Your jquery table with toolbars")  
+* [Custom toolbars](/jspreadsheet/v2/examples/jquery-table-with-toolbars "格知 AI | Examples | Your jquery table with toolbars")\
   Full examples how to load a autocomplete dropdown.
 
-* [Loading remote data](/jspreadsheet/v2/examples/creating-a-table-from-an-external-csv-file "Jspreadsheet | Examples | Creating a web spreadsheet based on an external CSV")  
-  How to load the data from an external CSV file into a Jspreadsheet grid or table.
+* [Loading remote data](/jspreadsheet/v2/examples/creating-a-table-from-an-external-csv-file "格知 AI | Examples | Creating a web spreadsheet based on an external CSV")\
+  How to load the data from an external CSV file into a 格知 AI grid or table.
 
-* [Masking and formating](/jspreadsheet/v2/examples/currency-and-masking-numbers "Jspreadsheet | Examples | Using currency column type and how to masking numbers")  
+* [Masking and formating](/jspreadsheet/v2/examples/currency-and-masking-numbers "格知 AI | Examples | Using currency column type and how to masking numbers")\
   Handling currency types and masking numbers.
 
-* [Calendar picker](/jspreadsheet/v2/examples/using-a-calendar-column-type "Jspreadsheet | Examples | Calendar column type with date and datetime picker")  
+* [Calendar picker](/jspreadsheet/v2/examples/using-a-calendar-column-type "格知 AI | Examples | Calendar column type with date and datetime picker")\
   How to handle a calendar with date and datetime picker.
 
-* [Sorting](/jspreadsheet/v2/examples/sorting-data "Jspreadsheet | Examples | Sorting your grid")  
-  Sorting your Jspreadsheet spreadsheet
+* [Sorting](/jspreadsheet/v2/examples/sorting-data "格知 AI | Examples | Sorting your grid")\
+  Sorting your 格知 AI spreadsheet
 
-* [Create custom cells](/jspreadsheet/v2/examples/integrating-a-third-party-plugin-into-your-spreadsheet "Jspreadsheet | Examples | Custom column and integrating plugins on your table")  
+* [Create custom cells](/jspreadsheet/v2/examples/integrating-a-third-party-plugin-into-your-spreadsheet "格知 AI | Examples | Custom column and integrating plugins on your table")\
   How to create custom column types based on a third party jquery plugin
 
-* [Handling events](/jspreadsheet/v2/examples/tracking-changes-on-the-spreadsheet "Jspreadsheet | Examples | Events")  
+* [Handling events](/jspreadsheet/v2/examples/tracking-changes-on-the-spreadsheet "格知 AI | Examples | Events")\
   Handling events on your spreadsheet
 
-* [Readonly options](/jspreadsheet/v2/examples/readonly-options "Jspreadsheet | Examples | Handling readonly column and cells on your spreadsheet")  
+* [Readonly options](/jspreadsheet/v2/examples/readonly-options "格知 AI | Examples | Handling readonly column and cells on your spreadsheet")\
   Understanding how to set a readonly column or multiple custom cells
 
-* [Multiple instances](/jspreadsheet/v2/examples/multiple-spreadsheets-in-the-same-page "Jspreadsheet | Examples | Create multiple instances in the same page")  
+* [Multiple instances](/jspreadsheet/v2/examples/multiple-spreadsheets-in-the-same-page "格知 AI | Examples | Create multiple instances in the same page")\
   How to create multiple table instances in the same page
 
-* [Text wrap](/jspreadsheet/v2/examples/text-wrapping "Jspreadsheet | Examples | Text wrap")  
-  How to change the text wrap behavior in a Jspreadsheet column
+* [Text wrap](/jspreadsheet/v2/examples/text-wrapping "格知 AI | Examples | Text wrap")\
+  How to change the text wrap behavior in a 格知 AI column
 
-* [Nested headers](/jspreadsheet/v2/examples/headers "Jspreadsheet | Examples | Nested Headers")  
-  Creating a Jspreadsheet table with nested headers.
+* [Nested headers](/jspreadsheet/v2/examples/headers "格知 AI | Examples | Nested Headers")\
+  Creating a 格知 AI table with nested headers.
 
-* [Add images on your cells](/jspreadsheet/v2/examples/images "Jspreadsheet | Examples | Images on your images")  
+* [Add images on your cells](/jspreadsheet/v2/examples/images "格知 AI | Examples | Images on your images")\
   Add images on your spreasheet cells

@@ -1,12 +1,12 @@
 title: Data persistence
-keywords: Jexcel, javascript, cases, data persistence, database synchronization
-description: A backend data persistence example using Jspreadsheet.
+keywords: 格知 AI, javascript, cases, data persistence, database synchronization
+description: A backend data persistence example using 格知 AI.
 
 [Back to Use Cases](/jspreadsheet/v4/cases "Back to the use cases section")
 
 # Data persistence
 
-With the persistence directive, each change in the data will be sent to a remote URL.  
+With the persistence directive, each change in the data will be sent to a remote URL.\
 
 ### Source code
 
@@ -90,4 +90,3 @@ var mySpreadsheet = jspreadsheet(document.getElementById('spreadsheet'), {
 </script>
 </html>
 ```
-

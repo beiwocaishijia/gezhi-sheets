@@ -1,48 +1,18 @@
-title: Jspreadsheet Distributions Comparison
-keywords: Jspreadsheet, Jexcel, data grid, JavaScript, Excel-like, spreadsheet, table, documentation, performance, version differences, distribution comparison
-description: Explore a detailed comparison highlighting the key differences between various Jspreadsheet distributions.
+title: 格知 AI · 能力与边界
+keywords: 格知 AI, 表格能力, 文件兼容, 使用边界
+description: 了解格知 AI 已实现的能力与使用限制。
 
-# Comparison Table
+# 格知 AI · 能力与边界
 
-The main differences between the JSS distributions:
+| 能力 | 当前范围 |
+| --- | --- |
+| AI 任务 | 批量填列、文字转表、整理数据、问答、公式与自然语言操作 |
+| 模型服务 | GLM、Kimi、豆包、DeepSeek、Qwen，各自配置密钥与模型 |
+| 文件 | Excel / CSV、多工作表、受支持公式与文本编号 |
+| 保存 | 本机自动保存、版本检查、有效备份；Windows DPAPI 加密密钥 |
+| 修改 | 生成后预览、确认应用、一次撤销与重做 |
+| 容量 | 每张表最多 1000 行、100 列；每个工作簿最多 20 张表 |
 
-| Package                                         |    CE distribution    |  Pro distribution   |  Pro distribution   |
-|-------------------------------------------------|:---------------------:|:-------------------:|:-------------------:|
-| Distribution                                    |        **CE**         |      **Base**       |     **Premium**     |
-| License                                         |      Free (MIT)       |      Required       |      Required       |
-| Spreadsheet-like formulas                       |          Yes          |      Advanced       |      Advanced       |
-| Copy and paste features                         |          Yes          |      Advanced       |      Advanced       |
-| Viewport                                        |     Lazy loading      |   Smart loading*    |   Smart loading*    |
-| Plugins support                                 |          Yes          |         Yes         |         Yes         |
-| Advance filtering and multiple column filtering |          No           |         Yes         |         Yes         |
-| Worksheets management                           |        Limited        |         Yes         |         Yes         |
-| Native persistence features                     |        Limited        |         Yes         |         Yes         |
-| Automatic formula update on copy and paste      |          No           |         Yes         |         Yes         |
-| Automatic formula update on corner copy         |          No           |         Yes         |         Yes         |
-| Formula returning DOM objects to cells.         |          No           |         Yes         |         Yes         |
-| Cell renderer                                   |          No           |         Yes         |         Yes         |
-| Editor definitions at a cell level              |          No           |         Yes         |         Yes         |
-| Cross worksheet calculations                    |          No           |         No          |         Yes         |
-| Native validations                              |          No           |         No          |         Yes         |
-| Column and row grouping                         |          No           |         No          |         Yes         |
-| Defined names (Range and variables)             |          No           |         No          |         Yes         |
-| Extensions                                      |          No           |         No          |         Yes         |
-| Formula Picker                                  |          No           |         No          |         Yes         |
+本机工作台尚不包含登录、多人协作或完整 Excel 排版兼容。当前版本没有独立的商业版升级流程。
 
-## More Details
-
-### Worksheet Management
-
-Pro includes dragging-and-drop, deleting or renaming worksheets, adding a new worksheet button, and configuring the context menu.
-
-### Persistence Support
-
-Pro offers native persistence features such as internal row IDs and sequences, updated row IDs, saving methods, and integration with persistence plugins.
-
-### Advanced Lazy Loading
-
-Provides efficient DOM management with pagination and lazy loading, creating and displaying DOM elements only when required. From version 8, lazy loading leverages the viewport and extends virtual DOM management to columns.
-
-### Cell-Level Definitions
-
-The Pro distribution enables developers to configure properties like masking, format, type, and other attributes at the cell level.
+完整范围见 [使用指南](../../USER-GUIDE.md)，验证状态见 [验证记录](../../VALIDATION.md)。

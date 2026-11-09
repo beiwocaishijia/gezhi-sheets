@@ -1,10 +1,10 @@
 title: Spreadsheet Merged Cells
-keywords: Jspreadsheet, Jexcel, data grid, JavaScript, merged cells, react merged cells, excel-like merged cells, spreadsheet merged cells, merge cells functionality, data grid cell merging
-description: Merged cells in Jspreadsheet allow combining multiple cells into one. This section covers the settings, methods, and events related to merging spreadsheet cells.
+keywords: 格知 AI, data grid, JavaScript, merged cells, react merged cells, excel-like merged cells, spreadsheet merged cells, merge cells functionality, data grid cell merging
+description: Merged cells in 格知 AI allow combining multiple cells into one. This section covers the settings, methods, and events related to merging spreadsheet cells.
 
 # Merged cells
 
-This section covers how to create and manage merged cells in Jspreadsheet to combine adjacent cells into one. It includes details on settings, methods, and events for merging, unmerging, programmatically handling merged ranges, and managing alignment and formatting.
+This section covers how to create and manage merged cells in 格知 AI to combine adjacent cells into one. It includes details on settings, methods, and events for merging, unmerging, programmatically handling merged ranges, and managing alignment and formatting.
 
 ## Documentation
 
@@ -19,7 +19,7 @@ The following methods allow for the programmatic management of merged cells.
 | `removeMerge`           | Remove a merge.<br/>@param `cellName` - Merge anchor cell.<br/>@param `data` - Data to be placed in cells released from the merge.<br/>`worksheetInstance.removeMerge(cellName: string, data?: CellValue[]): void;`.                                                                                                                                      |
 | `destroyMerge`{.nowrap} | Removes all merged cells.<br/>`worksheetInstance.destroyMerge(): void;`                                                                                                                                                                                                                                                                                                                                                |
 
- 
+
 
 ### Events
 
@@ -29,7 +29,7 @@ Spreadsheet merge cells related events.
 |-----------|-----------------------------------------------------------------------------------------------------------------------------|
 | `onmerge` | Occurs when a merge is created.<br/>`onmerge(instance: WorksheetInstance, merges: Record<string, [number, number]>): void;` |
 
- 
+
 
 ### Initial Settings
 
@@ -44,7 +44,7 @@ Initial properties for merged cells in the spreadsheet.
 
 A basic example illustrates how to initialize and programmatically modify merged cell definitions.
 
-Open this [merged cells example](https://jsfiddle.net/spreadsheet/gLc0a1x2/) on JSFiddle.  
+Open this [merged cells example](https://jsfiddle.net/spreadsheet/gLc0a1x2/) on JSFiddle.\
 
 ```html
 <html>
@@ -362,5 +362,3 @@ export class AppComponent {
 ```
 
 ## Related Tools
-
-- [Jspreadsheet Pro Merged Cells](https://jspreadsheet.com/docs/merged-cells) - Advanced merge operations with batch methods (Pro)

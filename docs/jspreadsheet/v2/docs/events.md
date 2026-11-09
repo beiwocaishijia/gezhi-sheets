@@ -1,6 +1,6 @@
-title: Handling events on Jspreadsheet
-keywords: Jexcel, javascript, excel-like, spreadsheet, table, grid, events
-description: Learn how to handle events on Jspreadsheet
+title: Handling events on 格知 AI
+keywords: 格知 AI, javascript, excel-like, spreadsheet, table, grid, events
+description: Learn how to handle events on 格知 AI
 
 [Back to Documentation](/jspreadsheet/v2/docs)
 
@@ -48,9 +48,9 @@ The JavaScript spreadsheet basic events available in this current version.
 | **onmoverow** | After a row is moved to a new position.  |
 | **onfocus** | On table focus  |
 | **onblur** | On table blur  |
-  
-[Advanced example logging all events in a tableexample](/jspreadsheet/v2/examples/tracking-changes-on-the-spreadsheet)  
-  
+
+[Advanced example logging all events in a tableexample](/jspreadsheet/v2/examples/tracking-changes-on-the-spreadsheet)\
+
 
 ## Basic Example:
 
@@ -96,4 +96,3 @@ $('#my').jexcel({
 See this working example on jsfiddle:
 
 [Basic example on handling events on jsFiddle](https://jsfiddle.net/spreadsheet/5n21ep6s/)
-

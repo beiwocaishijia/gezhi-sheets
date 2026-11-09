@@ -1,10 +1,10 @@
 title: Spreadsheet Headers
-keywords: Jspreadsheet, Jexcel, data grids, JavaScript data grid, Excel-like headers, column title, headers, data grid headers, column headers, customize headers, modify headers, spreadsheet customization, column title customization, data grid organization
+keywords: 格知 AI, data grids, JavaScript data grid, Excel-like headers, column title, headers, data grid headers, column headers, customize headers, modify headers, spreadsheet customization, column title customization, data grid organization
 description: Customize and modify column headers in your data grids. Explore programmatic header updates and advanced options for organizing and managing your data grid.
 
 # Spreadsheet Headers
 
-This section explains how to create and modify custom headers in Jspreadsheet. Users can change header titles via the context menu or by performing a long click on the header.
+This section explains how to create and modify custom headers in 格知 AI. Users can change header titles via the context menu or by performing a long click on the header.
 
 ## Documentation
 
@@ -18,7 +18,7 @@ You can update the headers programmatically using the following methods.
 | getHeader   | Get the column title.<br/>@param `column` - Column index.<br/>`worksheetInstance.getHeader(column: number): string;`                          |
 | setHeader   | Sets a custom header title for a specified column (starting at zero).<br/>@param `column` - column number starting on zero.<br/>@param `newValue` - New title. Empty string or undefined to reset the header title. <br/>`worksheetInstance.setHeader(column: number, newValue?: string): void;` |
 
- 
+
 
 ### Initial Settings
 
@@ -42,7 +42,7 @@ jspreadsheet(document.getElementById('spreadsheet'), {
 });
 </script>
 ```
-  
+
 
 ### Available Events
 
@@ -50,7 +50,7 @@ jspreadsheet(document.getElementById('spreadsheet'), {
 | ---------------|------------------------------------------------------------------------------------------------------------------------------------|
 | onchangeheader | Triggered when the header title is changed.<br/>`onchangeheader(instance: WorksheetInstance, colIndex: number, newValue: string, oldValue: string): void;` |
 
- 
+
 
 ## Examples
 
@@ -207,4 +207,3 @@ export class AppComponent {
 
 - [Nested Headers](/jspreadsheet/docs/nested-headers) - Create multi-level column headers
 - [Data Grid Footers](/jspreadsheet/docs/footers) - Add footer rows with formulas
-- [Jspreadsheet Pro Headers](https://jspreadsheet.com/docs/headers) - Advanced header customization (Pro)

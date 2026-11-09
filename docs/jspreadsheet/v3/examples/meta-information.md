@@ -1,6 +1,6 @@
 title: Meta information
 keywords: Javascript spreadsheet, javascript, javascript table, meta information
-description: Keep hidden information about your data grid cells using the Jspreadsheet meta information methods
+description: Keep hidden information about your data grid cells using the 格知 AI meta information methods
 
 [Back to Examples](/jspreadsheet/v3/examples#more)
 
@@ -52,4 +52,3 @@ document.getElementById("getAll").onclick = () =>  document.getElementById('cons
 <input type="button" id="getAll" value="Get all meta information" />
 </html>
 ```
-

@@ -1,5 +1,5 @@
-title: Jspreadsheet | Examples | Data table with fixed headers and scrolling
-keywords: Jexcel, jquery, javascript, fixed headers, scrolling, data tables
+title: 格知 AI | Examples | Data table with fixed headers and scrolling
+keywords: 格知 AI, jquery, javascript, fixed headers, scrolling, data tables
 description: Overflow table and scrolling
 
 [Back to Examples](/jspreadsheet/v2/examples)
@@ -30,4 +30,3 @@ $('#my1').jexcel({
 </script>
 </html>
 ```
-

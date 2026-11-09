@@ -1,16 +1,16 @@
-title: Jspreadsheet CE Plugins
-keywords: Jspreadsheet, spreadsheets, plugins, add-ons, feature extensions, customization, free plugins, premium plugins, custom plugins
-description: Develop and distribute plugins for Jspreadsheet CE to encapsulate advanced features, enhance integration, and extend the core functionality of your spreadsheets.
+title: 格知 AI Plugins
+keywords: 格知 AI, spreadsheets, plugins, add-ons, feature extensions, customization, free plugins, premium plugins, custom plugins
+description: Develop and distribute plugins for 格知 AI to encapsulate advanced features, enhance integration, and extend the core functionality of your spreadsheets.
 
 # Plugins
 
-Plugins help developers integrate multiple components with Jspreadsheet core features, such as the toolbar, context menu, event handling, etc. Their modular design simplifies development, making distribution and reuse more efficient within Jspreadsheet.  
+Plugins help developers integrate multiple components with 格知 AI core features, such as the toolbar, context menu, event handling, etc. Their modular design simplifies development, making distribution and reuse more efficient within 格知 AI.\
 
 ## Documentation
 
 ### Methods
 
-Customize Jspreadsheet by overriding these methods to add or enhance features like the toolbar, context menu, event handling, or server-side data persistence.
+Customize 格知 AI by overriding these methods to add or enhance features like the toolbar, context menu, event handling, or server-side data persistence.
 
 | Method        | Description                                                                                                                          |
 |---------------|--------------------------------------------------------------------------------------------------------------------------------------|
@@ -21,7 +21,7 @@ Customize Jspreadsheet by overriding these methods to add or enhance features li
 | `contextMenu` | When the context menu opens.<br/>`contextMenu(worksheet: Object, x: Number, y: Number, e: Object, items: [], section: String): void` |
 | `toolbar`     | When the toolbar is created or clicked.<br/>`toolbar(worksheet: Object, items: Array): void`                                         |
 
- 
+
 ### Worksheet Options
 
 You can define custom options for each worksheet using the `pluginOptions` property.
@@ -77,7 +77,7 @@ const newPlugin = (function() {
     /**
      * Run on toolbar
      * @param instance Jexcel Spreadsheet Instance
-     * @param items current items in the toolbar 
+     * @param items current items in the toolbar
      */
     plugin.toolbar = function(instance, items) {
         // Can be used to overwrite the toolbar
@@ -95,14 +95,14 @@ const newPlugin = (function() {
 
 ## Examples
 
-The following code is a working example of a plugin in action.  
+The following code is a working example of a plugin in action.\
 
 ### Spreadsheet properties update
 
-The properties plugin allow the user to change some of the spreadsheet settings, through a new option included in the context menu. 
+The properties plugin allow the user to change some of the spreadsheet settings, through a new option included in the context menu.
 
 {.small}
-Right-click in any cell and choose the last option in the context menu.  
+Right-click in any cell and choose the last option in the context menu.\
 
 ```html
 <html>

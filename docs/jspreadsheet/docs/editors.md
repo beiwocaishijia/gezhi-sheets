@@ -1,12 +1,12 @@
 title: Spreadsheet Inline Cell Editors
-keywords: Jspreadsheet, data grid, JavaScript, Excel-like controls, spreadsheet controls, data input editors, custom cell editors, input components, editor methods, editor settings, editor events, interactive data grid, custom data input
-description: Jspreadsheet cell editors support integrating third-party JavaScript components, enabling advanced, customizable inputs for dynamic data entry.
+keywords: 格知 AI, data grid, JavaScript, Excel-like controls, spreadsheet controls, data input editors, custom cell editors, input components, editor methods, editor settings, editor events, interactive data grid, custom data input
+description: 格知 AI cell editors support integrating third-party JavaScript components, enabling advanced, customizable inputs for dynamic data entry.
 
 # Spreadsheet Cell Editors
 
 ## Overview
 
-Jspreadsheet editors assist users with cell input during editing. Jspreadsheet includes built-in components, from basic text fields to interactive widgets. The API also allows developers to create custom components, integrating various JavaScript input methods for enhanced data interaction.
+格知 AI editors assist users with cell input during editing. 格知 AI includes built-in components, from basic text fields to interactive widgets. The API also allows developers to create custom components, integrating various JavaScript input methods for enhanced data interaction.
 
 ### Available Editors
 
@@ -21,12 +21,6 @@ Jspreadsheet editors assist users with cell input during editing. Jspreadsheet i
 * image
 * color
 * html
-
-{.pro}
-> #### Differences in the Pro Version
-> The Pro version offers 17 native editors and allows defining cell-level editors and programmatically changing cell types.\
->\
-> [Learn more](https://jspreadsheet.com/docs/editors){.button}
 
 ## Documentation
 
@@ -171,9 +165,9 @@ export class AppComponent {
 }
 ```
 
-### Custom Editors  
+### Custom Editors
 
-Custom editors allow enhanced user interaction and data collection in your data grid. A custom editor is defined as a JavaScript object with the following methods:  
+Custom editors allow enhanced user interaction and data collection in your data grid. A custom editor is defined as a JavaScript object with the following methods:\
 
 | Method        | Description                                                                                                                                                          |
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -802,35 +796,8 @@ The source code for editors is available for reference. Use these examples as a 
 \
 [https://github.com/jspreadsheet/editors](https://github.com/jspreadsheet/editors){.button}
 
-{.pro}
-> **Upgrade to Jspreadsheet Pro for Advanced Cell Editors**
->
-> Jspreadsheet CE provides 12 basic editors. **Jspreadsheet Pro** extends this with 17 professional editors and advanced capabilities:
->
-> **Advanced Editor Types:**
-> - **Conditional Dropdowns:** Options dynamically change based on other cell values
-> - **Rich Text Editor:** Full HTML formatting with bold, italic, lists, and styling
-> - **HTML Editor:** Embed custom HTML content directly in cells
-> - **Advanced Date/Time:** Enhanced calendar with time selection and custom formats
-> - **Rating Editor:** Star ratings and custom rating systems
-> - **Tags Editor:** Multi-select tags with autocomplete
-> - **Progress Bars:** Visual progress indicators in cells
-> - **Custom Editors:** Build your own cell editors with full API access
->
-> **Pro-Only Editor Features:**
-> - **Cell-Level Editors:** Define different editors for individual cells (not just columns)
-> - **Programmatic Type Changes:** Dynamically change cell types at runtime
-> - **Enhanced Validation:** Advanced validation rules with custom messages
-> - **Editor Events:** Extended event system for editor lifecycle
->
-> Perfect for data-intensive applications requiring sophisticated user input controls.
->
-> **[Explore Pro Editors →](https://jspreadsheet.com/docs/editors)** | **[Compare Editions →](https://jspreadsheet.com/docs/getting-started)** | **[View Pricing →](https://jspreadsheet.com/pricing)**
-
 ## Related Tools
 
 - [JavaScript HTML Editor](https://jsuites.net/docs/javascript-html-editor) - Standalone rich text editor component
-- [Jspreadsheet Pro Editors](https://jspreadsheet.com/docs/editors) - Advanced spreadsheet cell editors (Pro)
 - [Custom Cell Editors](https://jspreadsheet.com/docs/editors/custom) - Build your own custom editors (Pro)
 - [HTML Editor](https://jspreadsheet.com/docs/editors/html) - Rich text editing in cells (Pro)
-

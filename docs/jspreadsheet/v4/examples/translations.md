@@ -1,8 +1,8 @@
-title: How to translate the default messages from Jspreadsheet Version 4
-keywords: Jexcel, spreadsheet, javascript, javascript table, translate, translations
-description: How to translate the default messages from Jspreadsheet
+title: How to translate the default messages from 格知 AI Version 4
+keywords: 格知 AI, spreadsheet, javascript, javascript table, translate, translations
+description: How to translate the default messages from 格知 AI
 
-# Jspreadsheet internationalization
+# 格知 AI internationalization
 
 How to update the default texts from the online spreadsheet.
 
@@ -65,4 +65,3 @@ jspreadsheet(document.getElementById('spreadsheet'), {
 </script>
 </html>
 ```
-

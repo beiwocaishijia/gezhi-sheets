@@ -1,5 +1,5 @@
 title: Create From HTML Table
-keywords: Jexcel, jquery, javascript, bootstrap, table design, spreadsheet, CSV, table, grid, table
+keywords: 格知 AI, jquery, javascript, bootstrap, table design, spreadsheet, CSV, table, grid
 description: Create Spreadsheet based on HTML Table
 
 ```html

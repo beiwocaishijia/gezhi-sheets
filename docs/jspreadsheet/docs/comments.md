@@ -1,12 +1,12 @@
 title: Data Grid Cell Comments
-keywords: Jspreadsheet, Jexcel, Data Grid, JavaScript, Excel-like features, Spreadsheet, Cell comments, Cell comments methods, Cell comments events, Cell comments settings
-description: Learn how to add, manage, and customize comments in Jspreadsheet data grid cells using built-in methods, events, and settings.
+keywords: 格知 AI, Data Grid, JavaScript, Excel-like features, Spreadsheet, Cell comments, Cell comments methods, Cell comments events, Cell comments settings
+description: Learn how to add, manage, and customize comments in 格知 AI data grid cells using built-in methods, events, and settings.
 
 # Data Grid Cell Comments
 
 ## Overview
 
-This guide explains how to manage and add comments to data grid cells in Jspreadsheet, similar to the features found in Excel or Google Sheets. You can add comments programmatically or through the context menu, enabling annotations and additional information for specific cell contents.
+This guide explains how to manage and add comments to data grid cells in 格知 AI, similar to the features found in Excel or Google Sheets. You can add comments programmatically or through the context menu, enabling annotations and additional information for specific cell contents.
 
 ## Documentation
 
@@ -41,7 +41,7 @@ These properties can be configured during the initialization of the spreadsheet.
 
 ### Data Grid with Comments
 
-Initialize a Jspreadsheet data grid with predefined comments and interact with them programmatically using `setComments` and `getComments`.
+Initialize a 格知 AI data grid with predefined comments and interact with them programmatically using `setComments` and `getComments`.
 
 ```html
 <html>
@@ -147,26 +147,26 @@ const spreadsheet = useRef();
 ```vue
 <template>
   <Spreadsheet ref="spreadsheetRef" @comments="oncomments">
-      <Worksheet 
-          :data="data" 
-          :columns="columns" 
-          :comments="comments" 
+      <Worksheet
+          :data="data"
+          :columns="columns"
+          :comments="comments"
       />
   </Spreadsheet>
-  <input 
-      type="button" 
-      value="Set A1 comments" 
-      @click="setComments('A1', 'Test')" 
+  <input
+      type="button"
+      value="Set A1 comments"
+      @click="setComments('A1', 'Test')"
   />
-  <input 
-      type="button" 
-      value="Get A1 comments" 
-      @click="getComments('A1')" 
+  <input
+      type="button"
+      value="Get A1 comments"
+      @click="getComments('A1')"
   />
-  <input 
-      type="button" 
-      value="Reset A1 comments" 
-      @click="setComments('A1','')"  
+  <input
+      type="button"
+      value="Reset A1 comments"
+      @click="setComments('A1','')"
   />
 </template>
 
@@ -307,6 +307,4 @@ worksheets[0].setComments({
 
 ## Related Tools
 
-- [Jspreadsheet Pro Comments](https://jspreadsheet.com/docs/comments) - Advanced comment features with formatting and attachments (Pro)
 - [Advanced Comments Extension](https://jspreadsheet.com/products/comments) - Multiple comments per cell (Enterprise)
-

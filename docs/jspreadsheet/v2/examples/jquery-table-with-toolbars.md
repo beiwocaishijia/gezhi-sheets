@@ -1,5 +1,5 @@
-title: Jspreadsheet | Examples | Your jquery table with toolbars
-keywords: Jexcel, jquery, javascript, excel-like, spreadsheet, jquery plugin, sorting, jquery table, toolbars
+title: 格知 AI | Examples | Your jquery table with toolbars
+keywords: 格知 AI, jquery, javascript, excel-like, spreadsheet, jquery plugin, sorting, jquery table, toolbars
 description: Full examples how to load a autocomplete dropdown.
 
 [Back to Examples](/jspreadsheet/v2/examples)
@@ -10,16 +10,16 @@ The following example will show how to integrate a custom native toolbar in your
 
 ## Instructions
 
-The toolbar can be customized with a few parameters. 
+The toolbar can be customized with a few parameters.
 
 | | |
 | ---|---  |
 | _**type**_ |  could be **i** for icon, **select** for a dropdown, **spectrum** or a colorpicker.  |
-| _**content**_ |  defines the icon (from material icons) when you use type:i; [click here for all possible keys](https://material.io/tools/icons/) |  
+| _**content**_ |  defines the icon (from material icons) when you use type:i; [click here for all possible keys](https://material.io/tools/icons/) |
 | _**k**_ |  means the style should be apply to the cell;  |
 | _**v**_ |  means the value of the style should be apply to the cell; When type:select, you can define an array of possibles values;  |
 | _**method**_ |  can be used together with type:i to implement any custom method. The method will receive the spreadsheet instance and all marked cells by default.  |
-  
+
 
 ## Source code
 
@@ -83,4 +83,3 @@ function redo(instance, selectedCell)
 ```
 
 **NOTE:** It is important to have google material fonts loaded.
-

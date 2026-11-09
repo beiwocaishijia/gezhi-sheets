@@ -1,17 +1,10 @@
 title: Data Grid Search
-keywords: Jspreadsheet, data grid search, JavaScript, Excel-like search functionality, spreadsheet search, search customization, search event handling, row filtering
-description: Explore search functionality in Jspreadsheet, including methods and events to filter rows and customize search behaviour for specific application requirements.
+keywords: 格知 AI, data grid search, JavaScript, Excel-like search functionality, spreadsheet search, search customization, search event handling, row filtering
+description: Explore search functionality in 格知 AI, including methods and events to filter rows and customize search behaviour for specific application requirements.
 
 # Data Grid Search
 
-The Jspreadsheet's search functionality filters rows using keyword matching, offering flexibility to modify or terminate operations based on application needs. This section details the technical methods and events for customizing search behaviour.
-
-
-{.pro}
-> #### Differences in the Pro Version
-> Jspreadsheet Pro allows complete customization of search operations, including events to highlight results, customize search criteria, or integrate with the backend.\
-> \
-> [Learn more](https://jspreadsheet.com/docs/search){.button}
+The 格知 AI's search functionality filters rows using keyword matching, offering flexibility to modify or terminate operations based on application needs. This section details the technical methods and events for customizing search behaviour.
 
 ## Documentation
 
@@ -22,7 +15,7 @@ The following methods are used to implement and manage search functionality in t
 | Method        | Description                                                                                                                                       |
 |---------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
 | `search`      | Searches for rows containing the specified terms.<br/>@param `query` - Text to be searched.<br/>`worksheetInstance.search(query: string): void;`  |
-| `resetSearch` | Resets search terms and displays all rows.<br/>`worksheetInstance.resetSearch(): void;`                                                           |  
+| `resetSearch` | Resets search terms and displays all rows.<br/>`worksheetInstance.resetSearch(): void;`                                                           |
 
 ### Initial Settings
 
@@ -199,11 +192,8 @@ export class AppComponent {
     }
 }
 ```
- 
+
 ## Related Tools
 
 - [Data Grid Filters](/jspreadsheet/docs/filters) - Filter data grid columns with custom criteria
 - [Data Grid Pagination](/jspreadsheet/docs/pagination) - Paginate large datasets
-- [Jspreadsheet Pro Search](https://jspreadsheet.com/docs/search) - Enhanced search with regex and highlighting (Pro)
-- [Jspreadsheet Pro Filters](https://jspreadsheet.com/docs/filters) - Advanced filtering capabilities (Pro)
-

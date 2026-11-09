@@ -1,5 +1,5 @@
-title: Jspreadsheet | Examples | Calendar column type with date and datetime picker
-keywords: Jexcel, jquery, javascript, excel-like, spreadsheet, jquery plugin, date, datetime picker
+title: 格知 AI | Examples | Calendar column type with date and datetime picker
+keywords: 格知 AI, jquery, javascript, excel-like, spreadsheet, jquery plugin, date, datetime picker
 description: How to handle a calendar with date and datetime picker.
 
 [Back to Examples](/jspreadsheet/v2/examples)
@@ -45,7 +45,7 @@ $('#my').jexcel({
 });
 </script>
 </html>
-```  
+```\
 
 ## Date column customization
 
@@ -90,4 +90,3 @@ $('#my2').jexcel({
 });
 </script>
 ```
-

@@ -1,40 +1,20 @@
-title: Download Jspreadsheet
-keywords: Download Jspreadsheet
-description: Download Jspreadsheet for your projects.
-canonical: https://bossanova.uk/jspreadsheet/download
+title: 格知 AI · 下载与启动
+keywords: 格知 AI, Gezhi Sheets, 下载, 本地运行
+description: 从 GitHub 获取格知 AI 并在 Windows 上启动。
 
-# Jspreadsheet Download
+# 格知 AI · 下载与启动
 
-Jspreadsheet is available through multiple distribution channels, making it easy to integrate into your project regardless of your preferred setup.
+从 [GitHub 仓库](https://github.com/beiwocaishijia/gezhi-sheets) 获取代码，或[下载源码 ZIP](https://github.com/beiwocaishijia/gezhi-sheets/archive/refs/heads/master.zip)。
 
-## Download Options
+需要 Windows 与 Node.js 22.13 或更新版本。
 
-### Direct Download
-
-[Click here to download](https://bossanova.uk/jspreadsheet/v5/jspreadsheet.zip)
-
-### CDN
-
-You can include Jspreadsheet directly via CDN for quick setup:  
-
-{.ignore}
-```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jspreadsheet-ce/dist/jspreadsheet.css" />
-<script src="https://cdn.jsdelivr.net/npm/jspreadsheet-ce/dist/jspreadsheet.js"></script>
-```  
-
-### NPM
-
-For modern web development, install Jspreadsheet via NPM:
-
-```bash
-npm install jspreadsheet-ce
+```powershell
+git clone https://github.com/beiwocaishijia/gezhi-sheets.git
+cd gezhi-sheets
+npm ci
+npm run dev
 ```
 
-### GitHub Repository
+打开 [本地工作台](http://127.0.0.1:8001)。已安装依赖时，也可以双击 `启动jspreadsheet.cmd`。
 
-Access the source code and contribute to the development of Jspreadsheet on [GitHub](https://github.com/jspreadsheet/jspreadsheet).
-
-## Documentation
-
-For more information on integrating Jspreadsheet into your project, visit the [official documentation](https://bossanova.uk/jspreadsheet/docs).  
+配置五家模型、导入工作簿和使用六类 AI 功能，见 [格知 AI 使用指南](../USER-GUIDE.md)。

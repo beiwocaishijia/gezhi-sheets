@@ -1,5 +1,5 @@
-title: Jspreadsheet | Examples | Images on your images
-keywords: Jexcel, jquery, javascript, spreadsheet, table, jquery plugin, images
+title: 格知 AI | Examples | Images on your images
+keywords: 格知 AI, jquery, javascript, spreadsheet, table, jquery plugin, images
 description: Add images on your spreadsheet cells
 
 [Back to Examples](/jspreadsheet/v2/examples)
@@ -40,4 +40,3 @@ $('#my').jexcel('updateSettings', {
 ```
 
 [Edit this example on jsFiddle](https://jsfiddle.net/spreadsheet/9296zmpf/)
-

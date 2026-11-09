@@ -14,7 +14,7 @@
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-087f70?style=flat-square)](LICENSE) [![JavaScript](https://img.shields.io/badge/JavaScript-vanilla-101f31?style=flat-square)](package.json) [![Models](https://img.shields.io/badge/模型接入-5_家-087f70?style=flat-square)](#模型由你选择) [![Tests](https://img.shields.io/badge/tests-144_passed-101f31?style=flat-square)](docs/VALIDATION.md)
 
-[看它如何工作](#看它如何工作) · [六类能力](#从零散信息到可用数据) · [快速开始](#快速开始) · [使用文档](docs/CE-LAB.md)
+[看它如何工作](#看它如何工作) · [六类能力](#从零散信息到可用数据) · [快速开始](#快速开始) · [使用文档](docs/USER-GUIDE.md)
 
 </div>
 
@@ -164,7 +164,7 @@ npm run lint
 
 | 文档 | 内容 |
 | --- | --- |
-| [使用与开发说明](docs/CE-LAB.md) | 六类任务、模型配置、文件兼容、保存恢复、接口 |
+| [使用与开发说明](docs/USER-GUIDE.md) | 六类任务、模型配置、文件兼容、保存恢复、接口 |
 | [验收记录](docs/VALIDATION.md) | 回归覆盖范围与五家真实连接状态 |
 | [组件扩展](docs/COMPONENT-EXTENSIONS.md) | 事务撤销、显式文本与公式修复 |
 | [视觉素材说明](docs/media/README.md) | 品牌素材、截图与模拟演示的制作方式 |

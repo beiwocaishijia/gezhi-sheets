@@ -1,5 +1,5 @@
-title: Jspreadsheet | Examples | Using currency column type and how to mask numbers
-keywords: Jexcel, jquery, javascript, excel-like, spreadsheet, jquery plugin, masking, current, numbers
+title: 格知 AI | Examples | Using currency column type and how to mask numbers
+keywords: 格知 AI, jquery, javascript, excel-like, spreadsheet, jquery plugin, masking, current, numbers
 description: Handling currency types and masking numbers.
 
 [Back to Examples](/jspreadsheet/v2/examples)
@@ -7,7 +7,7 @@ description: Handling currency types and masking numbers.
 # Currency and masking numbers
 
 The next example will show how to mask the column and automatic change colors based on the column values.
- 
+
 
 ## Source code
 
@@ -58,7 +58,7 @@ $('#my').jexcel('updateSettings', {
 });
 </script>
 </html>
-```  
+```\
 
 # Formatting a column value using an external javascript plugin
 
@@ -104,7 +104,6 @@ $('#my1').jexcel('updateSettings', {
 });
 </script>
 </html>
-```  
+```\
 
-**NOTE** The Jspreadsheet uses the [jQuery Mask Plugin](https://github.com/igorescobar/jQuery-Mask-Plugin) to perform the masking. But, the example above shows that it is possible to integrate any external plugin for masking or to visual adjust the data automatically.
-
+**NOTE** The 格知 AI uses the [jQuery Mask Plugin](https://github.com/igorescobar/jQuery-Mask-Plugin) to perform the masking. But, the example above shows that it is possible to integrate any external plugin for masking or to visual adjust the data automatically.

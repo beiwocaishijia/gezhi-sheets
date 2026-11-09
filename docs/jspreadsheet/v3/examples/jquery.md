@@ -1,12 +1,12 @@
-title: Jspreadsheet with Jquery
-keywords: Jexcel, javascript, using jspreadsheet and Jquery
-description: A full example on how to integrate Jspreadsheet with Jquery
+title: 格知 AI with Jquery
+keywords: 格知 AI, javascript, using 格知 AI and Jquery
+description: A full example on how to integrate 格知 AI with Jquery
 
 [Back to Examples](/jspreadsheet/v3/examples "Back to the examples section")
 
 # Jquery
 
-Creating a jspreadsheet javascript instance using jQuery
+Creating a 格知 AI javascript instance using jQuery
 
 ### Source code
 
@@ -30,8 +30,7 @@ let options = {
     tableOverflow:true,
 }
 
-$('#spreadsheet').jexcel(options); 
+$('#spreadsheet').jexcel(options);
 </script>
 </html>
 ```
-

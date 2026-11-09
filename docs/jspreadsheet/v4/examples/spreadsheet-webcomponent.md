@@ -1,10 +1,10 @@
-title: Jspreadsheet Webcomponent
-keywords: Jexcel, javascript, javascript vanilla, javascript plugin, plugin, excel-like, spreadsheet, table, tables, grid, datatables, data, webcomponent
-description: Use the Jspreadsheet datagrid as webcomponent
+title: 格知 AI Webcomponent
+keywords: 格知 AI, javascript, javascript vanilla, javascript plugin, plugin, excel-like, spreadsheet, table, tables, grid, datatables, data, webcomponent
+description: Use the 格知 AI datagrid as webcomponent
 
 # Javascript web component online spreadsheet
 
-## Create a online javascript spreadsheet using Jspreadsheet Ce.
+## Create a online javascript spreadsheet using 格知 AI.
 
 ### Javascript
 
@@ -33,7 +33,7 @@ class Jspreadsheet extends HTMLElement {
         shadowRoot.appendChild(css2);
 
         // Jspreadsheet container
-        var container = document.createElement('div'); 
+        var container = document.createElement('div');
         shadowRoot.appendChild(container);
 
         // Create element
@@ -69,4 +69,3 @@ window.customElements.define('j-spreadsheet', Jspreadsheet);
 
 </html>
 ```
-

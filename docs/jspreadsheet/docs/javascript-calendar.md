@@ -1,17 +1,17 @@
 title: Javascript Calendar and Date Operations
-keywords: Jspreadsheet, data grid, javascript, excel-like calendar, spreadsheet calendar, javascript calendar, data grid calendar, advanced calendar, calendar events, calendar settings, interactive data grid, customizable calendar, dynamic calendar, event-driven calendar, calendar integration
-description: Explore the data grid calendar input type, date operations, formatting, validations, events, and other related date operations and calendar features available in Jspreadsheet.
+keywords: 格知 AI, data grid, javascript, excel-like calendar, spreadsheet calendar, javascript calendar, data grid calendar, advanced calendar, calendar events, calendar settings, interactive data grid, customizable calendar, dynamic calendar, event-driven calendar, calendar integration
+description: Explore the data grid calendar input type, date operations, formatting, validations, events, and other related date operations and calendar features available in 格知 AI.
 
 # Date operations
 
-This section explains how to handle dates in Jspreadsheet, focusing on the calendar input type and various date operations. You can work with dates by applying a mask to text input fields or using the dedicated calendar type.
+This section explains how to handle dates in 格知 AI, focusing on the calendar input type and various date operations. You can work with dates by applying a mask to text input fields or using the dedicated calendar type.
 
 **Key Differences:**
 
 - **Text type with date mask**: This option supports date-related calculations, copy-paste functionality, and fill-handle operations similar to Excel. It allows dates to be treated as numerical values, making it ideal for performing operations.
 - **Calendar Type**: This option provides a calendar picker for selecting dates but stores the value as a string. It’s more focused on user-friendly input rather than complex date calculations.
 
-This section covers the following topics: 
+This section covers the following topics:
 
 - **Configuring the calendar picker**: How to customize the calendar editor for user-friendly date selection.
 - **Validating date values**: Set rules to ensure date inputs are valid based on the values in other columns.
@@ -167,15 +167,15 @@ export class AppComponent {
     }
 }
 ```
- 
 
- 
+
+
 
 ### Column Calendar Customization
 
-In the example below, we configure the calendar column type as a year-month picker only. 
+In the example below, we configure the calendar column type as a year-month picker only.
 
- 
+
 
 
 
@@ -200,7 +200,7 @@ jspreadsheet(document.getElementById('spreadsheet'), {
         data: [
             [ '2021-01-01', '', '', '' ]
         ],
-        columns: [  
+        columns: [
             { type: 'calendar', options: { type: 'year-month-picker', format: 'Mon/YYYY' } },
         ]
     }]
@@ -299,7 +299,7 @@ export class AppComponent {
 
 ### Calendar Date Validations
 
-In the example below, `filterOptions` is used to overwrite the column configuration `validRange` just before the edit. The rule is that the last column cannot have a date after the previous column date. Additionally, the onbeforechange event behavior blocks the user from pasting or programmatically breaking this rule. 
+In the example below, `filterOptions` is used to overwrite the column configuration `validRange` just before the edit. The rule is that the last column cannot have a date after the previous column date. Additionally, the onbeforechange event behavior blocks the user from pasting or programmatically breaking this rule.
 
 ```html
 <html>
@@ -635,13 +635,13 @@ export class AppComponent {
     }
 }
 ```
- 
 
- 
+
+
 
 ### International Calendar Configurations
 
-To translate the text in the calendar plugin, you can include the `setDictionary` method as below. 
+To translate the text in the calendar plugin, you can include the `setDictionary` method as below.
 
 ```html
 <div id="spreadsheet"></div>
@@ -694,7 +694,7 @@ jspreadsheet.setDictionary(dictionary);
 jspreadsheet(document.getElementById('spreadsheet'), {
     worksheets: [{
         minDimensions: [4,4],
-        columns: [  
+        columns: [
             { type: 'calendar', options: { startingDay: 1 } },
             { type: 'calendar', options: { startingDay: 1 } },
             { type: 'calendar', options: { startingDay: 1 } },
@@ -918,7 +918,7 @@ export class AppComponent {
     }
 }
 ```
- 
+
 
 ## Calendar Component Library
 
@@ -953,42 +953,14 @@ For reactive applications, [LemonadeJS Calendar](https://lemonadejs.net/docs/plu
 
 ---
 
-### Jspreadsheet Pro - Enhanced Calendar Features
-Upgrade to [Jspreadsheet Pro](https://jspreadsheet.com/docs/date) for enhanced calendar functionality including:
-- LemonadeJS Calendar integration
-- Improved accessibility and ARIA support
-- Additional date operations and formulas
-- Advanced customization options
-
-**[View Jspreadsheet Pro Date Documentation →](https://jspreadsheet.com/docs/date)**
-
----
-
-### Comparison: Calendar Options for Jspreadsheet CE
-
-| Feature                    | Jspreadsheet CE Date | CalendarJS | LemonadeJS Calendar | Jspreadsheet Pro |
-|----------------------------|---------------------|------------|---------------------|------------------|
-| **In-cell date editing**   | ✓                   | -          | -                   | ✓                |
-| **External date picker**   | -                   | ✓          | ✓                   | ✓                |
-| **Reactive binding**       | -                   | -          | ✓                   | -                |
-| **Excel date format**      | ✓                   | ✓          | ✓                   | ✓                |
-| **ARIA support**           | Basic               | ✓✓         | ✓✓                  | ✓✓               |
-| **Range selection**        | ✓                   | ✓          | ✓                   | ✓                |
-| **Best for**               | CE grid cells       | Standalone | Reactive apps       | Pro grid cells   |
-
----
-
 ## Related content
 
 **Calendar Components:**
 - [CalendarJS](https://calendarjs.com/docs/calendar) - Standalone calendar and date picker
 - [LemonadeJS Calendar](https://lemonadejs.net/docs/plugins/calendar) - Reactive calendar component
-- [jSuites Calendar](https://jsuites.net/docs/javascript-calendar) - Calendar used by Jspreadsheet CE
-- [Jspreadsheet Pro Date](https://jspreadsheet.com/docs/date) - Enhanced calendar features
+- [jSuites Calendar](https://jsuites.net/docs/javascript-calendar) - Calendar used by 格知 AI
 
-**Related Jspreadsheet CE Features:**
+**Related 格知 AI Features:**
 - [Cell Formatting](./format) - Format dates in cells
 - [Custom Formulas](./custom-formulas) - Create date calculations
 - [Headers](./headers) - Column headers and titles
-
-

@@ -1,10 +1,10 @@
-title: Jspreadsheet with Jquery
-keywords: Jexcel, javascript, using Jspreadsheet and Jquery
-description: A full example on how to integrate Jspreadsheet with Jquery
+title: 格知 AI with Jquery
+keywords: 格知 AI, javascript, using 格知 AI and Jquery
+description: A full example on how to integrate 格知 AI with Jquery
 
 # Jquery
 
-Creating a Jspreadsheet javascript instance using jQuery
+Creating a 格知 AI javascript instance using jQuery
 
 ### Source code
 
@@ -28,10 +28,9 @@ let options = {
     tableOverflow:true,
 }
 
-let table = jspreadsheet($('#spreadsheet')[0], options); 
+let table = jspreadsheet($('#spreadsheet')[0], options);
 
 document.getElementById("addRow").onclick = () => table.insertRow()
 </script>
 </html>
 ```
-

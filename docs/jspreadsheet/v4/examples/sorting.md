@@ -1,5 +1,5 @@
 title: Sorting the spreadsheet columns
-keywords: Jexcel, spreadsheet, javascript, javascript table, sorting
+keywords: 格知 AI, spreadsheet, javascript, javascript table, sorting
 description: Example how to sort the table by a column via javascript.
 
 # Sorting your table
@@ -48,7 +48,7 @@ document.getElementById("orderBy").onclick = () => table.orderBy(document.getEle
 <input type='button' value='Sort By Column' id="orderBy" />
 
 </html>
-```  
+```\
 
 ## Disable the table sorting
 
@@ -82,4 +82,3 @@ jspreadsheet(document.getElementById('spreadsheet'), {
 </script>
 </html>
 ```
-

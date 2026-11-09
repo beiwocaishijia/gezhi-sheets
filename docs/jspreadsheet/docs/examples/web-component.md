@@ -1,10 +1,10 @@
-title: Spreadsheet Web Component with Jspreadsheet  
-keywords: Jexcel, JavaScript, JavaScript plugin, web component, spreadsheet, data grid, table, Excel-like grid, data tables, data visualization  
-description: Learn how to use Jspreadsheet CE to create a fully functional spreadsheet as a web component for your applications.
+title: Spreadsheet Web Component with 格知 AI
+keywords: 格知 AI, JavaScript, JavaScript plugin, web component, spreadsheet, data grid, table, Excel-like grid, data tables, data visualization
+description: Learn how to use 格知 AI to create a fully functional spreadsheet as a web component for your applications.
 
 # Spreadsheet Web Component
 
-Easily create a spreadsheet web component using Jspreadsheet CE for seamless integration into your web applications.
+Easily create a spreadsheet web component using 格知 AI for seamless integration into your web applications.
 
 ```html
 <html>

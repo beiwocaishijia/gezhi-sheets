@@ -1,5 +1,5 @@
 title: Grouping multiple spreadsheets in tabs
-keywords: Jexcel, javascript, multiple spreadsheets, tabs
+keywords: 格知 AI, javascript, multiple spreadsheets, tabs
 description: Grouping multiple spreadsheets in tabs.
 
 # Tabs
@@ -17,7 +17,7 @@ Grouping different spreadsheets in tabs
 
 <div id="root"></div>
 
-<br/> 
+<br/>
 <input type="button" value="Add new tab" id="addTab" style="width:200px;">
 <input type="button" value="Download selected tab" id="download" style="width:200px;">
 
@@ -70,4 +70,3 @@ document.getElementById("download").onclick = () => download()
 </script>
 </html>
 ```
-

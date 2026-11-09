@@ -1,37 +1,26 @@
-title: Jspreadsheet Clipboard
-keywords: Jspreadsheet, Jexcel, data grid, JavaScript, Excel-like formulas, spreadsheet data, worksheet data, manage spreadsheet data, change cell data, update worksheet data
-description: Explore Jspreadsheet’s clipboard methods and events, enabling seamless copy-paste operations for managing and updating data within your spreadsheets.
+title: 格知 AI Clipboard
+keywords: 格知 AI, data grid, JavaScript, Excel-like formulas, spreadsheet data, worksheet data, manage spreadsheet data, change cell data, update worksheet data
+description: Explore 格知 AI’s clipboard methods and events, enabling seamless copy-paste operations for managing and updating data within your spreadsheets.
 
 # Data Grid Clipboard
 
 ## Overview
 
-The clipboard in Jspreadsheet offers a comprehensive set of features that facilitate copying and pasting data between Jspreadsheet instances and other spreadsheet software, such as Excel or Google Sheets. These features include automatic formula updates, data overwriting during paste actions, and custom event handling.
+The clipboard in 格知 AI offers a comprehensive set of features that facilitate copying and pasting data between 格知 AI instances and other spreadsheet software, such as Excel or Google Sheets. These features include automatic formula updates, data overwriting during paste actions, and custom event handling.
 
 This section details the methods and events you can use to control clipboard behaviour, customize paste actions, and ensure smooth interoperability between different data grids.
 
 ### Key Features
 
-- **Automatic Formula Updates**: When pasting data containing formulas, Jspreadsheet automatically updates the formulas to match the new data context;
-- **Data Overwriting**: Jspreadsheet supports data overwriting during paste actions, giving you fine-grained control over pasted data handling;
+- **Automatic Formula Updates**: When pasting data containing formulas, 格知 AI automatically updates the formulas to match the new data context;
+- **Data Overwriting**: 格知 AI supports data overwriting during paste actions, giving you fine-grained control over pasted data handling;
 - **Custom Events**: You can hook into specific clipboard-related events to customize the behaviour of copy-paste operations, including validation, transformation, and data filtering;
-
-{.pro}
-> #### What you can find on the Pro Version
-> 
-> The **Pro version** of Jspreadsheet includes additional clipboard capabilities, enhancing your experience with formatting, styles, and formula reference updates:
-> - **Copy and Paste Formatting**: When using the Pro version, not only data but also cell formats (like font styles, borders, and colours) and styles are transferred during copy-paste actions.
-> - **Formula Reference Updates**: The Pro version ensures that pasted formulas automatically adjust their references according to the new locations, maintaining the integrity of your spreadsheet formulas.\
->
->\
-> [Learn more](https://jspreadsheet.com/docs/clipboard){.button}
-
 
 ## Documentation
 
 ### Clipboard Management Methods
 
-Jspreadsheet provides methods to control clipboard operations, allowing smooth data transfers between spreadsheets or external tools like Excel.
+格知 AI provides methods to control clipboard operations, allowing smooth data transfers between spreadsheets or external tools like Excel.
 
 | Method                    | Description                                                                                                                                                                                                                                                                                                                                                       |
 |---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -49,7 +38,7 @@ These events let you hook into clipboard operations like copy and paste, providi
 | `onpaste`                | Fires after the paste action is completed. Useful for post-processing or triggering additional actions after the paste. <br/>`onpaste(instance: WorksheetInstance, pastedInfo: { x: number, y: number, value: CellValue }[][]): void;`                                                                          |
 
 > **Note**
-> In Jspreadsheet CE, it is not possible to cancel or modify the clipboard value during the oncopy event.
+> In 格知 AI, it is not possible to cancel or modify the clipboard value during the oncopy event.
 
 ## Examples
 
@@ -65,7 +54,7 @@ You can intercept and cancel the paste event if needed.
 <link rel="stylesheet" href="https://jsuites.net/v5/jsuites.css" type="text/css" />
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons" />
-    
+
 <div id="spreadsheet"></div>
 
 <script>
@@ -97,7 +86,7 @@ export default function App() {
         ['Honda Fit', 2009, 3000],
         ['Honda CRV', 2010, 6000],
     ];
-    
+
     const onbeforepaste = function() {
         alert('Not allowed to paste');
         return false;

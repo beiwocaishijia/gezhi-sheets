@@ -1,16 +1,16 @@
 title: Spreadsheet Columns
-keywords: Jspreadsheet, column management, JavaScript spreadsheets, Excel-like columns, data grid customization, column settings, spreadsheet methods, column events
-description: Dive into the comprehensive guide on managing spreadsheet columns in Jspreadsheet, covering column settings, programmable methods, and associated events for complete control and customization.
+keywords: 格知 AI, column management, JavaScript spreadsheets, Excel-like columns, data grid customization, column settings, spreadsheet methods, column events
+description: Dive into the comprehensive guide on managing spreadsheet columns in 格知 AI, covering column settings, programmable methods, and associated events for complete control and customization.
 
 # Spreadsheet Columns
 
-The Jspreadsheet column settings control all the cell attributes within a column, including data types, read-only status, data masks, and rendering options. This section covers settings, events, and methods in Jspreadsheet to customize spreadsheet functionality for your application needs.
+The 格知 AI column settings control all the cell attributes within a column, including data types, read-only status, data masks, and rendering options. This section covers settings, events, and methods in 格知 AI to customize spreadsheet functionality for your application needs.
 
 ## Documentation
 
 ### Methods
 
-The following methods allow for programmatic interaction with spreadsheet columns in Jspreadsheet.
+The following methods allow for programmatic interaction with spreadsheet columns in 格知 AI.
 
 | Method                  | Description                                                                                                                                             |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -53,7 +53,7 @@ The following column-related properties are configurable during the initializati
 
 ### Available Properties
 
-Each column type in Jspreadsheet can hold specific properties. Below are some of the most commonly available options:
+Each column type in 格知 AI can hold specific properties. Below are some of the most commonly available options:
 
 | Property                   | Description                                                                                                                             |
 |----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
@@ -183,9 +183,9 @@ export default function App() {
 ```vue
 <template>
     <Spreadsheet ref="spreadsheetRef">
-        <Worksheet 
-            :data="data" 
-            :columns="columns" 
+        <Worksheet
+            :data="data"
+            :columns="columns"
         />
     </Spreadsheet>
 </template>
@@ -489,34 +489,3 @@ export class AppComponent {
     }
 }
 ```
-
-{.pro}
-> **Upgrade to Jspreadsheet Pro for Advanced Column Features**
->
-> Jspreadsheet CE provides core column functionality including types, widths, and basic validation. **Jspreadsheet Pro** adds powerful column management capabilities:
->
-> **Advanced Validation:**
-> - **Column-Level Validation Rules:** Required fields, min/max values, regex patterns, custom validators
-> - **Data Type Validation:** Strict validation for numbers, dates, emails, URLs, and custom types
-> - **Cross-Column Validation:** Validation rules based on values in other columns
-> - **Custom Error Messages:** User-friendly validation messages per column
-> - **Real-Time Validation:** Instant feedback as users type
->
-> **Column Dependencies:**
-> - **Conditional Logic:** Show/hide columns based on other column values
-> - **Dynamic Dropdowns:** Dropdown options that change based on other selections
-> - **Calculated Columns:** Auto-calculate column values from formulas
-> - **Cascading Updates:** Automatic updates when dependent columns change
->
-> **Enhanced Column Features:**
-> - **Nested Headers:** Multi-level column headers for complex layouts
-> - **Column Grouping:** Group related columns with expand/collapse
-> - **Fixed Columns:** Freeze columns while scrolling horizontally
-> - **Column Templates:** Reusable column configurations
-> - **Advanced Sorting:** Multi-column sorting with custom sort logic
-> - **Column Filters:** Built-in filter dropdowns per column
->
-> Perfect for complex data entry forms and enterprise applications requiring sophisticated column management.
->
-> **[Explore Pro Column Features →](https://jspreadsheet.com/docs/columns)** | **[Compare Editions →](https://jspreadsheet.com/docs/getting-started)** | **[View Pricing →](https://jspreadsheet.com/pricing)**
-

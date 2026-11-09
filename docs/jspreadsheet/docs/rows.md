@@ -1,10 +1,10 @@
 title: Managing the Data Grid Rows
-keywords: Jspreadsheet, Jexcel, data grid, JavaScript, Excel-like rows, spreadsheet rows, data table rows, row management, add rows, delete rows, move rows, row manipulation, row events, row settings, row documentation
-description: Learn to manage rows in Jspreadsheet, including adding, deleting, and moving them. Explore methods, events, and settings for customizing row behaviour in dynamic and integrated data grid applications.
+keywords: 格知 AI, data grid, JavaScript, Excel-like rows, spreadsheet rows, data table rows, row management, add rows, delete rows, move rows, row manipulation, row events, row settings, row documentation
+description: Learn to manage rows in 格知 AI, including adding, deleting, and moving them. Explore methods, events, and settings for customizing row behaviour in dynamic and integrated data grid applications.
 
 # Spreadsheet Rows
 
-Row settings in Jspreadsheet define behaviours and attributes, such as unique identifiers, row height, styling, and cell properties like read-only status. This section covers the methods, events, and settings for managing rows in a data grid.
+Row settings in 格知 AI define behaviours and attributes, such as unique identifiers, row height, styling, and cell properties like read-only status. This section covers the methods, events, and settings for managing rows in a data grid.
 
 ## Documentation
 
@@ -34,7 +34,7 @@ The following events are related to rows in your spreadsheet.
 | `onmoverow`         | Triggered after a row is moved to a new position.<br/>`onmoverow(worksheet: Object, origin: Number, destination: Number) => void`                                 |
 | `onresizerow`       | Triggered after the height of one or more rows is changed.<br/>`onresizerow(worksheet: Object, row: Mixed, height: Mixed, oldHeight: Mixed) => void`             |
 
- 
+
 
 ### Initial Settings
 
@@ -65,7 +65,7 @@ You can initialize the spreadsheet with custom `id`, `text`, and `height` using 
 
 ## Examples
 
-A basic spreadsheet with a few programmatic methods available. 
+A basic spreadsheet with a few programmatic methods available.
 
 ```html
 <html>
@@ -292,4 +292,3 @@ export class AppComponent {
     }
 }
 ```
- 

@@ -1,17 +1,10 @@
 title: Spreadsheet Cells
-keywords: JavaScript, Jspreadsheet, Jexcel, Data Grid, Spreadsheet Features, Excel-like Functionality, Table Management, Cell Settings, Cell Configuration
-description: Detailed documentation on Jspreadsheet cell configuration, covering events, methods, and settings for advanced customization.
+keywords: JavaScript, 格知 AI, Data Grid, Spreadsheet Features, Excel-like Functionality, Table Management, Cell Settings, Cell Configuration
+description: Detailed documentation on 格知 AI cell configuration, covering events, methods, and settings for advanced customization.
 
 # Spreadsheet Cells
 
-This guide provides an in-depth overview of data grid cells in Jspreadsheet, including key methods, configuration options, and a basic implementation example. 
-
-{.pro}
-> #### Differences in the Pro Version
->
-> The Jspreadsheet Pro enables cell-level editor customization and allows dynamic programmatic changes to cell types.\
-> \
-> [Learn more](https://jspreadsheet.com/docs/cells){.button}
+This guide provides an in-depth overview of data grid cells in 格知 AI, including key methods, configuration options, and a basic implementation example.
 
 ## Documentation
 
@@ -73,7 +66,7 @@ let worksheets = jspreadsheet(document.getElementById('spreadsheet'), {
 });
 
 btn1.addEventListener('click', function() {
-    worksheets[0].getCell('A1').style.backgroundColor = 'orange'; 
+    worksheets[0].getCell('A1').style.backgroundColor = 'orange';
 })
 
 </script>
@@ -143,19 +136,19 @@ export default function App() {
 <template>
   <div>
       <Spreadsheet ref="spreadsheetRef">
-          <Worksheet 
-              :data="data" 
-              :columns="columns" 
-              :merge-cells="mergeCells" 
-              :rows="rows" 
-              :style="style" 
+          <Worksheet
+              :data="data"
+              :columns="columns"
+              :merge-cells="mergeCells"
+              :rows="rows"
+              :style="style"
           />
       </Spreadsheet>
-      <input 
-          type="button" 
-          value="Apply external style" 
-          @click="applyStyle" 
-          class="jss_object" 
+      <input
+          type="button"
+          value="Apply external style"
+          @click="applyStyle"
+          class="jss_object"
       />
   </div>
 </template>
@@ -267,41 +260,4 @@ export class AppComponent {
 }
 ```
 
-{.pro}
-> **Upgrade to Jspreadsheet Pro for Advanced Cell Features**
->
-> Jspreadsheet CE provides basic cell operations and styling. **Jspreadsheet Pro** adds powerful cell-level capabilities:
->
-> **Cell-Level Validation:**
-> - **Required Cells:** Mark specific cells as required with custom error messages
-> - **Custom Validators:** Define validation functions per cell (not just column-level)
-> - **Cross-Cell Validation:** Validate based on values in other cells
-> - **Real-Time Validation:** Instant feedback with visual indicators as users type
-> - **Validation Rules:** Min/max values, regex patterns, custom logic per cell
-> - **Error Highlighting:** Automatic visual highlighting of invalid cells
->
-> **Advanced Cell Formatting:**
-> - **Conditional Cell Formatting:** Auto-apply colors, styles based on cell values
-> - **Data Bars:** In-cell bar charts showing relative values
-> - **Color Scales:** Gradient colors based on value ranges
-> - **Icon Sets:** Visual icons (arrows, flags, traffic lights) based on values
-> - **Rich Text in Cells:** Bold, italic, underline, colors within single cell
-> - **Cell-Specific Masks:** Different format masks per cell (not just column)
->
-> **Cell Protection & Security:**
-> - **Cell-Level Protection:** Lock specific cells while allowing others to edit
-> - **Conditional Protection:** Protect/unprotect cells based on user roles or values
-> - **Password Protection:** Protect cells with passwords
-> - **Read-Only Cells:** Programmatically set individual cells as read-only
->
-> **Enhanced Cell Features:**
-> - **Cell Comments/Notes:** Advanced commenting system with threads and mentions
-> - **Cell Metadata:** Store custom business data per cell
-> - **Cell History:** Track changes per cell with audit trail
-> - **Cell Dependencies:** Track which cells depend on each other
-> - **Cell Types:** Dynamic cell type changes at runtime
-> - **Custom Renderers:** Per-cell custom rendering functions
->
-> Perfect for data entry applications requiring strict validation and conditional formatting.
->
 > **[Explore Pro Cell Features →](https://jspreadsheet.com/docs/cells)** | **[Compare Editions →](https://jspreadsheet.com/docs/getting-started)** | **[View Pricing →](https://jspreadsheet.com/pricing)**

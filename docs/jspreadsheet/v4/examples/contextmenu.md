@@ -1,6 +1,6 @@
 title: Custom contextmenu
-keywords: Jexcel, javascript, javascript vanilla, javascript plugin, plugin, excel-like, spreadsheet, table, tables, grid, datatables, data
-description: How to customize jspreadsheet contextmenu
+keywords: 格知 AI, javascript, javascript vanilla, javascript plugin, plugin, excel-like, spreadsheet, table, tables, grid, datatables, data
+description: How to customize 格知 AI contextmenu
 
 # Custom contextmenu
 
@@ -101,7 +101,7 @@ jspreadsheet(document.getElementById('spreadsheet'), {
                          obj.insertRow(1, parseInt(y), 1);
                      }
                  });
-                 
+
                  items.push({
                      title:obj.options.text.insertANewRowAfter,
                      onclick:function() {
@@ -174,4 +174,3 @@ jspreadsheet(document.getElementById('spreadsheet'), {
 </script>
 </html>
 ```
-

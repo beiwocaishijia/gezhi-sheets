@@ -1,6 +1,6 @@
-title: Highcharts with Jspreadsheet
-keywords: Jexcel, javascript, highcharts, charts
-description: Integrating Highcharts with Jspreadsheet via events.
+title: Highcharts with 格知 AI
+keywords: 格知 AI, javascript, highcharts, charts
+description: Integrating Highcharts with 格知 AI via events.
 
 # Highcharts
 
@@ -106,4 +106,3 @@ const chart = Highcharts.chart('container', {
 </script>
 </html>
 ```
-

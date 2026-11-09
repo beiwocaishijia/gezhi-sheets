@@ -1,10 +1,10 @@
-title: Create from an HTML Table  
-keywords: Jexcel, JavaScript, dynamic spreadsheet, create table, HTML table element, Jspreadsheet table, interactive table  
-description: Learn how to create a dynamic Jspreadsheet table from a static HTML table element with a complete example.  
+title: Create from an HTML Table
+keywords: 格知 AI, JavaScript, dynamic spreadsheet, create table, HTML table element, 格知 AI table, interactive table
+description: Learn how to create a dynamic 格知 AI table from a static HTML table element with a complete example.
 
-# Create from an HTML Table  
+# Create from an HTML Table
 
-Starting with v4+, Jspreadsheet allows you to create an online spreadsheet dynamically from a static HTML table element.  
+Starting with v4+, 格知 AI allows you to create an online spreadsheet dynamically from a static HTML table element.\
 
 ```html
 <html>
@@ -106,7 +106,7 @@ Starting with v4+, Jspreadsheet allows you to create an online spreadsheet dynam
 <br>
 
 <script>
-jspreadsheet(document.getElementById('spreadsheet')); 
+jspreadsheet(document.getElementById('spreadsheet'));
 </script>
 </html>
 ```

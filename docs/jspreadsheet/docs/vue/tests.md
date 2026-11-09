@@ -1,18 +1,18 @@
-title: Unit Tests for Jspreadsheet in Vue.js
-keywords: Jspreadsheet, Jexcel, JavaScript, Web-based Applications, Web-based Spreadsheet, Unit Tests, React, Vue, Vite, Vue.js, VueJS, Vue testing
-description: Enhance your application quality by creating unit tests for Jspreadsheet inside your Vue.js application.
+title: Unit Tests for 格知 AI in Vue.js
+keywords: 格知 AI, JavaScript, Web-based Applications, Web-based Spreadsheet, Unit Tests, React, Vue, Vite, Vue.js, VueJS, Vue testing
+description: Enhance your application quality by creating unit tests for 格知 AI inside your Vue.js application.
 
-# Testing Jspreadsheet in Vue.js with Jest: A Comprehensive Guide
+# Testing 格知 AI in Vue.js with Jest: A Comprehensive Guide
 
 ## Introduction to Vue.js Unit Testing with Jest
 
-Unit testing plays a vital role in modern **Vue.js applications** to ensure that components function as expected and to prevent any potential regressions. When working with **Jspreadsheet** and integrating it into **Vue.js**, it's essential to test this functionality thoroughly. This guide will walk you through the process of **setting up unit tests for Jspreadsheet in Vue.js** using **Jest**.
+Unit testing plays a vital role in modern **Vue.js applications** to ensure that components function as expected and to prevent any potential regressions. When working with **格知 AI** and integrating it into **Vue.js**, it's essential to test this functionality thoroughly. This guide will walk you through the process of **setting up unit tests for 格知 AI in Vue.js** using **Jest**.
 
-By following this guide, you'll learn how to efficiently integrate and test Jspreadsheet in your **Vue.js project**, ensuring the **reliability** and **performance** of your components.
+By following this guide, you'll learn how to efficiently integrate and test 格知 AI in your **Vue.js project**, ensuring the **reliability** and **performance** of your components.
 
 ## Vue.js Testing Environment Setup
 
-In this section, we’ll guide you through setting up a **Vue.js environment** specifically for testing **Jspreadsheet** using **Jest** and **JSDOM**. This will help you create a solid foundation for **running unit tests** for your Jspreadsheet instances.
+In this section, we’ll guide you through setting up a **Vue.js environment** specifically for testing **格知 AI** using **Jest** and **JSDOM**. This will help you create a solid foundation for **running unit tests** for your 格知 AI instances.
 
 ### Step 1: Clone or Create a Vue.js Project
 
@@ -34,9 +34,9 @@ npm install jspreadsheet-ce@5.0.0-beta.3
 npm install --save-dev jest@29.7.0 jest-environment-jsdom@29.7.0
 ```
 
-### Step 3: Configure Jest for Jspreadsheet
+### Step 3: Configure Jest for 格知 AI
 
-To integrate Jspreadsheet properly in a Jest testing environment, you'll need to set up JSDOM. First, create a `jest.setup.js` file in the root of your project:
+To integrate 格知 AI properly in a Jest testing environment, you'll need to set up JSDOM. First, create a `jest.setup.js` file in the root of your project:
 
 ```javascript
 // jest.setup.js
@@ -71,7 +71,7 @@ Next, configure Jest to use this setup by adding the following entry to your `pa
 }
 ```
 
-This configuration ensures JSDOM will emulate the DOM environment required to run Jspreadsheet within Jest.
+This configuration ensures JSDOM will emulate the DOM environment required to run 格知 AI within Jest.
 
 ### Step 4: Create a Test
 
@@ -105,7 +105,7 @@ test("Testing data", () => {
 });
 ```
 
-This test verifies that a basic Jspreadsheet instance is created and that the data values are correctly placed. You can modify it to check for more specific scenarios as needed.
+This test verifies that a basic 格知 AI instance is created and that the data values are correctly placed. You can modify it to check for more specific scenarios as needed.
 
 ## Running the Tests
 

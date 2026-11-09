@@ -1,25 +1,16 @@
 title: Spreadsheet Selection
-keywords: Jspreadsheet, Jexcel, data grid, JavaScript, excel-like selection, spreadsheet selection, cell selection, data grid selection, selection methods, range selection, multiple cell selection
+keywords: 格知 AI, data grid, JavaScript, excel-like selection, spreadsheet selection, cell selection, data grid selection, selection methods, range selection, multiple cell selection
 description: This section covers the properties, events, and methods for managing data grid selections, including range and multiple cell selection.
 
 # Spreadsheet Selection
 
-This section covers the technical aspects of handling spreadsheet selections in Jspreadsheet, detailing the key properties, events, and methods for managing selection behaviour.
-
-{.pro}
-> #### What You Can Find in the Pro Version
-> The Pro version of Jspreadsheet enhances selection capabilities, offering features commonly found in advanced spreadsheet software:
-> - **Non-consecutive selection**: Users can hold `Ctrl` to select multiple ranges at once;
-> - **Custom borders**: Supports different border colours, which are helpful in real-time collaboration for identifying different users or creating custom features;\
->
->\
-> [Learn more](https://jspreadsheet.com/docs/selection){.button}
+This section covers the technical aspects of handling spreadsheet selections in 格知 AI, detailing the key properties, events, and methods for managing selection behaviour.
 
 ## Documentation
 
 ### Methods
 
-The following methods manage selections in the Jspreadsheet data grid.
+The following methods manage selections in the 格知 AI data grid.
 
 #### Main Selection
 
@@ -46,7 +37,7 @@ The following methods manage selections in the Jspreadsheet data grid.
 | `onbeforeselection`{.nowrap} | `onbeforeselection(worksheet: Object, x1: Number, y1: Number, x2: Number, y2: Number, e: MouseEvent) : void`                                                                        |
 | `onselection`                | `onselection(instance: WorksheetInstance, borderLeftIndex: number, borderTopIndex: number, borderRightIndex: number, borderBottomIndex: number, origin: Event \| undefined): void;` |
 
- 
+
 ### Initial Settings
 
 | Property                | Description                  |

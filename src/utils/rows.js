@@ -414,7 +414,7 @@ export const deleteRow = function (rowNumber, numOfRows) {
                 // If delete all rows, and set allowDeletingAllRows false, will stay one row
                 if (obj.options.allowDeletingAllRows != true && lastRow + 1 === numOfRows) {
                     numOfRows--;
-                    console.error('Jspreadsheet: It is not possible to delete the last row');
+                    console.error('格知 AI: It is not possible to delete the last row');
                 }
 
                 // Remove node
@@ -466,7 +466,7 @@ export const deleteRow = function (rowNumber, numOfRows) {
                 dispatch.call(obj, 'ondeleterow', obj, onbeforedeleterowRecords);
             }
         } else {
-            console.error('Jspreadsheet: It is not possible to delete the last row');
+            console.error('格知 AI: It is not possible to delete the last row');
         }
     }
 };

@@ -9,7 +9,7 @@ export const openFilter = function (columnId) {
     const obj = this;
 
     if (!obj.options.filters) {
-        console.log('Jspreadsheet: filters not enabled.');
+        console.log('格知 AI: filters not enabled.');
     } else {
         // Make sure is integer
         columnId = parseInt(columnId);

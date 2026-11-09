@@ -1,5 +1,5 @@
 title: Custom Table Design
-keywords: Jexcel, javascript, javascript vanilla, javascript plugin, plugin, excel-like, spreadsheet, table, tables, grid, datatables, data
+keywords: 格知 AI, javascript, javascript vanilla, javascript plugin, plugin, excel-like, spreadsheet, table, tables, grid, datatables, data
 description: Customized CSS for your datagrid
 
 # Create custom CSS for your javascript spreadsheet
