@@ -216,6 +216,11 @@ export const executeFormula = function (expression, x, y) {
                         } else {
                             value = '';
                         }
+                        // An apostrophe explicitly marks text, including numeric-looking text.
+                        if (typeof value === 'string' && value[0] === "'") {
+                            formulaExpressions[tokens[i]] = quoteFormulaString(value.slice(1));
+                            continue;
+                        }
                         // Get column data
                         if (('' + value).substr(0, 1) == '=') {
                             if (typeof formulaResults[tokens[i]] !== 'undefined') {
@@ -258,7 +263,9 @@ export const executeFormula = function (expression, x, y) {
             let res;
 
             try {
-                res = formula(encodeFormulaStrings(expression.substr(1)), formulaExpressions, x, y, obj);
+                res = typeof obj.parent.config.formulaEvaluator === 'function'
+                    ? obj.parent.config.formulaEvaluator(expression, x, y, obj)
+                    : formula(encodeFormulaStrings(expression.substr(1)), formulaExpressions, x, y, obj);
 
                 if (typeof res === 'function') {
                     res = '#ERROR';
@@ -280,6 +287,10 @@ export const executeFormula = function (expression, x, y) {
 
 export const parseValue = function (i, j, value, cell) {
     const obj = this;
+
+    if (typeof value === 'string' && value[0] === "'") {
+        return value.slice(1);
+    }
 
     if (('' + value).substr(0, 1) == '=' && obj.parent.config.parseFormulas != false) {
         value = executeFormula.call(obj, value, i, j);

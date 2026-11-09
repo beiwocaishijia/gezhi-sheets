@@ -66,7 +66,7 @@ const webpack = {
         },
         port: 8000,
         devMiddleware: {
-            publicPath: 'https://localhost:3000/',
+            publicPath: '/',
         },
         hot: 'only',
     },

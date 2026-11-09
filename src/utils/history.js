@@ -13,6 +13,11 @@ import { conditionalSelectionUpdate } from './selection.js';
 export const setHistory = function (changes) {
     const obj = this;
 
+    if (obj._historyBatch && !obj.ignoreHistory) {
+        obj._historyBatch.push(changes);
+        return;
+    }
+
     if (obj.ignoreHistory != true) {
         // Increment and get the current history index
         const index = ++obj.historyIndex;
@@ -184,6 +189,54 @@ const historyProcessColumn = function (type, historyRecord) {
 /**
  * Undo last action
  */
+const replayRecord = function (record, forward) {
+    const history = this.history;
+    const index = this.historyIndex;
+    this.history = [record];
+    this.historyIndex = forward ? -1 : 0;
+    try {
+        (forward ? redo : undo).call(this);
+    } finally {
+        this.history = history;
+        this.historyIndex = index;
+    }
+};
+
+/** Run synchronous edits as one undoable operation; roll back on failure. */
+export const batch = function (callback) {
+    if (typeof callback !== 'function' || callback.constructor.name === 'AsyncFunction') {
+        throw new TypeError('batch requires a synchronous callback');
+    }
+    if (this._historyBatch) {
+        return callback(this);
+    }
+    const records = [];
+    const previousEvents = this.parent.ignoreEvents;
+    this._historyBatch = records;
+    this.parent.ignoreEvents = true;
+    let result;
+    try {
+        result = callback(this);
+        if (result && typeof result.then === 'function') {
+            throw new TypeError('batch does not accept promises');
+        }
+    } catch (error) {
+        for (let i = records.length - 1; i >= 0; i--) {
+            replayRecord.call(this, records[i], false);
+        }
+        throw error;
+    } finally {
+        delete this._historyBatch;
+        this.parent.ignoreEvents = previousEvents;
+    }
+    if (records.length) {
+        const record = { action: 'batch', records };
+        setHistory.call(this, record);
+        dispatch.call(this, 'onbatch', this, record);
+    }
+    return result;
+};
+
 export const undo = function () {
     const obj = this;
 
@@ -204,7 +257,11 @@ export const undo = function () {
         // History
         historyRecord = obj.history[obj.historyIndex--];
 
-        if (historyRecord.action == 'insertRow') {
+        if (historyRecord.action == 'batch') {
+            for (let i = historyRecord.records.length - 1; i >= 0; i--) {
+                replayRecord.call(obj, historyRecord.records[i], false);
+            }
+        } else if (historyRecord.action == 'insertRow') {
             historyProcessRow.call(obj, 1, historyRecord);
         } else if (historyRecord.action == 'deleteRow') {
             historyProcessRow.call(obj, 0, historyRecord);
@@ -287,7 +344,11 @@ export const redo = function () {
         // History
         historyRecord = obj.history[++obj.historyIndex];
 
-        if (historyRecord.action == 'insertRow') {
+        if (historyRecord.action == 'batch') {
+            for (const record of historyRecord.records) {
+                replayRecord.call(obj, record, true);
+            }
+        } else if (historyRecord.action == 'insertRow') {
             historyProcessRow.call(obj, 0, historyRecord);
         } else if (historyRecord.action == 'deleteRow') {
             historyProcessRow.call(obj, 1, historyRecord);

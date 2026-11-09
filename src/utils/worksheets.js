@@ -49,7 +49,7 @@ import { getIdFromColumnName } from './internalHelpers.js';
 import { copy, paste } from './copyPaste.js';
 import { isReadOnly, setReadOnly } from './cells.js';
 import { openFilter, resetFilters } from './filter.js';
-import { redo, undo } from './history.js';
+import { batch, redo, undo } from './history.js';
 
 const setWorksheetFunctions = function (worksheet) {
     for (let i = 0; i < worksheetPublicMethodsLength; i++) {
@@ -602,6 +602,7 @@ const worksheetPublicMethods = [
     ['getValue', getValue],
     ['getValueFromCoords', getValueFromCoords],
     ['setValue', setValue],
+    ['batch', batch],
     ['setValueFromCoords', setValueFromCoords],
     ['getWidth', getWidth],
     [

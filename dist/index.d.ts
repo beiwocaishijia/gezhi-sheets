@@ -436,6 +436,10 @@ declare namespace jspreadsheet {
          * @param changes - list of changes.
          */
         onafterchanges?: (instance: WorksheetInstance, changes: CellChange[]) => void;
+        /** Fired once after a successful synchronous worksheet.batch transaction. */
+        onbatch?: (instance: WorksheetInstance, record: { action: 'batch'; records: object[] }) => void;
+        /** Optional evaluator used for rendering and recalculation, including batch operations. */
+        formulaEvaluator?: (formula: string, x: number, y: number, instance: WorksheetInstance) => string | number | boolean;
 
         /**
          * Occurs before a column value is changed. If any value is returned, it will be the cell's new value.
@@ -1430,6 +1434,8 @@ declare namespace jspreadsheet {
     }
 
     interface WorksheetInstance {
+        /** Group synchronous edits into one undo step. Throws and rolls back on failure. */
+        batch<T>(callback: (worksheet: WorksheetInstance) => T): T;
         ads: HTMLDivElement;
 
         /**
