@@ -169,10 +169,10 @@ npm run lint
 | [组件扩展](docs/COMPONENT-EXTENSIONS.md) | 事务撤销、显式文本与公式修复 |
 | [视觉素材说明](docs/media/README.md) | 品牌素材、截图与模拟演示的制作方式 |
 
-前端使用原生 JavaScript、Jspreadsheet CE 与 Webpack；后端使用 Node.js、Express、原生 `fetch` 和 Zod。文件处理采用 ExcelJS 与 Papa Parse，数值统计使用 Decimal。
+前端使用原生 JavaScript 与 Webpack；后端使用 Node.js、Express、原生 `fetch` 和 Zod。文件处理采用 ExcelJS 与 Papa Parse，数值统计使用 Decimal。
 
-## 来源与许可证
+## 维护与许可证
 
-格知 AI 基于 **[Jspreadsheet CE](https://github.com/jspreadsheet/ce)** 二次开发，由 [beiwocaishijia](https://github.com/beiwocaishijia) 维护。感谢 Jspreadsheet 及其贡献者提供的开源表格组件。
+格知 AI 由 [beiwocaishijia](https://github.com/beiwocaishijia) 维护。
 
-上游版权与许可声明保留，详见 **[MIT License](LICENSE)**。品牌封面为原创设计示意；其余产品截图与操作演示来自本仓库实际页面。
+许可证详见 **[MIT License](LICENSE)**。品牌封面为原创设计示意；其余产品截图与操作演示来自本仓库实际页面。
