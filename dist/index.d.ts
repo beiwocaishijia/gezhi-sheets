@@ -87,6 +87,7 @@ declare namespace jspreadsheet {
          * @param instance - Worksheet instance.
          * @param options - Column configuration object.
          * @param e - Event that called this method.
+         * @param empty - If true, start with an empty editor while keeping the stored value unchanged until save.
          */
         openEditor?: (
             cell: HTMLTableCellElement,
@@ -95,7 +96,8 @@ declare namespace jspreadsheet {
             y: number,
             instance: WorksheetInstance,
             options: Column,
-            e: KeyboardEvent | MouseEvent | TouchEvent | undefined
+            e: KeyboardEvent | MouseEvent | TouchEvent | undefined,
+            empty?: boolean
         ) => void;
 
         /**

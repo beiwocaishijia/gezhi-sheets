@@ -54,7 +54,7 @@ export const openEditor = function (cell, empty, e) {
         // If there is a custom editor for it
         if (obj.options.columns && obj.options.columns[x] && typeof obj.options.columns[x].type === 'object') {
             // Custom editors
-            obj.options.columns[x].type.openEditor(cell, obj.options.data[y][x], parseInt(x), parseInt(y), obj, obj.options.columns[x], e);
+            obj.options.columns[x].type.openEditor(cell, obj.options.data[y][x], parseInt(x), parseInt(y), obj, obj.options.columns[x], e, empty);
 
             // On edition start
             dispatch.call(obj, 'oncreateeditor', obj, cell, parseInt(x), parseInt(y), null, obj.options.columns[x]);

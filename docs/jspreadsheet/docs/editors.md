@@ -179,10 +179,47 @@ Custom editors allow enhanced user interaction and data collection in your data 
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `createCell`  | Triggered when a new cell is created.<br/>`createCell(cell: Object, value: Any, x: Number, y: Number, instance: Object, options: Object): void`                       |
 | `updateCell`  | Triggered when the cell value changes.<br/>`updateCell(cell: Object, value: Any, x: Number, y: Number, instance: Object, options: Object): void`                      |
-| `openEditor`  | Triggered when the user starts editing a cell.<br/>`openEditor(cell: Object, value: Any, x: Number, y: Number, instance: Object, options: Object): void`              |
+| `openEditor`  | Triggered when the user starts editing a cell.<br/>`openEditor(cell: Object, value: Any, x: Number, y: Number, instance: Object, options: Object, e: Event, empty?: Boolean): void` |
 | `closeEditor` | Triggered when the user finalizes the cell edit.<br/>`closeEditor(cell: Object, confirmChanges: Boolean, x: Number, y: Number, instance: Object, options: Object): void` |
 | `destroyCell` | Triggered when a cell is destroyed.<br/>`destroyCell(cell: Object, x: Number, y: Number, instance: Object): void`                                                    |
 | `get`         | Converts raw data into processed data, such as displaying text instead of an ID in a dropdown type.<br/>`get(options: Object, value: Any): Any`                      |
+
+### Starting a custom editor with empty content
+
+The optional eighth `openEditor` argument, `empty`, indicates whether editing should
+start without the existing cell content. The original value is still passed as the
+second argument. The event remains the seventh argument, so existing custom editors
+can keep their current callback signature.
+
+Use `empty === true` to clear the editor input; when `empty` is `false` or omitted,
+keep the existing value. Opening an empty editor does not change the stored cell
+value. Saving commits the edited value, while cancelling restores the old value.
+
+```javascript
+const textEditor = {
+    openEditor(cell, value, x, y, instance, options, event, empty) {
+        const input = document.createElement('input');
+        input.value = empty === true ? '' : value;
+        cell.textContent = '';
+        cell.appendChild(input);
+        input.focus();
+    },
+    closeEditor(cell) {
+        return cell.querySelector('input').value;
+    },
+    updateCell(cell, value) {
+        cell.textContent = value;
+    },
+};
+
+const sheet = jspreadsheet(document.getElementById('spreadsheet'), {
+    worksheets: [{ data: [['Original value']], columns: [{ type: textEditor }] }],
+})[0];
+
+const cell = sheet.getCell('A1');
+sheet.openEditor(cell, true); // Empty input; stored value is still "Original value".
+// Save with sheet.closeEditor(cell, true), or cancel with sheet.closeEditor(cell, false).
+```
 
 ## Examples
 
