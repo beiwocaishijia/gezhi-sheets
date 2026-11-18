@@ -1,7 +1,7 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/hero-dark.png">
-  <source media="(prefers-color-scheme: light)" srcset="docs/assets/hero-light.png">
-  <img alt="格知 AI · Gezhi Sheets — 让表格听懂你的话。" src="docs/assets/hero-light.png" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/hero-workbench-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="docs/assets/hero-workbench-light.png">
+  <img alt="格知 AI · Gezhi Sheets — 让表格听懂你的话。" src="docs/assets/hero-workbench-light.png" width="100%">
 </picture>
 
 <div align="center">

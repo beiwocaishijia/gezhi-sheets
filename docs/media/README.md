@@ -7,7 +7,7 @@
 | 文件 | 用途与来源 |
 | --- | --- |
 | `logo.svg` | 原创四格标志：三个白色格子与一个略微上移的青绿色格子。应用图标与 README 统一使用。 |
-| `hero-light.png` / `hero-dark.png` | README 封面，随 GitHub 深浅主题切换。使用实际运行的工作台截图，配合独立排版。结果列的浅绿色来自合成示例工作簿保存的单元格样式。 |
+| `hero-workbench-light.png` / `hero-workbench-dark.png` | README 封面，随 GitHub 深浅主题切换。使用实际运行的工作台截图，配合独立排版。结果列的浅绿色来自合成示例工作簿保存的单元格样式。 |
 | `product-overview.png` | 本仓库实际工作台截图，展示三条合成客户反馈与两个新增结果字段。 |
 | `demo.gif` | 实际浏览器操作录制，约十余秒：选区、生成、预览、应用、撤销。 |
 | `feature-extract.png` | 实际表格中的原文与提取结果局部。 |
